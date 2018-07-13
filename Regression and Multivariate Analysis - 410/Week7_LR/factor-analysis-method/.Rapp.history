@@ -1,0 +1,62 @@
+x <- c(5,6,7,8,8)
+y <- c(1,2,3,4,5)
+plot(x,y)
+x <- rnorm(100)#
+y <- runif(100)#
+plot(x, y)
+hist(x)
+hist(y)
+8000/50
+library(h2o)
+airlinesURL = "https://s3.amazonaws.com/h2o-airlines-unpacked/allyears2k.csv"
+library(tm)
+install.packages("Sxslt", repos = "http://www.omegahat.org/R", type = "source")
+library(Sxslt)
+ls()
+x <- runif(1000)
+y <- runif(1000)
+my_data <- data.frame(x,y)
+my_model <- lm(y ~ x, data = my_data)
+str(my_model)
+system.time(source(“run_sydney_jump_start.R”))
+system.time(source("run_sydney_jump_start.R "))
+system.time(source("run_sydney_jump_start.R"))
+getOption("repos")
+install.packages("h2o", repos = "http://cran.cnr.Berkeley.edu")
+library()
+install.packages("lubridate", repos = "http://cran.cnr.Berkeley.edu/")
+install.packages("h2o", repos = "http://cran.cnr.Berkeley.edu/")
+install.packages("lubridate", repos = "https://cran.rstudio.com/")
+library(igrpaph)
+package(igraph)
+library(igraph)
+library(markovchain)
+library(networkD3)
+10+22+25+440+30+22+20
+50+22+20+400+10+22+30
+getwd()
+source("jump-start-factor-analysis-v001.R")
+fa_varimax$scores
+fa_varimax$scores$Factor1
+varimax_factor_scores <- fa_varimax$scores
+varimax_factor_scores$Factor1
+varimax_factor_scores['Factor1']
+varimax_factor_scores[,'Factor1']
+varimax_factor_scores$varimax1 <- fa_varimax$scores[,'Factor1']
+student_data$varimax1 <- fa_varimax$scores[,'Factor1']
+names(student_data)
+# add factor scores to the data frame, resulting in five new #
+# variables or columns for analysis#
+student_data$varimax1 <- fa_varimax$scores[,'Factor1']#
+student_data$varimax2 <- fa_varimax$scores[,'Factor2']#
+student_data$varimax3 <- fa_varimax$scores[,'Factor3']#
+student_data$varimax4 <- fa_varimax$scores[,'Factor4']#
+student_data$varimax5 <- fa_varimax$scores[,'Factor5']#
+#
+# demonstrate that estimated factor scores from the#
+# varimax-rotated factor analytic solution  #
+# are themselves uncorrelated (within rounding error)#
+varimax_factor_cormat <- cor(student_data[, c("varimax1", "varimax2", #
+     "varimax3", "varimax4", "varimax5")])#
+print(round(varimax_factor_cormat, digits = 3))
+source("jump-start-factor-analysis-v001.R")
