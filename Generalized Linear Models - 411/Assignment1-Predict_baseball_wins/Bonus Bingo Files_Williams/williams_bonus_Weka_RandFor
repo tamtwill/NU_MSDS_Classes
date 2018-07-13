@@ -1,0 +1,56 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.WrapperSubsetEval -B weka.classifiers.trees.RandomForest -F 5 -T 0.01 -R 1 -E DEFAULT -- -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Search:       weka.attributeSelection.BestFirst -D 1 -N 5
+Relation:     moneyball-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    2276
+Attributes:   16
+              TARGET_WINS
+              TEAM_BATTING_H
+              TEAM_BATTING_2B
+              TEAM_BATTING_3B
+              TEAM_BATTING_HR
+              TEAM_BATTING_BB
+              TEAM_BATTING_SO
+              TEAM_BASERUN_SB
+              TEAM_BASERUN_CS
+              TEAM_BATTING_HBP
+              TEAM_PITCHING_H
+              TEAM_PITCHING_HR
+              TEAM_PITCHING_BB
+              TEAM_PITCHING_SO
+              TEAM_FIELDING_E
+              TEAM_FIELDING_DP
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 136
+	Merit of best subset found:   11.853
+
+Attribute Subset Evaluator (supervised, Class (numeric): 1 TARGET_WINS):
+	Wrapper Subset Evaluator
+	Learning scheme: weka.classifiers.trees.RandomForest
+	Scheme options: -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1 
+	Subset evaluation: RMSE
+	Number of folds for accuracy estimation: 5
+
+Selected attributes: 2,5,6,8,9,10,11,14,15,16 : 10
+                     TEAM_BATTING_H
+                     TEAM_BATTING_HR
+                     TEAM_BATTING_BB
+                     TEAM_BASERUN_SB
+                     TEAM_BASERUN_CS
+                     TEAM_BATTING_HBP
+                     TEAM_PITCHING_H
+                     TEAM_PITCHING_SO
+                     TEAM_FIELDING_E
+                     TEAM_FIELDING_DP
+

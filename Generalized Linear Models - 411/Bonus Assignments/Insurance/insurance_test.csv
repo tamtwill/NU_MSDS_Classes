@@ -1,0 +1,559 @@
+INDEX,TARGET,KIDSDRIV,AGE,HOMEKIDS,YOJ,INCOME,PARENT1,HOME_VAL,MSTATUS,SEX,EDUCATION,JOB,TRAVTIME,CAR_USE,BLUEBOOK,TIF,CAR_TYPE,RED_CAR,OLDCLAIM,CLM_FREQ,REVOKED,MVR_PTS,CAR_AGE,URBANICITY
+3,,1,37,2,,"$107,961",No,"$333,680",Yes,M,Bachelors,z_Blue Collar,44,Commercial,"$16,970",1,Van,yes,"$2,374",1,Yes,10,7,Highly Urban/ Urban
+9,,0,28,1,13,"$44,077",No,"$170,598",Yes,z_F,z_High School,z_Blue Collar,29,Commercial,"$8,710",6,z_SUV,no,"$8,935",2,No,0,1,Highly Urban/ Urban
+10,,0,43,0,13,"$37,214",No,,Yes,M,<High School,z_Blue Collar,52,Commercial,"$26,560",1,Panel Truck,yes,$0,0,No,3,1,Highly Urban/ Urban
+18,,0,34,3,12,"$22,510",No,"$123,888",Yes,M,z_High School,Clerical,26,Private,"$14,690",4,Minivan,yes,$0,0,Yes,0,1,z_Highly Rural/ Rural
+21,,0,34,0,8,"$14,194",No,"$87,034",z_No,z_F,<High School,Clerical,13,Private,"$2,920",4,Sports Car,no,"$24,767",3,Yes,2,10,Highly Urban/ Urban
+30,,0,41,0,10,"$66,265",No,"$159,276",Yes,M,Masters,Lawyer,59,Private,"$12,230",4,Minivan,yes,$0,0,No,1,9,Highly Urban/ Urban
+31,,0,46,0,7,,No,,z_No,M,Masters,,17,Commercial,"$23,350",13,Panel Truck,yes,"$4,678",3,No,6,17,Highly Urban/ Urban
+37,,0,56,2,14,"$192,089",No,"$471,701",Yes,M,PhD,,31,Commercial,"$21,100",1,Van,yes,$0,0,No,0,,Highly Urban/ Urban
+39,,0,41,1,8,"$126,468",Yes,$0,z_No,z_F,Masters,Manager,34,Commercial,"$32,690",3,Pickup,no,$0,0,No,2,18,Highly Urban/ Urban
+47,,0,60,3,18,"$78,936",No,"$235,670",Yes,z_F,Masters,Lawyer,40,Private,"$20,350",6,z_SUV,no,$0,0,No,0,15,Highly Urban/ Urban
+60,,0,31,3,14,"$26,112",No,"$117,229",Yes,z_F,<High School,Clerical,58,Private,"$14,030",3,z_SUV,no,$0,0,No,0,5,z_Highly Rural/ Rural
+62,,0,58,0,12,"$131,560",No,,z_No,z_F,PhD,Doctor,40,Private,"$14,870",1,z_SUV,no,$0,0,No,2,14,Highly Urban/ Urban
+63,,1,59,1,12,"$119,382",Yes,$0,z_No,z_F,Masters,Manager,26,Commercial,"$24,130",13,Pickup,no,$0,0,No,0,16,Highly Urban/ Urban
+64,,0,57,0,14,"$8,212",No,$0,Yes,M,<High School,Student,5,Private,"$7,200",4,Pickup,yes,$0,0,No,0,,Highly Urban/ Urban
+68,,1,44,2,15,"$46,140",No,"$169,084",Yes,M,z_High School,z_Blue Collar,29,Commercial,"$10,510",1,Pickup,no,"$4,276",3,No,7,1,Highly Urban/ Urban
+75,,0,53,0,8,"$61,862",No,"$245,885",Yes,M,PhD,Doctor,33,Private,"$11,270",1,Pickup,yes,$0,0,No,0,14,Highly Urban/ Urban
+76,,0,54,0,13,"$88,668",No,"$316,419",Yes,z_F,PhD,Lawyer,63,Private,"$20,090",4,Minivan,no,"$10,520",2,No,1,14,Highly Urban/ Urban
+83,,0,55,0,15,"$75,249",No,$0,z_No,M,Masters,,5,Commercial,"$17,020",1,Van,yes,"$1,316",2,No,1,21,Highly Urban/ Urban
+87,,0,38,0,14,"$10,486",No,"$66,515",Yes,M,<High School,Clerical,33,Private,"$6,350",1,Minivan,no,"$5,702",1,No,4,5,Highly Urban/ Urban
+92,,0,64,0,9,"$38,020",No,,Yes,M,z_High School,z_Blue Collar,11,Commercial,"$28,710",7,Pickup,yes,$0,0,No,0,3,Highly Urban/ Urban
+98,,1,39,2,13,"$52,950",No,"$187,514",Yes,M,z_High School,Manager,6,Private,"$10,210",1,Pickup,yes,$0,0,Yes,0,,Highly Urban/ Urban
+106,,0,26,1,0,$0,No,$0,Yes,z_F,Bachelors,Student,10,Commercial,"$4,100",1,Sports Car,no,"$11,279",3,No,5,6,Highly Urban/ Urban
+107,,0,43,2,11,"$46,224",No,"$173,103",Yes,M,z_High School,z_Blue Collar,45,Commercial,"$11,510",13,Pickup,yes,$0,0,Yes,0,10,Highly Urban/ Urban
+113,,0,37,0,7,"$61,790",No,$0,z_No,M,z_High School,z_Blue Collar,32,Commercial,"$15,150",4,Minivan,no,$0,0,No,0,7,Highly Urban/ Urban
+120,,0,32,1,12,"$76,985",Yes,$0,z_No,M,Masters,,37,Private,"$19,500",7,Van,yes,"$6,762",1,No,4,15,Highly Urban/ Urban
+123,,0,42,0,13,"$28,341",No,"$124,838",Yes,M,<High School,Clerical,45,Commercial,"$8,530",4,Pickup,yes,"$3,710",3,No,7,1,Highly Urban/ Urban
+125,,0,48,0,6,"$52,275",No,"$169,104",Yes,M,Bachelors,Professional,57,Private,"$14,060",1,Minivan,no,"$3,868",1,No,3,6,Highly Urban/ Urban
+126,,0,21,0,5,"$40,022",No,$0,z_No,z_F,Bachelors,Manager,67,Private,"$9,360",6,Sports Car,yes,$0,0,No,0,1,Highly Urban/ Urban
+128,,0,58,0,14,"$39,707",No,"$192,089",Yes,M,<High School,z_Blue Collar,29,Commercial,"$16,870",1,Van,yes,"$3,546",1,No,6,6,Highly Urban/ Urban
+129,,0,32,0,12,"$52,469",No,$0,z_No,M,z_High School,z_Blue Collar,21,Commercial,"$4,700",4,Pickup,no,$0,0,Yes,1,9,z_Highly Rural/ Rural
+131,,0,63,2,10,"$52,064",No,,Yes,z_F,z_High School,z_Blue Collar,16,Commercial,"$11,770",1,Sports Car,no,$834,2,No,8,1,Highly Urban/ Urban
+135,,0,45,3,12,"$13,891",No,"$64,530",Yes,z_F,<High School,Clerical,47,Private,"$7,390",1,z_SUV,no,"$1,546",2,No,4,8,Highly Urban/ Urban
+141,,1,57,2,15,"$34,116",Yes,$0,z_No,z_F,z_High School,Clerical,25,Private,"$10,610",10,Sports Car,no,"$34,041",3,Yes,1,7,Highly Urban/ Urban
+147,,0,57,0,15,"$25,761",No,"$149,672",Yes,M,Bachelors,Clerical,57,Private,"$11,940",1,Pickup,no,"$4,792",1,No,8,11,Highly Urban/ Urban
+148,,0,42,0,11,"$49,224",No,"$155,963",Yes,M,z_High School,z_Blue Collar,29,Commercial,"$27,460",1,Minivan,yes,"$4,546",3,No,0,1,Highly Urban/ Urban
+151,,0,27,2,11,"$68,493",Yes,"$217,494",z_No,M,Bachelors,z_Blue Collar,22,Commercial,"$20,180",1,Van,no,$0,0,No,0,5,Highly Urban/ Urban
+156,,0,50,0,13,"$94,589",No,"$276,150",Yes,M,<High School,z_Blue Collar,8,Private,"$6,500",11,Minivan,no,$0,0,No,2,1,Highly Urban/ Urban
+157,,0,40,2,13,"$50,537",No,"$193,855",Yes,z_F,z_High School,z_Blue Collar,39,Commercial,"$28,960",1,Van,no,"$1,613",1,No,2,8,Highly Urban/ Urban
+174,,0,36,3,15,"$79,457",Yes,"$213,122",z_No,z_F,Bachelors,Professional,34,Private,"$5,100",1,z_SUV,no,$0,0,No,1,8,Highly Urban/ Urban
+186,,0,53,0,12,"$48,587",No,$0,z_No,M,z_High School,z_Blue Collar,61,Commercial,"$19,300",6,Van,no,"$4,390",3,No,3,6,Highly Urban/ Urban
+193,,0,46,0,13,"$57,933",No,"$202,659",z_No,z_F,Masters,Lawyer,7,Private,"$16,620",1,z_SUV,no,$0,0,No,0,,Highly Urban/ Urban
+195,,0,55,0,13,,No,"$315,515",z_No,z_F,PhD,Home Maker,5,Private,"$21,270",6,Sports Car,no,"$2,622",1,No,2,20,Highly Urban/ Urban
+212,,0,54,0,14,"$81,438",No,$0,z_No,z_F,Masters,Lawyer,39,Private,"$15,040",4,Sports Car,no,$0,0,No,0,16,Highly Urban/ Urban
+213,,0,58,0,12,"$69,282",No,"$295,989",Yes,M,Bachelors,Professional,47,Private,"$10,520",6,Pickup,no,"$1,142",1,No,0,13,Highly Urban/ Urban
+217,,0,33,0,9,"$69,641",No,"$230,290",z_No,M,Bachelors,z_Blue Collar,33,Commercial,"$22,680",1,Panel Truck,yes,"$1,712",4,No,2,15,Highly Urban/ Urban
+223,,0,50,0,3,"$87,719",No,$0,z_No,M,Bachelors,z_Blue Collar,20,Commercial,"$9,160",17,Minivan,no,$0,0,Yes,2,9,Highly Urban/ Urban
+226,,0,58,0,,"$7,452",No,$0,z_No,z_F,z_High School,Student,30,Private,"$8,050",1,z_SUV,no,"$9,231",3,No,0,1,Highly Urban/ Urban
+228,,2,45,3,9,"$44,786",No,"$175,534",Yes,z_F,z_High School,Clerical,5,Private,"$10,480",13,z_SUV,no,$0,0,No,2,1,Highly Urban/ Urban
+230,,0,39,1,6,"$56,014",No,"$234,014",Yes,z_F,Bachelors,Professional,28,Private,"$7,100",4,z_SUV,no,$0,0,No,0,,Highly Urban/ Urban
+241,,2,45,3,10,"$116,018",No,,Yes,M,Bachelors,Manager,25,Commercial,"$17,600",4,Van,no,"$16,545",1,Yes,2,4,Highly Urban/ Urban
+243,,0,34,3,9,"$23,439",No,"$113,409",Yes,z_F,z_High School,Clerical,38,Private,"$7,240",4,Minivan,no,$0,0,Yes,1,6,Highly Urban/ Urban
+249,,2,36,2,10,"$35,990",Yes,$0,z_No,M,z_High School,Clerical,34,Private,"$13,840",6,Minivan,yes,"$10,310",1,No,3,1,z_Highly Rural/ Rural
+281,,0,48,0,9,"$40,408",No,$0,z_No,z_F,z_High School,Clerical,24,Private,"$5,540",4,Sports Car,no,$0,0,Yes,1,1,Highly Urban/ Urban
+288,,0,45,0,0,$0,No,$0,Yes,z_F,z_High School,Student,35,Private,"$14,500",1,z_SUV,no,"$9,063",3,No,6,9,Highly Urban/ Urban
+294,,0,42,2,11,"$68,171",Yes,$0,z_No,M,Bachelors,Professional,13,Private,"$18,130",3,Van,yes,$0,0,No,2,10,Highly Urban/ Urban
+295,,0,64,0,0,$0,No,$0,Yes,M,z_High School,Student,60,Private,"$7,900",6,Sports Car,yes,"$23,432",2,Yes,9,8,Highly Urban/ Urban
+300,,0,39,1,11,"$32,188",No,"$174,247",Yes,z_F,z_High School,Professional,38,Private,"$8,620",6,z_SUV,no,"$5,399",2,No,4,1,Highly Urban/ Urban
+302,,0,45,1,10,"$59,197",Yes,$0,z_No,M,Masters,,61,Commercial,"$22,690",10,Panel Truck,no,"$4,940",2,No,3,8,Highly Urban/ Urban
+303,,0,39,0,16,"$92,117",No,"$295,537",Yes,M,z_High School,z_Blue Collar,40,Commercial,"$14,610",7,Minivan,yes,$0,0,No,0,1,Highly Urban/ Urban
+308,,0,28,4,10,"$10,032",No,$0,Yes,M,Bachelors,Student,13,Commercial,"$5,850",1,Pickup,yes,"$12,269",1,Yes,0,12,Highly Urban/ Urban
+319,,0,50,0,12,"$26,748",No,,z_No,M,<High School,z_Blue Collar,25,Private,"$9,170",1,Pickup,no,"$25,089",2,Yes,1,6,Highly Urban/ Urban
+320,,0,34,1,13,"$38,307",No,"$151,790",Yes,M,z_High School,z_Blue Collar,24,Commercial,"$5,330",1,Pickup,no,"$17,857",1,Yes,10,1,Highly Urban/ Urban
+324,,0,58,2,12,"$146,202",No,"$473,366",Yes,M,Bachelors,Professional,22,Private,"$10,320",6,Pickup,yes,"$4,716",1,No,0,12,Highly Urban/ Urban
+331,,0,45,0,10,"$22,860",No,$0,z_No,M,<High School,z_Blue Collar,32,Commercial,"$11,800",1,Pickup,no,"$3,118",2,No,1,1,z_Highly Rural/ Rural
+343,,0,54,0,10,"$46,624",No,"$212,273",z_No,M,Masters,Lawyer,40,Private,"$18,990",13,Van,no,$0,0,No,0,13,Highly Urban/ Urban
+347,,0,54,0,11,"$63,027",No,$0,z_No,M,Masters,Lawyer,52,Private,"$7,650",1,Pickup,yes,"$6,927",2,No,0,15,Highly Urban/ Urban
+348,,0,,3,0,$0,Yes,$0,z_No,M,Bachelors,Student,5,Commercial,"$1,500",10,Minivan,yes,$0,0,No,7,8,Highly Urban/ Urban
+350,,1,39,2,9,"$24,628",No,"$195,489",Yes,z_F,z_High School,z_Blue Collar,32,Commercial,"$18,810",6,z_SUV,no,"$2,415",1,No,3,10,Highly Urban/ Urban
+357,,0,30,0,7,"$10,678",No,$0,z_No,M,<High School,Clerical,22,Commercial,"$11,700",4,Pickup,yes,"$7,228",1,No,8,7,Highly Urban/ Urban
+358,,0,24,3,15,"$13,003",No,"$104,742",Yes,z_F,z_High School,Clerical,38,Private,"$1,500",6,z_SUV,no,"$3,230",2,No,4,1,Highly Urban/ Urban
+360,,0,32,1,11,"$21,400",Yes,$0,z_No,z_F,<High School,Clerical,30,Private,"$14,790",11,Minivan,no,"$6,373",1,No,5,1,Highly Urban/ Urban
+366,,0,27,1,9,"$37,130",Yes,$0,z_No,z_F,<High School,z_Blue Collar,5,Private,"$7,910",1,z_SUV,no,"$2,616",4,No,1,1,Highly Urban/ Urban
+367,,0,41,0,13,"$55,138",No,$0,z_No,z_F,Bachelors,z_Blue Collar,29,Commercial,"$16,880",10,z_SUV,no,$0,0,Yes,0,13,Highly Urban/ Urban
+368,,0,57,0,11,"$114,830",No,$0,z_No,M,PhD,,26,Commercial,"$26,900",4,Panel Truck,no,"$28,321",2,No,0,13,Highly Urban/ Urban
+376,,1,57,1,14,"$41,645",No,"$160,772",Yes,M,z_High School,Professional,23,Commercial,"$7,200",4,Pickup,yes,"$5,040",2,No,0,5,Highly Urban/ Urban
+380,,0,52,0,11,"$81,849",No,"$273,961",Yes,z_F,z_High School,z_Blue Collar,56,Commercial,"$6,700",1,z_SUV,no,"$4,235",3,No,6,1,Highly Urban/ Urban
+388,,0,28,2,10,"$23,427",No,"$98,357",Yes,z_F,<High School,Clerical,50,Private,"$6,640",4,z_SUV,no,"$17,308",3,Yes,6,1,Highly Urban/ Urban
+396,,0,41,0,10,"$18,523",No,$0,z_No,z_F,<High School,Clerical,27,Private,"$9,400",13,z_SUV,no,"$9,642",3,No,2,5,Highly Urban/ Urban
+398,,0,31,1,12,"$65,651",No,"$288,294",Yes,M,Masters,,32,Commercial,"$17,760",6,Van,yes,"$29,471",2,Yes,0,18,Highly Urban/ Urban
+403,,0,56,0,14,"$38,924",No,"$183,890",Yes,z_F,Masters,Lawyer,49,Private,"$5,390",6,Sports Car,no,$0,0,No,1,16,Highly Urban/ Urban
+410,,0,40,1,14,"$2,970",No,$0,Yes,M,<High School,Student,72,Private,"$17,710",4,Minivan,no,$0,0,No,5,8,Highly Urban/ Urban
+412,,0,24,0,10,"$20,220",No,"$115,168",Yes,z_F,z_High School,z_Blue Collar,5,Commercial,"$17,850",11,Sports Car,yes,"$27,872",2,Yes,9,1,Highly Urban/ Urban
+420,,0,52,0,10,"$83,901",No,$0,z_No,M,Masters,,43,Commercial,"$23,650",6,Panel Truck,yes,$0,0,No,5,9,Highly Urban/ Urban
+434,,0,59,0,13,"$111,559",No,"$330,596",Yes,z_F,Masters,,30,Commercial,"$29,020",15,Pickup,no,"$1,348",3,No,6,,Highly Urban/ Urban
+440,,0,38,3,11,"$13,337",Yes,"$106,321",z_No,z_F,z_High School,Clerical,53,Private,"$6,920",11,z_SUV,no,$0,0,No,0,1,z_Highly Rural/ Rural
+450,,0,28,1,0,$0,Yes,"$63,142",z_No,M,z_High School,Student,42,Commercial,"$9,750",9,Pickup,yes,$0,0,No,2,10,Highly Urban/ Urban
+453,,0,33,2,12,"$45,893",Yes,"$189,452",z_No,M,z_High School,Professional,54,Commercial,"$18,990",1,Van,yes,"$29,781",3,Yes,0,6,Highly Urban/ Urban
+464,,0,39,0,11,"$63,433",No,"$236,857",z_No,M,Bachelors,z_Blue Collar,30,Commercial,"$6,610",10,Pickup,no,$0,0,No,1,,Highly Urban/ Urban
+465,,2,36,3,0,$0,No,,Yes,z_F,<High School,Student,19,Commercial,"$23,510",6,Pickup,no,"$32,008",3,Yes,6,1,Highly Urban/ Urban
+466,,1,39,3,14,"$71,309",Yes,"$224,123",z_No,z_F,Bachelors,Professional,87,Private,"$14,580",1,z_SUV,no,"$4,648",3,No,3,7,Highly Urban/ Urban
+473,,0,40,0,12,"$4,716",No,"$121,325",Yes,M,z_High School,Student,45,Private,"$6,410",1,Pickup,yes,"$46,652",2,Yes,1,1,Highly Urban/ Urban
+476,,0,60,0,13,"$82,171",No,"$275,664",Yes,M,Masters,Lawyer,45,Private,"$15,720",1,Minivan,yes,$0,0,No,0,13,Highly Urban/ Urban
+478,,0,32,2,,$0,Yes,$0,z_No,z_F,Bachelors,Student,28,Commercial,"$4,700",7,z_SUV,no,"$4,196",3,No,0,11,Highly Urban/ Urban
+479,,0,45,2,0,$0,No,"$101,395",Yes,M,<High School,Home Maker,34,Commercial,"$16,920",10,Van,no,"$10,264",3,No,4,1,Highly Urban/ Urban
+493,,0,38,3,15,"$137,897",No,"$335,993",Yes,z_F,Bachelors,z_Blue Collar,21,Commercial,"$19,090",7,Pickup,no,"$38,774",2,Yes,8,12,Highly Urban/ Urban
+497,,0,45,2,16,"$39,327",No,"$179,607",Yes,M,z_High School,z_Blue Collar,27,Commercial,"$15,940",4,Minivan,no,"$17,963",1,Yes,0,1,Highly Urban/ Urban
+503,,0,65,0,14,,No,"$231,739",Yes,z_F,Masters,Lawyer,45,Private,"$13,350",10,Sports Car,no,"$35,530",3,Yes,5,9,Highly Urban/ Urban
+504,,0,43,2,12,,No,"$227,476",Yes,M,Bachelors,z_Blue Collar,46,Commercial,"$19,610",7,Van,yes,"$4,704",3,No,1,11,Highly Urban/ Urban
+505,,0,45,0,4,,No,$0,z_No,M,z_High School,Professional,42,Private,"$13,830",4,Minivan,no,"$6,556",3,No,0,1,Highly Urban/ Urban
+507,,0,34,0,10,"$53,914",No,"$209,691",z_No,M,z_High School,Clerical,22,Commercial,"$27,620",1,Panel Truck,no,$0,0,No,0,6,Highly Urban/ Urban
+513,,0,30,3,13,"$69,512",No,"$187,162",Yes,z_F,Bachelors,z_Blue Collar,43,Commercial,"$13,330",1,z_SUV,no,$0,0,No,2,9,Highly Urban/ Urban
+519,,1,41,2,14,"$45,298",No,"$189,778",Yes,M,z_High School,z_Blue Collar,5,Commercial,"$16,000",1,Minivan,yes,"$8,584",2,No,0,1,Highly Urban/ Urban
+521,,0,58,0,,$0,No,$0,Yes,M,z_High School,Student,9,Private,"$7,300",1,Minivan,yes,$0,0,Yes,0,8,Highly Urban/ Urban
+522,,0,50,0,11,"$22,470",No,$0,z_No,z_F,<High School,Student,32,Private,"$13,810",1,z_SUV,no,"$5,558",2,No,9,5,Highly Urban/ Urban
+545,,0,40,1,11,"$29,310",No,"$118,987",Yes,M,z_High School,Clerical,5,Commercial,"$9,240",1,Pickup,no,$0,0,Yes,1,2,Highly Urban/ Urban
+549,,1,44,1,0,$0,No,$0,Yes,M,z_High School,Student,20,Commercial,"$8,660",7,Pickup,yes,$0,0,No,1,1,Highly Urban/ Urban
+551,,0,51,0,0,$0,No,$0,z_No,z_F,Bachelors,Home Maker,33,Private,"$4,270",4,Sports Car,no,$0,0,No,5,9,Highly Urban/ Urban
+556,,0,64,0,10,"$37,380",No,$0,z_No,M,Masters,Lawyer,14,Private,"$11,640",1,z_SUV,no,$0,0,No,0,15,Highly Urban/ Urban
+557,,0,35,2,13,"$28,777",No,"$116,463",Yes,M,<High School,z_Blue Collar,37,Commercial,"$7,880",1,Pickup,yes,"$2,569",2,No,5,1,Highly Urban/ Urban
+559,,0,37,3,15,"$72,019",Yes,$0,z_No,z_F,Bachelors,Professional,46,Private,"$12,400",1,z_SUV,no,"$1,109",3,No,8,1,Highly Urban/ Urban
+560,,0,51,0,14,"$18,282",No,$0,Yes,z_F,z_High School,Student,61,Commercial,"$17,500",6,z_SUV,no,$0,0,No,0,7,Highly Urban/ Urban
+566,,0,52,0,10,"$43,539",No,"$200,883",Yes,z_F,Masters,Lawyer,43,Private,"$13,290",10,z_SUV,no,"$9,667",1,No,7,16,Highly Urban/ Urban
+569,,0,33,4,13,"$29,161",No,"$127,565",Yes,M,z_High School,Clerical,21,Commercial,"$24,690",4,Panel Truck,no,$0,0,Yes,0,1,Highly Urban/ Urban
+573,,0,52,0,13,"$36,332",No,$0,z_No,M,z_High School,z_Blue Collar,42,Commercial,"$27,710",1,Panel Truck,yes,$0,0,Yes,6,1,Highly Urban/ Urban
+578,,0,32,1,12,"$13,847",No,"$129,852",Yes,z_F,z_High School,Clerical,44,Private,"$6,080",6,z_SUV,no,"$2,321",3,No,0,10,Highly Urban/ Urban
+579,,0,35,3,15,"$25,647",No,"$155,005",Yes,M,z_High School,Clerical,36,Private,"$10,710",1,Pickup,yes,$0,0,No,2,6,Highly Urban/ Urban
+582,,2,56,2,0,$0,Yes,"$129,145",z_No,z_F,z_High School,Home Maker,42,Private,"$7,100",1,z_SUV,no,$0,0,No,6,9,Highly Urban/ Urban
+596,,0,33,2,,"$30,863",Yes,"$97,212",z_No,M,<High School,z_Blue Collar,39,Commercial,"$4,900",10,Pickup,yes,$0,0,No,1,6,z_Highly Rural/ Rural
+598,,0,39,2,7,"$9,968",Yes,$0,z_No,z_F,Bachelors,Student,44,Private,"$5,500",4,z_SUV,no,$0,0,No,4,10,z_Highly Rural/ Rural
+599,,0,40,0,9,"$25,505",No,$0,z_No,z_F,z_High School,z_Blue Collar,40,Commercial,"$17,330",1,z_SUV,no,$0,0,No,1,10,Highly Urban/ Urban
+602,,0,54,0,13,"$33,791",No,"$171,275",Yes,M,<High School,Clerical,63,Private,"$9,730",1,Pickup,yes,"$41,917",2,Yes,5,1,Highly Urban/ Urban
+605,,0,43,0,12,"$77,104",No,$0,z_No,z_F,Masters,Manager,33,Private,"$27,330",6,Sports Car,no,$0,0,No,0,14,Highly Urban/ Urban
+617,,1,42,3,11,"$59,800",Yes,$0,z_No,M,z_High School,Clerical,37,Private,"$11,680",3,Pickup,yes,"$6,914",3,No,5,1,Highly Urban/ Urban
+619,,0,30,1,0,$0,Yes,$0,z_No,M,Bachelors,Student,46,Commercial,"$4,500",4,Pickup,no,$0,0,Yes,1,5,Highly Urban/ Urban
+630,,0,36,0,0,$0,No,$0,z_No,z_F,<High School,Student,35,Commercial,"$13,440",10,Pickup,no,"$5,093",2,No,8,1,Highly Urban/ Urban
+634,,0,32,2,12,"$39,144",Yes,$0,z_No,z_F,<High School,z_Blue Collar,34,Private,"$5,410",4,z_SUV,no,"$23,418",3,Yes,5,1,Highly Urban/ Urban
+643,,0,54,0,0,$0,No,"$111,556",z_No,M,Bachelors,Home Maker,26,Commercial,"$11,020",1,Pickup,yes,$0,0,Yes,1,7,Highly Urban/ Urban
+645,,0,36,0,11,"$33,447",No,$0,z_No,M,<High School,Clerical,42,Private,"$22,070",7,Van,yes,$0,0,No,0,1,Highly Urban/ Urban
+647,,0,57,0,8,"$81,767",No,"$308,350",Yes,z_F,z_High School,z_Blue Collar,30,Commercial,"$19,820",1,z_SUV,no,$0,0,No,0,7,Highly Urban/ Urban
+649,,0,47,0,9,,No,"$149,582",Yes,M,<High School,z_Blue Collar,44,Private,"$5,430",3,Pickup,yes,$0,0,No,0,1,Highly Urban/ Urban
+656,,2,45,2,10,"$71,119",Yes,$0,z_No,z_F,Bachelors,Clerical,43,Private,"$15,600",1,Minivan,no,"$3,534",3,No,5,4,Highly Urban/ Urban
+657,,0,51,0,12,"$146,881",No,"$396,556",Yes,M,PhD,Manager,70,Commercial,"$19,920",1,Van,no,$0,0,No,0,11,Highly Urban/ Urban
+658,,0,51,0,15,"$57,410",No,"$231,626",Yes,z_F,Bachelors,Professional,34,Private,"$12,340",13,z_SUV,no,"$33,089",3,No,3,4,Highly Urban/ Urban
+667,,0,46,0,10,"$42,621",No,$0,z_No,z_F,z_High School,Clerical,45,Private,"$10,360",4,z_SUV,no,"$7,333",1,Yes,0,1,Highly Urban/ Urban
+692,,0,64,0,14,"$45,110",No,"$178,514",Yes,M,Bachelors,z_Blue Collar,22,Commercial,"$14,860",1,z_SUV,no,$0,0,No,0,9,Highly Urban/ Urban
+693,,3,41,3,10,"$43,488",Yes,$0,z_No,z_F,<High School,z_Blue Collar,48,Private,"$9,950",11,z_SUV,no,$0,0,No,4,1,Highly Urban/ Urban
+698,,0,49,0,13,"$96,057",No,"$245,655",Yes,M,Bachelors,Professional,76,Commercial,"$27,660",6,Panel Truck,no,$0,0,No,2,9,Highly Urban/ Urban
+699,,0,64,0,,"$40,188",No,"$203,994",Yes,M,Bachelors,z_Blue Collar,65,Commercial,"$7,900",1,z_SUV,yes,"$10,942",2,Yes,0,11,Highly Urban/ Urban
+700,,0,50,0,14,"$27,783",No,$0,z_No,M,<High School,z_Blue Collar,41,Commercial,"$6,500",1,Pickup,yes,"$8,506",1,No,1,1,Highly Urban/ Urban
+704,,0,45,1,10,"$102,765",Yes,$0,z_No,z_F,Masters,Lawyer,43,Private,"$19,680",6,Minivan,no,$0,0,No,0,17,Highly Urban/ Urban
+707,,0,47,0,9,"$59,233",No,"$167,038",z_No,z_F,Bachelors,z_Blue Collar,14,Commercial,"$21,420",1,Minivan,no,$0,0,No,1,8,Highly Urban/ Urban
+708,,0,53,0,11,"$91,924",No,"$249,756",Yes,M,z_High School,z_Blue Collar,5,Commercial,"$19,330",13,Van,no,"$20,463",1,Yes,3,8,Highly Urban/ Urban
+709,,0,48,0,11,"$66,817",No,"$218,953",Yes,M,z_High School,Professional,31,Private,"$14,690",1,Minivan,yes,$0,0,No,0,,Highly Urban/ Urban
+713,,0,38,0,9,"$70,851",No,"$205,840",Yes,M,z_High School,Clerical,48,Private,"$20,330",6,Van,no,$0,0,No,0,1,Highly Urban/ Urban
+714,,0,53,0,8,"$132,536",No,"$368,061",Yes,M,Bachelors,Professional,43,Commercial,"$20,050",1,Van,no,$0,0,No,0,9,Highly Urban/ Urban
+716,,0,48,0,9,"$118,277",No,$0,z_No,M,Masters,,36,Commercial,"$17,680",15,Van,yes,"$7,274",3,No,1,18,Highly Urban/ Urban
+718,,0,51,0,8,"$93,709",No,$0,z_No,M,Masters,,22,Commercial,"$20,770",6,Van,yes,$0,0,No,0,19,Highly Urban/ Urban
+722,,0,31,1,8,"$30,348",Yes,"$128,843",z_No,M,Bachelors,Clerical,47,Private,"$4,600",10,Minivan,no,"$2,118",1,No,4,9,Highly Urban/ Urban
+729,,0,63,0,15,"$42,209",No,$0,z_No,M,z_High School,z_Blue Collar,22,Commercial,"$16,250",1,z_SUV,no,"$6,379",3,No,8,9,Highly Urban/ Urban
+731,,0,43,2,16,"$58,158",No,"$203,678",Yes,M,z_High School,z_Blue Collar,24,Commercial,"$16,400",6,Minivan,yes,$0,0,No,0,1,Highly Urban/ Urban
+733,,0,39,2,12,"$36,143",Yes,$0,z_No,M,z_High School,Clerical,44,Private,"$5,400",1,Pickup,yes,$0,0,No,0,10,z_Highly Rural/ Rural
+746,,1,36,2,11,"$33,274",Yes,$0,z_No,z_F,z_High School,z_Blue Collar,46,Commercial,"$16,780",6,Minivan,no,"$3,997",3,Yes,7,1,Highly Urban/ Urban
+747,,0,58,0,9,"$27,917",No,"$171,659",Yes,M,z_High School,Clerical,52,Private,"$20,410",1,Minivan,yes,$0,0,Yes,3,8,Highly Urban/ Urban
+748,,0,39,1,0,$0,Yes,$0,z_No,z_F,Bachelors,Student,15,Private,"$19,470",10,z_SUV,no,$0,0,No,2,8,z_Highly Rural/ Rural
+753,,0,26,4,,"$2,226",No,"$71,148",Yes,z_F,z_High School,Home Maker,51,Private,"$1,720",1,z_SUV,no,$0,0,No,3,1,Highly Urban/ Urban
+757,,0,47,0,9,"$108,776",No,"$278,542",Yes,z_F,Bachelors,Manager,47,Private,"$9,150",1,z_SUV,no,$0,0,No,1,2,Highly Urban/ Urban
+763,,0,33,4,15,"$37,793",Yes,$0,z_No,M,z_High School,z_Blue Collar,21,Commercial,"$9,710",10,Pickup,yes,$0,0,No,2,13,Highly Urban/ Urban
+767,,0,26,3,0,$0,Yes,$0,z_No,M,z_High School,Student,41,Commercial,"$4,100",1,Minivan,no,$0,0,No,3,1,Highly Urban/ Urban
+774,,0,45,3,17,"$61,094",No,"$175,634",Yes,z_F,Bachelors,z_Blue Collar,45,Commercial,"$6,000",6,z_SUV,no,"$5,528",1,No,0,10,Highly Urban/ Urban
+776,,1,43,2,11,"$76,159",Yes,,z_No,z_F,Bachelors,Professional,52,Private,"$20,270",3,Pickup,no,"$3,255",2,No,1,,Highly Urban/ Urban
+788,,0,33,1,10,"$83,664",No,"$217,763",Yes,M,Bachelors,z_Blue Collar,54,Commercial,"$21,100",4,Van,yes,"$5,495",3,No,7,8,Highly Urban/ Urban
+794,,1,42,2,12,"$110,128",No,"$282,423",Yes,M,Bachelors,Manager,33,Commercial,"$37,670",1,Panel Truck,yes,$0,0,No,0,14,Highly Urban/ Urban
+799,,0,46,0,12,"$33,635",No,"$191,957",Yes,z_F,z_High School,z_Blue Collar,55,Commercial,"$26,790",7,Minivan,no,"$3,960",2,No,3,8,Highly Urban/ Urban
+803,,1,36,1,6,"$40,570",No,"$186,294",Yes,z_F,Bachelors,Professional,30,Private,"$1,500",4,Sports Car,no,"$25,188",2,Yes,2,1,Highly Urban/ Urban
+806,,0,16,0,,"$49,522",No,"$155,030",z_No,M,Bachelors,z_Blue Collar,24,Commercial,"$14,980",4,Minivan,no,$0,0,No,0,,Highly Urban/ Urban
+807,,0,48,0,10,"$50,655",No,,z_No,M,z_High School,z_Blue Collar,29,Commercial,"$11,370",6,Pickup,yes,"$21,229",2,Yes,3,8,Highly Urban/ Urban
+811,,0,43,0,9,"$96,399",No,"$285,628",Yes,z_F,PhD,Manager,51,Private,"$14,920",1,z_SUV,no,"$3,117",4,No,1,12,Highly Urban/ Urban
+816,,0,47,0,13,"$65,802",No,"$262,566",Yes,z_F,z_High School,z_Blue Collar,31,Private,"$6,200",1,z_SUV,no,$0,0,No,0,1,Highly Urban/ Urban
+818,,0,50,0,15,"$43,543",No,"$105,982",Yes,M,Bachelors,z_Blue Collar,49,Commercial,"$15,890",4,Minivan,yes,$0,0,No,3,5,Highly Urban/ Urban
+819,,0,51,0,12,"$16,052",No,$0,z_No,M,<High School,Clerical,43,Private,"$6,600",4,Minivan,no,$0,0,No,0,1,Highly Urban/ Urban
+831,,0,37,0,11,"$40,868",No,$0,z_No,z_F,z_High School,Clerical,40,Private,"$9,620",6,z_SUV,no,"$7,414",1,No,1,8,Highly Urban/ Urban
+835,,0,53,0,9,"$48,780",No,,z_No,z_F,Bachelors,z_Blue Collar,55,Commercial,"$18,730",1,Pickup,no,"$32,593",2,Yes,8,12,Highly Urban/ Urban
+837,,0,52,0,7,"$73,574",No,"$224,049",Yes,M,z_High School,Professional,13,Commercial,"$27,520",1,Panel Truck,yes,$0,0,Yes,0,1,Highly Urban/ Urban
+841,,0,29,0,10,"$74,202",No,$0,z_No,M,Bachelors,Clerical,41,Private,"$19,300",4,Van,yes,"$7,291",2,No,4,13,Highly Urban/ Urban
+846,,0,33,3,0,$0,No,"$64,786",Yes,M,z_High School,Student,16,Commercial,"$4,800",4,Pickup,no,$0,0,No,5,1,Highly Urban/ Urban
+856,,0,38,0,12,"$27,370",No,"$111,642",Yes,M,z_High School,Clerical,14,Private,"$22,880",4,Minivan,yes,$0,0,Yes,0,9,Highly Urban/ Urban
+861,,0,52,0,8,"$57,912",No,"$236,693",Yes,z_F,Masters,Lawyer,78,Private,"$14,350",6,z_SUV,no,$0,0,No,0,16,Highly Urban/ Urban
+862,,0,53,0,12,"$25,698",No,"$213,856",Yes,z_F,<High School,Clerical,25,Private,"$9,370",4,z_SUV,no,"$37,412",1,Yes,0,1,Highly Urban/ Urban
+863,,0,31,1,13,"$42,492",No,"$163,297",Yes,M,z_High School,Clerical,14,Private,"$8,850",1,Pickup,yes,"$1,109",3,No,5,8,Highly Urban/ Urban
+865,,0,31,0,5,"$14,195",No,"$122,416",z_No,M,<High School,Clerical,34,Private,"$5,480",18,Minivan,yes,"$6,350",1,No,5,1,Highly Urban/ Urban
+871,,0,50,0,13,"$40,685",No,"$220,806",Yes,z_F,z_High School,Clerical,65,Private,"$15,360",6,z_SUV,no,$0,0,No,2,5,Highly Urban/ Urban
+879,,0,42,0,10,"$101,636",No,$0,z_No,z_F,Masters,,36,Commercial,"$24,890",14,Pickup,no,"$1,452",2,No,7,11,Highly Urban/ Urban
+880,,0,36,3,14,"$167,971",No,"$441,721",Yes,M,Bachelors,Professional,33,Private,"$5,100",6,Pickup,yes,"$2,769",1,No,0,13,Highly Urban/ Urban
+881,,0,41,0,9,"$21,651",No,"$142,293",z_No,z_F,<High School,Clerical,24,Commercial,"$25,640",1,Pickup,no,$0,0,No,1,1,Highly Urban/ Urban
+885,,2,44,2,7,"$78,850",No,"$294,899",Yes,M,Masters,,40,Commercial,"$24,730",4,Panel Truck,no,$0,0,No,0,12,Highly Urban/ Urban
+887,,0,32,1,11,"$36,179",Yes,"$106,892",z_No,z_F,<High School,Clerical,12,Private,"$13,030",1,Sports Car,no,$0,0,No,0,6,z_Highly Rural/ Rural
+892,,0,36,0,10,"$29,412",No,"$149,177",Yes,M,z_High School,z_Blue Collar,45,Commercial,"$23,210",4,Panel Truck,yes,"$1,247",2,No,5,11,Highly Urban/ Urban
+898,,0,35,2,12,"$4,457",Yes,$0,z_No,M,z_High School,Student,18,Private,"$1,500",4,Minivan,yes,$0,0,No,4,1,Highly Urban/ Urban
+900,,0,61,0,15,"$52,894",No,"$216,569",Yes,M,Bachelors,z_Blue Collar,37,Commercial,"$11,250",6,z_SUV,no,"$8,057",2,No,5,6,Highly Urban/ Urban
+904,,0,58,2,0,$0,No,$0,Yes,z_F,z_High School,Student,40,Commercial,"$1,500",11,z_SUV,no,"$3,564",2,No,9,10,Highly Urban/ Urban
+906,,0,45,0,14,"$108,309",No,$0,z_No,M,z_High School,z_Blue Collar,29,Commercial,"$17,450",12,Van,yes,$0,0,No,1,8,Highly Urban/ Urban
+910,,0,50,0,9,"$72,665",No,,z_No,M,Masters,,25,Commercial,"$36,440",1,Panel Truck,no,"$7,292",1,No,10,14,Highly Urban/ Urban
+912,,1,44,2,8,"$42,408",Yes,,z_No,M,Bachelors,Professional,43,Private,"$10,700",3,Minivan,yes,$0,0,Yes,3,9,Highly Urban/ Urban
+913,,0,31,1,10,"$115,308",No,"$313,484",Yes,M,Bachelors,Professional,39,Commercial,"$26,980",1,Panel Truck,no,"$7,506",2,No,3,3,Highly Urban/ Urban
+919,,0,49,0,11,"$65,659",No,$0,z_No,M,Bachelors,z_Blue Collar,24,Commercial,"$23,780",1,Panel Truck,yes,"$7,367",1,No,5,13,Highly Urban/ Urban
+924,,1,44,3,15,"$31,728",Yes,$0,z_No,z_F,z_High School,Clerical,28,Private,"$9,070",6,z_SUV,no,"$5,897",3,No,5,1,Highly Urban/ Urban
+925,,0,30,0,13,"$67,793",No,"$221,399",Yes,z_F,Bachelors,z_Blue Collar,35,Commercial,"$10,730",6,z_SUV,no,$0,0,Yes,2,14,Highly Urban/ Urban
+930,,1,37,2,11,"$3,081",Yes,$0,z_No,M,z_High School,Student,43,Private,"$1,500",6,Minivan,yes,$0,0,No,0,1,z_Highly Rural/ Rural
+940,,0,53,0,15,"$57,836",No,$0,z_No,z_F,z_High School,Professional,73,Private,"$16,080",6,z_SUV,no,"$5,935",1,No,8,1,Highly Urban/ Urban
+941,,0,52,0,11,"$137,357",No,"$327,227",z_No,z_F,Masters,Lawyer,11,Private,"$19,960",4,Pickup,no,"$8,306",3,No,0,18,Highly Urban/ Urban
+946,,0,33,3,14,"$6,607",No,$0,Yes,M,<High School,Clerical,9,Private,"$12,580",6,Minivan,yes,$0,0,No,1,1,Highly Urban/ Urban
+949,,0,36,1,0,$0,Yes,,z_No,z_F,<High School,Student,18,Commercial,"$21,620",9,z_SUV,no,"$6,259",1,No,3,1,Highly Urban/ Urban
+951,,0,33,1,9,"$53,021",Yes,"$233,074",z_No,M,z_High School,z_Blue Collar,51,Commercial,"$26,370",13,Panel Truck,yes,$0,0,No,7,,Highly Urban/ Urban
+962,,0,59,0,0,$0,No,"$145,884",z_No,z_F,z_High School,Student,13,Commercial,"$7,400",1,Sports Car,no,"$5,259",1,No,1,8,Highly Urban/ Urban
+966,,0,25,3,15,"$71,892",No,"$211,306",Yes,z_F,z_High School,z_Blue Collar,21,Commercial,"$27,470",6,Pickup,no,"$3,340",2,No,6,9,Highly Urban/ Urban
+967,,0,27,3,9,"$45,803",Yes,,z_No,M,z_High School,z_Blue Collar,20,Commercial,"$11,920",4,Pickup,yes,"$2,043",1,No,1,1,Highly Urban/ Urban
+971,,0,32,2,11,"$111,655",Yes,$0,z_No,z_F,Masters,,41,Private,"$18,430",4,z_SUV,no,$0,0,No,1,25,Highly Urban/ Urban
+981,,0,54,0,12,"$9,123",No,"$120,711",Yes,M,z_High School,Student,20,Private,"$3,320",6,Minivan,yes,"$7,499",2,No,0,7,Highly Urban/ Urban
+982,,0,48,0,12,,No,"$175,236",Yes,M,z_High School,z_Blue Collar,39,Commercial,"$11,070",4,Pickup,yes,$0,0,No,1,,Highly Urban/ Urban
+983,,0,31,1,11,"$29,644",No,"$148,568",Yes,z_F,z_High School,Clerical,32,Private,"$34,880",13,z_SUV,no,"$46,912",1,Yes,2,9,Highly Urban/ Urban
+984,,0,41,2,13,"$35,256",No,"$159,003",Yes,z_F,z_High School,Clerical,59,Private,"$11,010",1,z_SUV,no,"$3,603",1,No,3,6,Highly Urban/ Urban
+989,,0,23,3,6,"$5,822",Yes,$0,z_No,z_F,Masters,,11,Private,"$4,380",6,z_SUV,no,"$11,027",3,No,8,16,Highly Urban/ Urban
+990,,0,60,2,19,"$29,176",No,"$167,334",Yes,M,<High School,Clerical,51,Commercial,"$17,790",11,Van,yes,$0,0,Yes,0,1,Highly Urban/ Urban
+992,,2,36,3,12,"$20,178",Yes,,z_No,z_F,z_High School,Clerical,6,Private,"$8,030",1,z_SUV,no,$0,0,No,0,,z_Highly Rural/ Rural
+995,,0,49,0,11,"$214,189",No,$0,z_No,M,PhD,,17,Commercial,"$18,350",3,Van,yes,"$4,004",1,No,0,12,Highly Urban/ Urban
+996,,0,47,0,8,,No,"$186,797",Yes,z_F,z_High School,z_Blue Collar,5,Commercial,"$7,510",16,z_SUV,no,$0,0,No,3,9,Highly Urban/ Urban
+998,,0,33,1,11,"$40,518",Yes,,z_No,M,z_High School,Clerical,15,Commercial,"$20,090",3,Van,no,$0,0,No,1,1,Highly Urban/ Urban
+1001,,2,41,3,8,"$88,887",Yes,"$265,793",z_No,z_F,z_High School,z_Blue Collar,31,Commercial,"$30,190",10,z_SUV,no,$0,0,Yes,1,8,Highly Urban/ Urban
+1007,,0,42,2,,,No,"$165,531",Yes,M,Masters,Lawyer,69,Private,"$12,010",4,Pickup,yes,"$17,445",2,Yes,3,12,Highly Urban/ Urban
+1008,,0,47,0,14,"$19,483",No,"$81,685",Yes,M,z_High School,Clerical,54,Private,"$9,150",4,Pickup,no,"$20,115",1,Yes,6,3,Highly Urban/ Urban
+1016,,0,42,0,11,"$73,762",No,"$262,869",Yes,z_F,z_High School,z_Blue Collar,53,Commercial,"$27,210",7,z_SUV,no,"$1,372",2,No,4,1,Highly Urban/ Urban
+1022,,0,58,0,13,"$84,376",No,"$279,277",Yes,M,Masters,,30,Commercial,"$22,620",6,Panel Truck,yes,"$4,497",3,No,7,12,Highly Urban/ Urban
+1027,,0,27,1,10,"$20,972",Yes,$0,z_No,z_F,Bachelors,Student,28,Commercial,"$6,640",15,Sports Car,no,"$7,186",3,No,2,8,Highly Urban/ Urban
+1032,,0,47,0,14,"$52,891",No,"$232,693",Yes,z_F,z_High School,z_Blue Collar,44,Commercial,"$6,200",1,z_SUV,no,"$8,352",2,No,10,10,Highly Urban/ Urban
+1033,,2,45,2,10,"$75,209",Yes,$0,z_No,M,Masters,Lawyer,37,Private,"$15,480",1,Minivan,yes,$0,0,No,5,14,Highly Urban/ Urban
+1041,,0,43,0,11,,No,"$209,570",Yes,z_F,z_High School,z_Blue Collar,32,Commercial,"$5,800",1,Sports Car,no,"$2,768",3,No,7,1,Highly Urban/ Urban
+1065,,2,57,2,9,"$9,763",Yes,"$146,670",z_No,z_F,z_High School,Home Maker,21,Private,"$7,200",1,z_SUV,no,$0,0,No,0,,Highly Urban/ Urban
+1074,,0,35,3,8,,No,"$95,898",Yes,M,<High School,Student,53,Commercial,"$24,050",6,Panel Truck,yes,$0,0,No,0,1,Highly Urban/ Urban
+1075,,0,63,0,0,$0,No,"$111,129",Yes,z_F,PhD,Home Maker,33,Private,"$7,800",6,Sports Car,no,"$6,181",2,No,1,15,Highly Urban/ Urban
+1081,,0,29,1,11,"$72,438",Yes,$0,z_No,M,Bachelors,Professional,16,Commercial,"$25,450",3,Panel Truck,yes,"$22,443",1,Yes,0,,Highly Urban/ Urban
+1094,,0,45,0,13,"$103,134",No,,z_No,z_F,Masters,Lawyer,38,Private,"$11,810",1,z_SUV,no,$0,0,No,1,21,Highly Urban/ Urban
+1099,,0,60,0,17,"$38,391",No,"$137,071",Yes,z_F,z_High School,z_Blue Collar,47,Commercial,"$5,340",6,z_SUV,no,"$7,108",2,No,3,1,Highly Urban/ Urban
+1105,,0,54,0,,"$21,866",No,"$163,729",Yes,z_F,z_High School,Clerical,47,Private,"$18,200",1,Minivan,no,"$8,375",1,No,1,10,Highly Urban/ Urban
+1123,,0,46,0,7,"$60,551",No,$0,z_No,z_F,Bachelors,Professional,36,Commercial,"$25,850",1,Pickup,no,"$1,294",1,No,0,10,Highly Urban/ Urban
+1135,,0,48,0,12,"$59,146",No,"$239,920",z_No,z_F,Masters,Lawyer,45,Private,"$20,360",6,z_SUV,no,"$6,710",1,No,0,16,Highly Urban/ Urban
+1142,,0,49,0,14,"$76,778",No,"$209,440",Yes,z_F,Bachelors,Home Maker,62,Private,"$14,080",6,Sports Car,no,"$13,397",1,Yes,1,5,Highly Urban/ Urban
+1155,,0,35,0,13,"$40,457",No,$0,z_No,z_F,z_High School,z_Blue Collar,55,Commercial,"$9,050",13,z_SUV,no,$974,3,No,7,6,Highly Urban/ Urban
+1169,,0,63,0,0,$0,No,"$111,129",Yes,z_F,PhD,Home Maker,33,Private,"$24,020",1,z_SUV,no,$0,0,No,0,15,Highly Urban/ Urban
+1176,,0,35,0,9,"$69,592",No,$0,z_No,z_F,Masters,Lawyer,32,Private,"$11,960",1,z_SUV,no,$0,0,No,1,17,Highly Urban/ Urban
+1178,,0,59,0,9,"$79,380",No,,Yes,M,z_High School,z_Blue Collar,73,Commercial,"$19,960",1,Van,no,"$3,960",4,No,8,9,Highly Urban/ Urban
+1180,,0,26,1,0,$0,No,$0,Yes,z_F,<High School,Student,27,Private,"$4,120",4,z_SUV,no,$0,0,Yes,1,6,Highly Urban/ Urban
+1184,,0,34,3,14,"$56,095",No,"$186,866",Yes,M,Bachelors,Clerical,58,Private,"$6,970",6,Minivan,yes,$0,0,No,0,5,Highly Urban/ Urban
+1185,,0,52,0,11,"$38,442",No,"$175,653",z_No,z_F,Bachelors,z_Blue Collar,25,Commercial,"$14,880",4,z_SUV,no,$0,0,No,0,1,Highly Urban/ Urban
+1193,,0,40,1,11,"$6,947",Yes,"$131,827",z_No,z_F,Bachelors,Home Maker,41,Commercial,"$25,170",4,Panel Truck,yes,"$6,985",2,No,8,8,Highly Urban/ Urban
+1196,,0,60,0,13,"$128,275",No,$0,z_No,M,PhD,Doctor,33,Private,"$14,330",10,Minivan,no,"$3,977",3,No,4,13,Highly Urban/ Urban
+1199,,0,48,0,11,"$56,814",No,"$230,221",z_No,M,z_High School,Clerical,55,Private,"$10,930",7,Minivan,yes,$0,0,No,0,1,Highly Urban/ Urban
+1203,,2,57,3,15,"$106,465",No,"$329,334",Yes,z_F,Masters,Professional,37,Private,"$11,760",3,z_SUV,no,"$11,528",4,No,7,16,Highly Urban/ Urban
+1205,,2,44,3,13,"$18,154",No,"$108,984",Yes,M,<High School,z_Blue Collar,77,Commercial,"$6,420",1,Pickup,yes,"$8,183",2,No,1,1,Highly Urban/ Urban
+1207,,0,48,0,11,"$49,035",No,"$168,921",Yes,M,z_High School,z_Blue Collar,20,Commercial,"$11,210",1,Pickup,yes,"$7,759",2,No,1,6,Highly Urban/ Urban
+1208,,3,38,3,17,"$3,151",No,"$107,534",Yes,M,z_High School,Student,39,Commercial,"$14,990",4,Minivan,no,"$3,826",2,No,3,1,Highly Urban/ Urban
+1212,,0,59,0,17,"$320,127",No,"$750,455",Yes,M,PhD,,19,Commercial,"$57,970",1,Panel Truck,yes,"$6,375",2,No,5,12,Highly Urban/ Urban
+1213,,0,30,3,15,"$9,361",No,$0,Yes,z_F,z_High School,Student,38,Private,"$2,440",6,Sports Car,no,"$31,992",1,Yes,0,1,Highly Urban/ Urban
+1222,,4,45,5,0,$0,Yes,$0,z_No,z_F,<High School,Student,38,Private,"$12,000",10,z_SUV,no,$0,0,Yes,3,,z_Highly Rural/ Rural
+1223,,0,65,0,15,"$5,013",No,"$107,287",Yes,z_F,z_High School,Student,32,Commercial,"$8,670",1,Sports Car,no,"$5,900",1,No,8,8,Highly Urban/ Urban
+1226,,0,50,0,0,$0,No,$0,Yes,M,<High School,Student,57,Commercial,"$7,350",4,Pickup,no,"$17,009",3,Yes,4,1,Highly Urban/ Urban
+1227,,0,27,3,,"$104,575",Yes,$0,z_No,M,Bachelors,z_Blue Collar,42,Commercial,"$25,660",4,Panel Truck,yes,$0,0,No,2,12,Highly Urban/ Urban
+1229,,0,45,0,12,"$77,337",No,$0,z_No,z_F,Bachelors,Professional,37,Private,"$26,010",9,z_SUV,no,"$6,238",2,No,3,12,Highly Urban/ Urban
+1230,,0,35,0,,"$149,937",No,"$404,842",Yes,z_F,Bachelors,Professional,36,Private,"$19,990",4,z_SUV,no,$0,0,No,0,7,Highly Urban/ Urban
+1231,,0,35,0,10,"$1,886",No,"$55,001",Yes,z_F,<High School,Home Maker,27,Private,"$12,690",1,z_SUV,no,$0,0,Yes,0,1,Highly Urban/ Urban
+1241,,0,55,0,9,"$51,811",No,,z_No,z_F,Bachelors,z_Blue Collar,29,Commercial,"$7,000",10,Sports Car,no,"$1,815",4,No,0,11,Highly Urban/ Urban
+1243,,1,43,1,13,,No,$0,Yes,z_F,z_High School,Student,22,Commercial,"$17,600",8,z_SUV,no,"$5,336",2,No,0,1,Highly Urban/ Urban
+1244,,0,47,0,14,"$75,210",No,"$258,319",Yes,z_F,<High School,z_Blue Collar,35,Private,"$19,460",13,z_SUV,no,$0,0,Yes,0,1,Highly Urban/ Urban
+1246,,0,38,1,8,"$97,114",Yes,$0,z_No,M,Bachelors,z_Blue Collar,59,Commercial,"$25,530",7,Panel Truck,yes,$0,0,No,1,5,Highly Urban/ Urban
+1248,,0,45,0,11,"$186,027",No,"$455,275",z_No,M,PhD,Doctor,57,Private,"$20,100",6,Van,yes,"$2,104",3,No,2,10,Highly Urban/ Urban
+1249,,0,35,1,0,$0,No,"$60,714",Yes,z_F,<High School,Home Maker,58,Private,"$13,820",4,Sports Car,no,"$4,896",1,No,1,7,Highly Urban/ Urban
+1252,,0,59,0,15,"$68,526",No,"$219,285",Yes,M,Masters,Professional,35,Commercial,"$30,390",6,Panel Truck,no,"$5,714",3,No,2,12,Highly Urban/ Urban
+1261,,0,50,0,10,"$58,945",No,$0,z_No,z_F,Bachelors,Professional,18,Private,"$20,260",1,Sports Car,no,"$5,603",1,No,0,10,Highly Urban/ Urban
+1275,,2,37,2,13,"$27,964",Yes,"$125,832",z_No,z_F,<High School,Clerical,19,Private,"$9,980",1,Minivan,no,"$6,321",3,No,2,8,Highly Urban/ Urban
+1281,,0,40,0,0,$0,No,$0,Yes,M,Bachelors,Student,50,Commercial,"$18,010",1,Minivan,no,$0,0,No,1,6,Highly Urban/ Urban
+1285,,1,39,2,12,"$117,329",Yes,$0,z_No,M,Bachelors,Professional,37,Private,"$1,910",7,Minivan,no,"$3,486",2,No,8,12,Highly Urban/ Urban
+1288,,1,36,2,0,$0,Yes,$0,z_No,z_F,z_High School,Home Maker,39,Private,"$8,270",6,z_SUV,no,"$4,765",2,No,6,8,Highly Urban/ Urban
+1290,,0,51,0,9,"$69,551",No,$0,z_No,M,z_High School,z_Blue Collar,60,Commercial,"$6,600",9,Pickup,yes,$0,0,No,1,1,Highly Urban/ Urban
+1291,,1,45,2,9,"$13,996",No,,Yes,z_F,Bachelors,Home Maker,41,Private,"$9,630",3,z_SUV,no,"$49,148",2,Yes,0,8,Highly Urban/ Urban
+1304,,0,39,0,9,"$55,771",No,"$234,502",Yes,z_F,Masters,,7,Commercial,"$18,540",6,Pickup,no,$0,0,Yes,2,10,Highly Urban/ Urban
+1305,,0,43,1,0,$0,No,$0,Yes,z_F,z_High School,Student,31,Private,"$1,500",4,Sports Car,no,"$9,516",3,No,2,8,z_Highly Rural/ Rural
+1323,,1,41,2,8,"$26,652",No,,Yes,z_F,<High School,z_Blue Collar,47,Private,"$8,270",3,z_SUV,no,"$1,944",2,No,6,2,Highly Urban/ Urban
+1342,,0,36,0,14,"$66,335",No,"$241,407",Yes,z_F,z_High School,Professional,19,Commercial,"$2,670",1,z_SUV,no,$0,0,No,0,9,Highly Urban/ Urban
+1348,,0,35,0,10,"$64,530",No,$0,z_No,z_F,Masters,Lawyer,50,Private,"$5,000",1,Sports Car,no,"$5,202",1,No,0,13,Highly Urban/ Urban
+1353,,0,67,0,0,$0,No,$0,Yes,z_F,z_High School,Student,33,Private,"$8,200",7,Sports Car,no,"$6,934",1,No,0,10,Highly Urban/ Urban
+1363,,0,58,0,13,"$88,490",No,$0,z_No,z_F,Bachelors,Manager,52,Private,"$10,350",11,z_SUV,no,"$2,737",2,No,0,10,Highly Urban/ Urban
+1371,,0,51,0,8,"$80,479",No,$0,z_No,M,Bachelors,z_Blue Collar,31,Commercial,"$14,650",13,Minivan,yes,$575,2,No,4,14,Highly Urban/ Urban
+1372,,0,46,0,14,"$112,213",No,$0,z_No,M,Masters,,5,Commercial,"$33,610",3,Panel Truck,no,"$10,788",3,No,4,15,Highly Urban/ Urban
+1378,,0,32,4,14,"$81,772",Yes,$0,z_No,z_F,Bachelors,z_Blue Collar,38,Commercial,"$19,460",6,z_SUV,no,$0,0,Yes,6,13,Highly Urban/ Urban
+1381,,0,25,3,15,"$75,385",No,"$254,055",Yes,M,Bachelors,z_Blue Collar,19,Commercial,"$17,750",1,Van,yes,"$4,640",3,No,4,8,Highly Urban/ Urban
+1382,,0,49,0,10,"$73,241",No,$0,z_No,M,Masters,Lawyer,36,Private,"$6,400",1,Pickup,yes,"$3,863",2,No,0,15,Highly Urban/ Urban
+1393,,0,53,0,0,$0,No,$0,z_No,M,z_High School,Student,24,Private,"$17,190",6,Van,yes,$0,0,No,1,1,Highly Urban/ Urban
+1394,,0,33,2,14,"$82,407",Yes,$0,z_No,M,z_High School,z_Blue Collar,17,Commercial,"$4,800",4,Pickup,yes,$0,0,No,1,6,Highly Urban/ Urban
+1398,,0,46,0,10,"$45,626",No,"$183,557",Yes,z_F,z_High School,z_Blue Collar,30,Private,"$14,550",4,z_SUV,no,"$4,758",2,No,0,1,Highly Urban/ Urban
+1404,,0,43,0,10,"$49,729",No,"$211,046",z_No,z_F,Bachelors,Professional,49,Private,"$13,760",4,z_SUV,no,$0,0,No,0,8,Highly Urban/ Urban
+1405,,0,50,0,10,"$52,956",No,,z_No,z_F,Bachelors,z_Blue Collar,35,Commercial,"$8,370",11,z_SUV,no,"$2,988",1,No,5,12,Highly Urban/ Urban
+1419,,0,52,0,10,"$25,709",No,"$128,190",z_No,M,z_High School,Clerical,22,Commercial,"$10,680",4,Pickup,yes,"$28,621",1,Yes,1,,Highly Urban/ Urban
+1421,,0,54,0,15,"$64,548",No,"$251,584",Yes,M,<High School,z_Blue Collar,32,Commercial,"$16,360",1,Van,yes,"$26,281",1,Yes,3,1,Highly Urban/ Urban
+1426,,0,46,0,9,"$177,832",No,"$471,670",z_No,M,PhD,Doctor,54,Private,"$25,240",3,Minivan,yes,$949,2,No,2,14,Highly Urban/ Urban
+1431,,0,47,0,0,$0,No,$0,z_No,z_F,<High School,Student,5,Private,"$1,500",6,z_SUV,no,"$5,886",1,No,0,,Highly Urban/ Urban
+1435,,0,48,0,0,$0,No,$0,Yes,M,z_High School,Student,48,Commercial,"$1,500",4,Minivan,yes,"$25,494",3,Yes,6,8,Highly Urban/ Urban
+1437,,0,26,3,8,"$68,524",Yes,$0,z_No,z_F,Bachelors,Professional,34,Private,"$1,500",3,Sports Car,no,"$7,946",3,No,11,10,Highly Urban/ Urban
+1438,,0,45,0,11,"$125,058",No,$0,z_No,M,PhD,,33,Commercial,"$18,510",1,Van,yes,$0,0,Yes,0,8,Highly Urban/ Urban
+1442,,0,28,1,9,"$12,117",Yes,$0,z_No,M,Bachelors,Student,26,Commercial,"$5,510",1,Pickup,yes,$0,0,No,3,1,Highly Urban/ Urban
+1464,,0,39,0,7,"$23,551",No,$0,z_No,M,z_High School,Clerical,39,Commercial,"$9,200",10,Pickup,yes,"$6,632",3,No,4,1,Highly Urban/ Urban
+1471,,0,49,0,12,"$26,217",No,$0,z_No,M,Masters,Lawyer,15,Private,"$12,510",6,Minivan,yes,"$6,281",2,No,1,16,Highly Urban/ Urban
+1473,,0,35,0,9,"$55,578",No,"$173,187",Yes,z_F,z_High School,z_Blue Collar,47,Commercial,"$22,230",5,Minivan,no,$0,0,No,4,5,Highly Urban/ Urban
+1476,,1,46,0,13,"$83,790",No,"$266,852",Yes,M,Bachelors,Manager,53,Private,"$16,450",6,z_SUV,no,"$5,105",3,No,3,10,Highly Urban/ Urban
+1478,,1,42,1,10,"$61,365",No,"$152,143",Yes,z_F,Bachelors,Professional,36,Private,"$14,830",10,z_SUV,no,$0,0,No,0,13,Highly Urban/ Urban
+1479,,0,57,0,9,"$26,222",No,"$165,896",Yes,M,<High School,Clerical,73,Commercial,"$23,720",11,Panel Truck,yes,"$4,006",1,No,0,1,Highly Urban/ Urban
+1487,,0,52,0,11,"$38,806",No,"$202,431",Yes,M,z_High School,Clerical,69,Commercial,"$10,580",1,Pickup,yes,"$1,552",2,No,3,10,Highly Urban/ Urban
+1492,,1,45,2,,"$38,563",Yes,$0,z_No,z_F,Masters,Lawyer,6,Private,"$9,860",1,Sports Car,no,$0,0,Yes,0,11,Highly Urban/ Urban
+1496,,1,41,1,12,"$60,288",No,"$245,089",Yes,M,Bachelors,Professional,56,Commercial,"$28,730",4,Panel Truck,yes,$0,0,No,6,,Highly Urban/ Urban
+1497,,0,31,1,13,"$106,614",No,"$316,309",Yes,z_F,z_High School,z_Blue Collar,21,Commercial,"$15,260",7,Minivan,no,"$5,318",3,Yes,2,1,Highly Urban/ Urban
+1515,,0,47,0,13,"$45,431",No,"$192,184",Yes,M,<High School,z_Blue Collar,45,Commercial,"$16,780",4,Van,no,"$3,809",2,No,5,1,Highly Urban/ Urban
+1519,,0,51,0,12,"$67,452",No,$0,z_No,z_F,z_High School,z_Blue Collar,58,Commercial,"$21,600",3,Sports Car,no,"$4,075",3,No,4,5,Highly Urban/ Urban
+1522,,0,51,0,0,$0,No,$0,z_No,z_F,z_High School,Home Maker,5,Private,"$16,760",6,z_SUV,no,$0,0,No,1,4,Highly Urban/ Urban
+1526,,0,45,2,13,"$14,604",Yes,"$114,676",z_No,z_F,<High School,Clerical,52,Private,"$7,460",16,z_SUV,no,"$9,543",3,No,9,1,Highly Urban/ Urban
+1537,,0,35,0,12,,No,"$223,333",z_No,M,PhD,Manager,61,Private,"$13,230",6,Minivan,yes,"$4,292",3,No,4,,Highly Urban/ Urban
+1538,,0,43,0,6,"$86,530",No,$0,z_No,z_F,Bachelors,z_Blue Collar,54,Commercial,"$15,490",6,Sports Car,no,"$2,441",2,No,0,13,Highly Urban/ Urban
+1540,,0,54,0,0,$0,No,$0,z_No,z_F,z_High School,Student,38,Commercial,"$7,180",6,Sports Car,no,"$19,036",2,Yes,4,5,z_Highly Rural/ Rural
+1543,,1,53,1,0,$0,No,,Yes,z_F,<High School,Student,8,Private,"$1,700",7,Sports Car,no,"$4,543",2,No,4,1,Highly Urban/ Urban
+1548,,0,47,0,,"$82,992",No,"$231,457",Yes,z_F,Masters,Manager,47,Private,"$9,800",1,z_SUV,no,"$38,649",3,No,7,1,Highly Urban/ Urban
+1549,,0,50,0,11,"$68,517",No,$0,z_No,M,Masters,,52,Commercial,"$26,290",6,Panel Truck,yes,$0,0,No,0,12,Highly Urban/ Urban
+1556,,0,53,0,0,,No,"$136,780",Yes,z_F,z_High School,Home Maker,46,Private,"$7,100",13,z_SUV,no,$0,0,No,1,,Highly Urban/ Urban
+1564,,0,47,0,10,"$119,454",No,$0,z_No,z_F,Masters,,23,Commercial,"$27,530",1,Pickup,no,$0,0,Yes,0,14,Highly Urban/ Urban
+1570,,0,36,3,19,"$34,658",No,"$191,264",Yes,z_F,z_High School,z_Blue Collar,25,Commercial,"$8,290",6,z_SUV,no,"$30,192",1,Yes,7,1,Highly Urban/ Urban
+1577,,0,20,0,10,"$38,681",No,$0,z_No,z_F,Bachelors,Professional,64,Private,"$17,010",9,z_SUV,yes,"$30,646",1,Yes,10,10,Highly Urban/ Urban
+1585,,0,34,4,13,"$54,488",No,"$216,444",Yes,z_F,z_High School,z_Blue Collar,34,Commercial,"$13,360",1,z_SUV,no,"$4,470",4,No,0,1,Highly Urban/ Urban
+1590,,0,22,2,13,"$11,047",Yes,$0,z_No,z_F,<High School,Clerical,47,Private,"$18,770",1,z_SUV,no,"$6,996",1,No,0,8,Highly Urban/ Urban
+1592,,0,48,0,13,"$24,713",No,,Yes,z_F,<High School,Clerical,11,Commercial,"$23,550",1,Pickup,no,$0,0,Yes,1,4,Highly Urban/ Urban
+1594,,0,39,0,0,$0,No,$0,z_No,z_F,Bachelors,Home Maker,41,Commercial,"$10,070",4,z_SUV,no,"$3,855",2,No,6,14,Highly Urban/ Urban
+1596,,1,39,1,12,"$39,643",No,"$218,195",Yes,M,Bachelors,Clerical,38,Private,"$22,810",6,Minivan,no,"$6,656",2,No,0,11,Highly Urban/ Urban
+1598,,0,25,2,14,"$18,159",No,"$87,400",Yes,M,z_High School,Clerical,55,Private,"$15,360",15,Minivan,yes,"$5,117",2,No,7,1,Highly Urban/ Urban
+1603,,0,48,0,0,$0,No,,Yes,z_F,PhD,Home Maker,12,Private,"$15,610",4,Sports Car,no,"$5,316",2,No,3,14,Highly Urban/ Urban
+1607,,0,54,0,10,"$122,773",No,$0,z_No,M,Bachelors,Professional,44,Commercial,"$7,590",1,Pickup,yes,"$5,517",4,No,3,7,Highly Urban/ Urban
+1612,,0,49,0,11,"$39,220",No,"$201,872",z_No,z_F,<High School,z_Blue Collar,34,Commercial,"$16,430",10,z_SUV,no,"$5,161",1,No,11,7,Highly Urban/ Urban
+1627,,0,33,2,14,"$82,407",Yes,$0,z_No,M,z_High School,z_Blue Collar,51,Commercial,"$4,600",1,Pickup,no,"$1,794",2,No,0,6,Highly Urban/ Urban
+1629,,0,49,0,10,"$42,071",No,"$160,036",z_No,z_F,<High School,z_Blue Collar,48,Private,"$10,610",10,z_SUV,no,"$36,189",3,Yes,8,,Highly Urban/ Urban
+1630,,0,42,0,8,"$52,292",No,"$172,461",Yes,M,z_High School,z_Blue Collar,38,Commercial,"$22,960",6,Panel Truck,yes,"$6,597",2,No,3,1,Highly Urban/ Urban
+1640,,0,51,0,15,"$57,782",No,"$187,295",Yes,z_F,z_High School,z_Blue Collar,26,Commercial,"$12,380",6,Pickup,no,$0,0,No,1,6,Highly Urban/ Urban
+1641,,0,25,5,14,"$59,896",No,"$224,977",Yes,z_F,Bachelors,Clerical,30,Private,"$11,780",1,z_SUV,no,"$30,213",2,Yes,4,7,Highly Urban/ Urban
+1646,,2,45,4,16,"$65,801",Yes,$0,z_No,z_F,z_High School,z_Blue Collar,14,Commercial,"$16,070",1,z_SUV,no,"$7,056",1,No,3,1,Highly Urban/ Urban
+1662,,0,47,0,14,"$85,183",No,"$273,069",Yes,z_F,Bachelors,Professional,40,Commercial,"$34,380",7,Van,no,"$6,308",2,No,2,14,Highly Urban/ Urban
+1668,,0,61,0,14,"$62,706",No,"$196,195",z_No,z_F,Masters,Lawyer,45,Private,"$13,870",4,Sports Car,no,"$8,081",1,Yes,4,12,Highly Urban/ Urban
+1671,,0,28,3,0,$0,Yes,$0,z_No,M,Bachelors,Student,33,Commercial,"$3,830",1,Minivan,yes,"$4,311",1,No,0,12,Highly Urban/ Urban
+1672,,1,45,1,12,"$67,633",No,"$211,342",Yes,z_F,z_High School,z_Blue Collar,29,Private,"$6,000",4,Sports Car,no,"$4,339",3,No,3,10,Highly Urban/ Urban
+1673,,0,51,0,12,,No,"$467,883",z_No,z_F,Bachelors,Professional,29,Commercial,"$44,590",1,Panel Truck,no,"$8,331",2,No,5,9,Highly Urban/ Urban
+1686,,0,36,1,,"$61,320",Yes,$0,z_No,z_F,Bachelors,Manager,34,Private,"$11,580",4,z_SUV,no,"$23,198",3,Yes,5,12,Highly Urban/ Urban
+1688,,0,38,4,14,"$40,248",No,"$166,402",Yes,M,z_High School,z_Blue Collar,27,Commercial,"$11,520",1,Minivan,yes,$0,0,No,1,9,Highly Urban/ Urban
+1696,,2,44,2,13,"$111,701",No,"$303,430",Yes,z_F,Bachelors,Manager,32,Private,"$16,370",1,Sports Car,no,"$4,873",2,No,1,7,Highly Urban/ Urban
+1701,,0,38,0,9,"$12,216",No,$0,z_No,z_F,z_High School,Student,53,Commercial,"$5,200",7,Sports Car,no,$0,0,No,2,1,Highly Urban/ Urban
+1707,,0,49,0,9,"$82,536",No,"$238,959",z_No,z_F,Masters,Lawyer,30,Private,"$7,350",3,Sports Car,no,"$46,105",1,Yes,2,7,Highly Urban/ Urban
+1708,,0,57,0,9,"$97,059",No,"$311,131",Yes,z_F,z_High School,Professional,30,Private,"$15,050",6,z_SUV,no,"$6,713",3,No,0,1,z_Highly Rural/ Rural
+1713,,0,39,0,10,"$116,247",No,$0,z_No,M,Bachelors,z_Blue Collar,25,Commercial,"$21,380",1,Van,no,$0,0,No,0,8,Highly Urban/ Urban
+1715,,0,53,0,12,"$41,359",No,"$182,242",Yes,M,Masters,,31,Commercial,"$16,850",9,Van,yes,"$9,581",1,No,4,1,Highly Urban/ Urban
+1717,,0,51,0,13,"$72,334",No,$0,z_No,z_F,z_High School,z_Blue Collar,36,Commercial,"$11,290",4,z_SUV,no,$0,0,Yes,4,,Highly Urban/ Urban
+1721,,0,38,1,11,"$51,551",No,"$177,942",Yes,z_F,Bachelors,z_Blue Collar,19,Private,"$15,380",1,z_SUV,no,"$5,563",3,No,3,,Highly Urban/ Urban
+1724,,2,45,2,12,"$8,467",No,"$105,059",Yes,z_F,<High School,Clerical,28,Private,"$6,900",9,z_SUV,no,$0,0,No,0,6,Highly Urban/ Urban
+1725,,0,35,3,9,"$63,364",Yes,$0,z_No,M,Masters,Professional,69,Commercial,"$23,330",1,Panel Truck,yes,$0,0,No,0,16,Highly Urban/ Urban
+1730,,0,43,1,8,"$27,413",Yes,,z_No,z_F,z_High School,Clerical,10,Private,"$8,540",1,Sports Car,no,$0,0,No,0,,Highly Urban/ Urban
+1731,,0,50,0,13,"$46,952",No,"$223,769",Yes,z_F,Bachelors,z_Blue Collar,26,Commercial,"$6,200",1,z_SUV,no,$0,0,No,0,1,Highly Urban/ Urban
+1734,,0,48,0,6,"$14,410",No,$0,z_No,z_F,<High School,Clerical,27,Private,"$7,740",7,z_SUV,no,"$1,001",1,No,3,1,Highly Urban/ Urban
+1740,,2,37,4,16,,Yes,$0,z_No,z_F,Bachelors,z_Blue Collar,23,Commercial,"$1,500",1,Sports Car,no,"$49,223",1,Yes,2,1,Highly Urban/ Urban
+1748,,0,36,0,8,"$131,766",No,$0,z_No,M,PhD,Manager,45,Private,"$13,950",4,Minivan,yes,$0,0,No,0,11,Highly Urban/ Urban
+1749,,0,64,1,15,"$34,199",No,"$174,149",Yes,M,Bachelors,z_Blue Collar,5,Private,"$11,210",7,Sports Car,yes,"$10,572",4,No,4,8,Highly Urban/ Urban
+1750,,0,39,0,10,"$70,750",No,"$228,858",z_No,M,Bachelors,z_Blue Collar,68,Private,"$3,350",1,Minivan,no,"$6,006",2,No,3,14,z_Highly Rural/ Rural
+1763,,0,60,4,16,"$28,634",No,"$151,602",Yes,M,<High School,Clerical,17,Private,"$5,730",1,Minivan,no,"$30,480",2,Yes,5,5,z_Highly Rural/ Rural
+1768,,0,50,0,13,"$56,566",No,"$222,820",Yes,M,Masters,Manager,27,Commercial,"$24,850",1,Panel Truck,no,"$1,203",3,No,3,11,Highly Urban/ Urban
+1773,,1,63,1,10,"$44,866",No,"$203,341",Yes,z_F,Masters,Manager,56,Private,"$11,160",4,Sports Car,no,"$6,499",1,Yes,9,14,Highly Urban/ Urban
+1777,,1,63,1,11,"$54,297",No,"$231,033",Yes,M,Bachelors,Professional,36,Private,"$12,150",4,Sports Car,yes,$0,0,No,0,12,Highly Urban/ Urban
+1778,,0,43,3,,,No,"$183,000",Yes,z_F,z_High School,z_Blue Collar,25,Private,"$15,710",1,Minivan,yes,$0,0,No,4,7,Highly Urban/ Urban
+1780,,2,38,2,12,"$102,020",Yes,$0,z_No,z_F,Masters,Lawyer,28,Private,"$15,500",6,z_SUV,no,"$5,306",2,No,5,1,Highly Urban/ Urban
+1782,,0,44,0,6,"$234,825",No,$0,z_No,z_F,PhD,Doctor,14,Private,"$16,790",4,z_SUV,no,"$32,113",1,Yes,7,19,Highly Urban/ Urban
+1784,,0,62,0,13,,No,"$157,022",Yes,M,<High School,z_Blue Collar,15,Private,"$13,940",10,Minivan,yes,$0,0,No,1,1,Highly Urban/ Urban
+1786,,0,48,0,12,"$63,260",No,$0,z_No,z_F,z_High School,z_Blue Collar,7,Commercial,"$24,160",4,Minivan,no,"$7,858",2,No,9,1,Highly Urban/ Urban
+1787,,1,45,2,15,,Yes,$0,z_No,M,Bachelors,Professional,26,Private,"$17,930",10,Van,yes,"$41,167",2,Yes,0,5,Highly Urban/ Urban
+1792,,1,38,3,14,"$89,065",No,"$229,172",Yes,M,Bachelors,z_Blue Collar,12,Commercial,"$14,210",1,Minivan,yes,"$1,155",1,Yes,0,6,Highly Urban/ Urban
+1800,,0,32,4,14,"$7,308",No,,Yes,z_F,z_High School,Home Maker,42,Private,"$26,020",11,Pickup,no,"$10,626",1,No,4,6,Highly Urban/ Urban
+1801,,1,39,2,15,"$5,538",No,"$78,372",Yes,z_F,Bachelors,Home Maker,49,Private,"$5,950",1,Sports Car,no,"$6,127",1,No,0,7,Highly Urban/ Urban
+1803,,0,61,0,15,"$47,534",No,"$199,888",Yes,M,<High School,Clerical,22,Private,"$12,350",4,z_SUV,no,"$2,414",1,No,0,1,Highly Urban/ Urban
+1804,,0,48,0,6,"$33,434",No,"$176,292",Yes,z_F,Bachelors,Clerical,38,Private,"$6,300",1,z_SUV,no,"$3,614",3,No,2,12,Highly Urban/ Urban
+1807,,0,50,0,,"$70,135",No,$0,z_No,M,Masters,Manager,5,Private,"$13,510",1,Minivan,yes,$0,0,No,0,13,Highly Urban/ Urban
+1818,,0,48,0,11,"$49,370",No,$0,z_No,M,z_High School,Professional,48,Commercial,"$6,440",3,Minivan,no,"$10,000",1,No,0,1,Highly Urban/ Urban
+1821,,0,39,3,8,"$24,062",No,"$149,083",Yes,z_F,<High School,Clerical,36,Private,"$12,510",1,Sports Car,no,$0,0,No,2,3,Highly Urban/ Urban
+1822,,0,39,0,10,"$23,756",No,$0,z_No,z_F,Masters,Lawyer,52,Private,"$7,780",3,Sports Car,no,$0,0,Yes,0,20,Highly Urban/ Urban
+1828,,0,46,0,14,"$38,871",No,"$178,677",Yes,z_F,PhD,,20,Commercial,"$38,870",7,Van,no,$0,0,No,1,1,Highly Urban/ Urban
+1833,,0,67,0,12,"$56,946",No,"$246,083",Yes,M,Masters,Lawyer,47,Private,"$26,020",1,Minivan,yes,$0,0,No,0,20,Highly Urban/ Urban
+1844,,0,57,0,14,"$37,694",No,"$175,270",Yes,M,<High School,z_Blue Collar,45,Private,"$10,970",1,Pickup,no,"$5,653",3,No,2,6,Highly Urban/ Urban
+1847,,0,35,0,9,"$32,494",No,"$124,012",z_No,z_F,z_High School,Clerical,14,Private,"$20,140",1,z_SUV,no,"$5,105",2,No,7,8,Highly Urban/ Urban
+1850,,0,41,0,12,"$70,478",No,$0,z_No,z_F,z_High School,Manager,32,Private,"$12,650",4,z_SUV,no,$0,0,Yes,2,1,Highly Urban/ Urban
+1854,,0,41,3,8,"$38,813",No,"$127,229",Yes,z_F,Bachelors,Clerical,31,Private,"$5,600",3,z_SUV,no,$0,0,No,0,9,Highly Urban/ Urban
+1858,,2,36,3,0,$0,No,$0,Yes,M,z_High School,Student,13,Commercial,"$5,100",7,Pickup,yes,$0,0,No,2,1,Highly Urban/ Urban
+1864,,0,60,0,14,"$36,730",No,,Yes,M,Masters,Professional,28,Commercial,"$21,360",1,Van,yes,$0,0,Yes,5,10,Highly Urban/ Urban
+1867,,0,36,0,10,"$15,927",No,"$130,924",Yes,M,z_High School,Student,24,Commercial,"$6,900",1,Pickup,yes,$0,0,No,3,1,z_Highly Rural/ Rural
+1876,,0,49,0,9,"$107,150",No,$0,z_No,M,Bachelors,z_Blue Collar,46,Commercial,"$17,280",1,Van,yes,"$3,780",2,No,5,7,Highly Urban/ Urban
+1880,,0,51,0,,"$76,916",No,"$255,588",Yes,z_F,Masters,Professional,20,Private,"$14,290",7,z_SUV,no,"$11,365",5,No,4,5,Highly Urban/ Urban
+1881,,0,49,0,13,"$43,560",No,"$174,690",Yes,M,Bachelors,Clerical,35,Private,"$10,760",6,Pickup,yes,"$6,675",1,No,3,7,Highly Urban/ Urban
+1891,,2,43,3,13,,No,"$356,585",Yes,M,Masters,,49,Commercial,"$28,200",1,Panel Truck,yes,"$6,013",2,No,0,8,Highly Urban/ Urban
+1894,,0,47,0,6,"$22,358",No,$0,z_No,z_F,z_High School,Clerical,19,Private,"$19,840",1,z_SUV,no,"$5,341",2,No,8,1,Highly Urban/ Urban
+1895,,0,34,2,9,"$33,538",Yes,$0,z_No,M,<High School,z_Blue Collar,29,Commercial,"$16,380",3,Van,yes,"$7,564",3,No,6,1,Highly Urban/ Urban
+1901,,0,52,0,9,"$39,157",No,"$130,089",Yes,M,z_High School,z_Blue Collar,50,Commercial,"$22,480",6,Van,no,"$1,105",3,No,5,1,Highly Urban/ Urban
+1905,,2,40,3,12,"$91,497",No,"$284,313",Yes,M,Bachelors,Professional,37,Commercial,"$23,450",17,Panel Truck,no,$0,0,No,2,1,Highly Urban/ Urban
+1912,,0,60,0,15,"$8,585",No,"$114,615",Yes,z_F,Bachelors,Professional,52,Commercial,"$24,900",6,Pickup,no,"$2,033",4,No,1,11,Highly Urban/ Urban
+1918,,0,46,0,12,"$96,729",No,"$270,745",z_No,z_F,PhD,Home Maker,60,Commercial,"$16,400",9,Pickup,no,"$4,052",4,No,3,15,Highly Urban/ Urban
+1921,,0,39,0,10,"$77,591",No,$0,z_No,z_F,Bachelors,z_Blue Collar,22,Commercial,"$13,160",6,z_SUV,no,"$24,983",2,Yes,4,11,Highly Urban/ Urban
+1923,,2,42,3,14,"$36,463",No,"$184,091",Yes,z_F,<High School,z_Blue Collar,10,Commercial,"$5,700",6,z_SUV,no,$0,0,No,5,9,Highly Urban/ Urban
+1924,,1,40,2,11,"$52,715",No,"$177,273",Yes,z_F,z_High School,z_Blue Collar,19,Commercial,"$8,370",1,Sports Car,no,"$4,707",3,No,6,1,Highly Urban/ Urban
+1931,,0,39,0,,"$97,934",No,"$297,260",z_No,M,Masters,,30,Commercial,"$16,650",10,Van,no,$0,0,Yes,3,12,Highly Urban/ Urban
+1941,,2,42,3,0,$0,Yes,"$83,913",z_No,z_F,z_High School,Home Maker,8,Commercial,"$19,620",1,Pickup,no,"$28,816",4,Yes,2,8,z_Highly Rural/ Rural
+1950,,1,44,1,13,"$80,824",No,"$259,932",Yes,M,Masters,Professional,41,Private,"$9,580",1,Minivan,no,"$40,929",1,Yes,0,16,Highly Urban/ Urban
+1951,,1,45,2,13,"$81,255",Yes,"$231,143",z_No,z_F,z_High School,z_Blue Collar,40,Private,"$15,810",6,z_SUV,no,$0,0,Yes,0,1,Highly Urban/ Urban
+1954,,0,39,0,9,"$59,833",No,$0,z_No,z_F,Bachelors,Manager,58,Private,"$9,930",4,z_SUV,no,"$7,578",1,No,0,,Highly Urban/ Urban
+1961,,0,54,0,15,"$4,716",No,"$120,571",Yes,M,z_High School,Student,25,Private,"$7,770",13,Pickup,no,$0,0,No,1,1,Highly Urban/ Urban
+1966,,0,35,0,10,"$33,087",No,"$92,673",z_No,M,z_High School,z_Blue Collar,18,Commercial,"$22,950",1,Panel Truck,yes,$0,0,No,6,11,Highly Urban/ Urban
+1979,,0,46,0,10,"$68,485",No,"$228,016",z_No,M,Bachelors,Professional,13,Commercial,"$18,820",16,Van,no,"$7,848",1,No,0,13,Highly Urban/ Urban
+1982,,0,30,1,,"$44,609",Yes,"$193,747",z_No,z_F,<High School,z_Blue Collar,24,Private,"$8,960",1,Sports Car,no,$0,0,Yes,0,1,Highly Urban/ Urban
+1987,,0,52,0,12,"$11,545",No,$0,z_No,z_F,z_High School,Home Maker,22,Private,"$26,900",3,z_SUV,no,$0,0,No,3,1,Highly Urban/ Urban
+1997,,2,40,2,11,"$63,913",Yes,$0,z_No,M,z_High School,z_Blue Collar,5,Commercial,"$5,500",13,Pickup,yes,"$1,896",1,No,1,1,Highly Urban/ Urban
+2004,,0,40,0,11,"$32,265",No,$0,z_No,z_F,z_High School,Clerical,46,Private,"$15,850",1,Minivan,no,$0,0,No,0,1,Highly Urban/ Urban
+2011,,0,49,0,14,"$115,320",No,"$311,697",Yes,z_F,Masters,Lawyer,44,Private,"$20,540",6,Minivan,no,$0,0,No,3,15,Highly Urban/ Urban
+2015,,0,48,0,12,"$127,253",No,,z_No,M,Masters,Manager,56,Commercial,"$19,030",1,Van,yes,$0,0,Yes,1,20,Highly Urban/ Urban
+2025,,1,43,2,15,"$59,346",Yes,$0,z_No,z_F,Bachelors,Professional,29,Private,"$8,090",1,Sports Car,no,"$5,037",3,No,6,16,Highly Urban/ Urban
+2033,,0,37,0,8,"$30,848",No,"$160,731",Yes,M,<High School,z_Blue Collar,25,Commercial,"$31,500",1,Minivan,no,"$7,957",1,No,3,10,z_Highly Rural/ Rural
+2034,,0,50,0,12,"$67,399",No,"$266,563",z_No,M,z_High School,z_Blue Collar,49,Commercial,"$19,240",3,Van,yes,"$44,641",2,Yes,4,1,Highly Urban/ Urban
+2035,,1,40,1,6,"$24,498",Yes,$0,z_No,z_F,z_High School,Clerical,36,Private,"$9,920",11,z_SUV,no,$0,0,No,0,1,Highly Urban/ Urban
+2036,,0,40,2,13,,No,"$280,943",Yes,M,PhD,,33,Commercial,"$26,040",10,Panel Truck,yes,$0,0,No,0,13,Highly Urban/ Urban
+2053,,0,36,0,9,"$64,947",No,$0,z_No,z_F,z_High School,z_Blue Collar,26,Commercial,"$34,920",1,Minivan,no,$0,0,Yes,0,1,Highly Urban/ Urban
+2059,,0,62,0,12,"$23,264",No,"$205,740",Yes,M,z_High School,Professional,24,Private,"$19,120",3,Sports Car,yes,"$2,136",3,No,3,1,Highly Urban/ Urban
+2060,,0,35,2,,"$62,783",Yes,$0,z_No,M,z_High School,z_Blue Collar,33,Commercial,"$4,900",10,Pickup,yes,"$2,723",1,No,7,7,Highly Urban/ Urban
+2073,,1,39,1,13,"$13,765",No,"$82,223",Yes,z_F,<High School,Clerical,28,Private,"$22,960",1,Minivan,no,$0,0,No,0,1,Highly Urban/ Urban
+2084,,0,42,0,14,"$40,480",No,"$164,701",Yes,M,Bachelors,Clerical,71,Commercial,"$10,830",6,Pickup,yes,$0,0,No,0,13,Highly Urban/ Urban
+2089,,0,43,0,11,"$58,251",No,"$210,945",z_No,M,Bachelors,Manager,57,Commercial,"$19,030",4,Van,no,$0,0,Yes,0,7,Highly Urban/ Urban
+2092,,0,19,3,11,"$5,228",Yes,$0,z_No,z_F,z_High School,Student,28,Commercial,"$15,080",14,z_SUV,no,$0,0,No,4,10,Highly Urban/ Urban
+2109,,0,50,0,8,"$30,956",No,"$166,846",Yes,M,z_High School,Clerical,11,Commercial,"$17,400",4,Van,no,"$3,288",2,No,3,7,Highly Urban/ Urban
+2129,,2,40,2,11,,Yes,$0,z_No,M,z_High School,z_Blue Collar,27,Private,"$13,420",6,Minivan,no,"$7,865",4,No,3,1,Highly Urban/ Urban
+2134,,0,37,2,12,"$32,924",No,"$170,564",Yes,z_F,Bachelors,z_Blue Collar,36,Private,"$8,000",6,z_SUV,no,"$39,722",1,Yes,4,10,Highly Urban/ Urban
+2135,,0,27,2,0,$0,No,$0,Yes,z_F,<High School,Student,12,Private,"$4,200",6,Sports Car,no,$0,0,Yes,2,6,Highly Urban/ Urban
+2148,,1,43,3,15,"$122,806",Yes,$0,z_No,z_F,Bachelors,z_Blue Collar,19,Commercial,"$18,080",1,z_SUV,no,"$1,784",1,No,4,14,Highly Urban/ Urban
+2149,,0,50,0,8,"$91,589",No,"$287,485",Yes,z_F,z_High School,z_Blue Collar,40,Commercial,"$6,730",17,z_SUV,no,$0,0,Yes,0,10,Highly Urban/ Urban
+2150,,0,59,0,12,"$80,217",No,"$275,635",Yes,M,Bachelors,z_Blue Collar,26,Commercial,"$26,630",1,Panel Truck,no,"$8,938",2,No,6,12,z_Highly Rural/ Rural
+2165,,0,58,0,8,"$83,521",No,"$275,791",Yes,M,Bachelors,Professional,37,Commercial,"$23,260",6,Panel Truck,yes,$0,0,No,2,1,Highly Urban/ Urban
+2166,,0,31,3,15,"$47,629",No,"$144,222",Yes,z_F,z_High School,z_Blue Collar,38,Commercial,"$9,360",1,z_SUV,no,"$6,906",2,No,0,6,Highly Urban/ Urban
+2168,,0,36,0,7,"$6,018",No,,z_No,z_F,<High School,Student,18,Private,"$1,500",4,Sports Car,no,$0,0,No,1,7,Highly Urban/ Urban
+2170,,1,43,1,9,"$111,656",Yes,$0,z_No,z_F,Bachelors,Professional,55,Private,"$7,700",1,Sports Car,no,"$30,378",1,Yes,5,9,Highly Urban/ Urban
+2171,,0,34,0,7,"$161,846",No,$0,z_No,z_F,PhD,,48,Commercial,"$32,020",9,Panel Truck,no,"$28,495",2,Yes,0,15,Highly Urban/ Urban
+2172,,0,50,0,14,,No,"$138,053",Yes,z_F,<High School,Clerical,33,Private,"$13,570",1,z_SUV,no,$0,0,No,1,9,Highly Urban/ Urban
+2176,,0,49,0,10,,No,"$209,679",Yes,z_F,z_High School,z_Blue Collar,50,Commercial,"$17,190",16,Sports Car,no,"$8,174",2,No,4,1,Highly Urban/ Urban
+2182,,0,61,0,0,$0,No,"$96,739",z_No,z_F,<High School,Student,5,Private,"$1,500",1,Sports Car,no,"$6,414",2,No,6,7,Highly Urban/ Urban
+2189,,0,44,2,7,"$24,091",Yes,$0,z_No,z_F,<High School,z_Blue Collar,27,Private,"$8,310",1,z_SUV,no,"$6,693",3,No,0,6,Highly Urban/ Urban
+2191,,0,43,0,9,"$63,511",No,"$219,943",z_No,M,Bachelors,z_Blue Collar,19,Commercial,"$12,150",3,Pickup,yes,$0,0,No,3,8,Highly Urban/ Urban
+2197,,1,48,1,11,"$84,042",No,"$263,403",Yes,z_F,Masters,Lawyer,55,Private,"$10,320",1,z_SUV,no,"$7,560",1,No,2,20,Highly Urban/ Urban
+2202,,0,36,0,9,"$12,546",No,$0,z_No,M,<High School,Clerical,22,Private,"$1,500",1,Minivan,yes,"$4,636",3,No,0,1,Highly Urban/ Urban
+2203,,0,52,0,10,"$32,028",No,$0,z_No,z_F,z_High School,Clerical,41,Private,"$14,860",3,z_SUV,no,$0,0,No,4,1,Highly Urban/ Urban
+2204,,0,45,0,11,"$49,957",No,"$191,130",z_No,M,Bachelors,Professional,22,Commercial,"$18,710",4,Van,yes,$0,0,No,1,2,Highly Urban/ Urban
+2206,,0,42,0,10,"$60,522",No,$0,z_No,z_F,z_High School,Clerical,27,Private,"$19,710",1,Sports Car,no,"$49,380",1,No,0,7,z_Highly Rural/ Rural
+2218,,0,31,3,13,"$30,089",No,"$121,900",Yes,M,z_High School,Professional,36,Commercial,"$31,510",3,Panel Truck,yes,"$4,278",1,No,4,1,Highly Urban/ Urban
+2219,,0,60,0,,"$71,840",No,"$278,030",Yes,z_F,Bachelors,Manager,33,Private,"$7,500",1,z_SUV,no,"$5,035",1,No,4,13,Highly Urban/ Urban
+2221,,0,39,0,9,"$133,060",No,$0,z_No,z_F,PhD,Lawyer,44,Private,"$5,400",7,Sports Car,no,"$2,897",2,No,1,18,Highly Urban/ Urban
+2226,,0,46,0,0,$0,No,$0,z_No,z_F,Bachelors,Home Maker,53,Private,"$6,100",17,z_SUV,no,"$5,348",4,No,5,12,Highly Urban/ Urban
+2228,,0,48,0,10,"$123,223",No,$0,z_No,M,Masters,,34,Commercial,"$24,380",7,Panel Truck,yes,"$3,233",3,No,0,11,Highly Urban/ Urban
+2232,,0,51,1,18,"$30,531",No,"$122,736",Yes,z_F,z_High School,z_Blue Collar,35,Commercial,"$6,600",1,z_SUV,no,"$32,674",3,Yes,6,1,Highly Urban/ Urban
+2236,,0,37,1,11,"$22,401",Yes,$0,z_No,z_F,<High School,z_Blue Collar,33,Private,"$7,440",4,Sports Car,no,"$30,099",3,Yes,6,4,Highly Urban/ Urban
+2241,,1,39,2,0,$0,Yes,$0,z_No,z_F,z_High School,Home Maker,5,Private,"$5,400",5,Sports Car,no,"$9,037",3,No,6,6,Highly Urban/ Urban
+2245,,2,40,2,13,,No,"$159,200",Yes,M,z_High School,z_Blue Collar,66,Commercial,"$15,930",3,Minivan,yes,"$2,718",2,No,0,1,Highly Urban/ Urban
+2251,,0,39,0,,"$94,059",No,"$286,323",Yes,M,Bachelors,Professional,33,Commercial,"$42,320",1,Panel Truck,yes,$0,0,No,0,6,Highly Urban/ Urban
+2255,,1,37,1,14,"$66,175",Yes,"$214,792",z_No,z_F,<High School,z_Blue Collar,51,Private,"$13,240",15,z_SUV,no,$0,0,No,4,1,Highly Urban/ Urban
+2256,,0,45,0,0,$0,No,"$77,453",z_No,z_F,Masters,Home Maker,24,Private,"$30,130",4,Minivan,no,$0,0,No,0,15,Highly Urban/ Urban
+2259,,1,41,2,14,"$86,860",Yes,$0,z_No,M,Bachelors,z_Blue Collar,33,Commercial,"$16,020",3,Minivan,no,$0,0,No,4,1,Highly Urban/ Urban
+2263,,0,43,0,10,"$46,119",No,$0,z_No,M,z_High School,Professional,51,Commercial,"$10,410",1,Pickup,yes,"$10,930",3,No,0,,Highly Urban/ Urban
+2264,,0,29,3,,"$15,958",Yes,"$111,962",z_No,M,<High School,Clerical,30,Private,"$6,000",3,Pickup,yes,$0,0,No,4,1,Highly Urban/ Urban
+2267,,3,39,3,13,"$110,251",No,"$349,101",Yes,M,Bachelors,z_Blue Collar,36,Commercial,"$38,900",1,Panel Truck,yes,"$21,033",2,Yes,3,1,Highly Urban/ Urban
+2273,,0,34,2,10,"$19,742",No,$0,Yes,z_F,z_High School,Student,13,Commercial,"$5,200",4,z_SUV,no,"$44,231",2,Yes,2,8,Highly Urban/ Urban
+2277,,0,55,0,16,"$174,355",No,"$457,551",Yes,M,Masters,,38,Commercial,"$16,230",1,Van,yes,$0,0,Yes,0,1,Highly Urban/ Urban
+2287,,0,27,1,10,"$44,208",Yes,$0,z_No,z_F,z_High School,Clerical,33,Private,"$8,620",1,z_SUV,no,"$3,700",2,No,5,9,Highly Urban/ Urban
+2289,,0,40,1,11,"$40,252",Yes,"$201,112",z_No,M,z_High School,z_Blue Collar,41,Private,"$7,240",13,Pickup,yes,$0,0,Yes,0,1,Highly Urban/ Urban
+2291,,0,39,0,11,"$52,586",No,"$260,933",z_No,M,<High School,z_Blue Collar,38,Private,"$8,330",1,Pickup,yes,$0,0,No,0,7,Highly Urban/ Urban
+2296,,1,63,1,2,"$38,111",No,"$152,804",Yes,z_F,Masters,Lawyer,28,Private,"$15,700",13,z_SUV,no,$0,0,Yes,2,19,Highly Urban/ Urban
+2299,,0,30,1,8,"$13,186",Yes,$0,z_No,z_F,z_High School,Home Maker,40,Private,"$5,820",7,z_SUV,no,$0,0,Yes,2,8,Highly Urban/ Urban
+2306,,0,28,2,8,"$66,783",No,"$227,215",Yes,z_F,Bachelors,z_Blue Collar,5,Commercial,"$10,980",10,z_SUV,no,"$8,079",2,No,3,10,Highly Urban/ Urban
+2314,,0,36,0,10,"$22,362",No,"$126,267",z_No,z_F,z_High School,Clerical,34,Private,"$9,200",1,z_SUV,no,"$4,633",1,No,5,1,Highly Urban/ Urban
+2317,,0,25,1,9,,Yes,$0,z_No,z_F,z_High School,Clerical,12,Private,"$7,530",3,z_SUV,no,"$4,885",3,No,3,7,Highly Urban/ Urban
+2318,,0,46,0,11,"$66,222",No,"$241,932",Yes,M,<High School,z_Blue Collar,33,Private,"$12,720",1,Minivan,no,"$7,872",1,No,5,,Highly Urban/ Urban
+2321,,3,46,0,12,"$54,216",No,$0,z_No,M,Masters,Professional,15,Commercial,"$10,410",6,Pickup,yes,$0,0,No,3,19,Highly Urban/ Urban
+2324,,0,48,0,14,"$58,132",No,$0,z_No,z_F,z_High School,Manager,32,Private,"$6,860",6,z_SUV,no,"$7,926",3,No,3,1,Highly Urban/ Urban
+2340,,0,47,0,,"$3,663",No,"$122,332",Yes,z_F,z_High School,Student,57,Commercial,"$9,310",1,Sports Car,no,"$1,348",2,No,4,7,Highly Urban/ Urban
+2343,,1,45,2,17,"$111,268",No,"$288,071",Yes,z_F,Masters,Lawyer,46,Private,"$21,680",4,Minivan,no,"$10,366",3,Yes,3,10,Highly Urban/ Urban
+2349,,0,47,0,6,"$32,267",No,$0,z_No,z_F,<High School,z_Blue Collar,63,Private,"$18,210",1,Sports Car,no,$0,0,Yes,6,,Highly Urban/ Urban
+2352,,0,27,2,10,"$17,686",No,"$136,423",Yes,z_F,<High School,Clerical,60,Private,"$10,050",10,Minivan,no,"$5,433",3,No,0,1,Highly Urban/ Urban
+2353,,0,47,0,13,"$61,214",No,"$219,101",Yes,M,Bachelors,z_Blue Collar,53,Commercial,"$18,180",7,Van,yes,"$4,723",2,No,0,7,Highly Urban/ Urban
+2365,,0,44,2,13,"$44,200",No,"$160,351",Yes,z_F,z_High School,Clerical,35,Private,"$10,910",4,z_SUV,no,$0,0,No,2,1,Highly Urban/ Urban
+2370,,1,43,2,11,"$29,081",Yes,$0,z_No,z_F,z_High School,Clerical,33,Private,"$10,320",6,z_SUV,no,$0,0,No,1,7,Highly Urban/ Urban
+2378,,0,49,0,16,"$25,371",No,"$143,256",Yes,M,z_High School,z_Blue Collar,20,Private,"$4,690",4,Pickup,yes,$0,0,No,3,11,Highly Urban/ Urban
+2390,,0,39,0,9,"$36,330",No,$0,z_No,z_F,z_High School,Clerical,47,Private,"$14,520",7,Sports Car,no,"$7,191",1,No,3,1,Highly Urban/ Urban
+2399,,3,41,3,,"$109,957",No,"$284,462",Yes,z_F,Masters,Manager,32,Private,"$18,130",6,z_SUV,no,$0,0,Yes,4,,Highly Urban/ Urban
+2402,,0,54,0,0,$0,No,$0,Yes,z_F,<High School,Student,36,Private,"$6,900",6,z_SUV,no,$0,0,Yes,0,7,Highly Urban/ Urban
+2403,,0,53,0,0,$0,No,"$118,678",z_No,z_F,<High School,Home Maker,29,Private,"$6,800",6,z_SUV,no,"$1,930",2,No,1,6,Highly Urban/ Urban
+2404,,0,57,0,13,"$65,968",No,$0,z_No,M,Bachelors,Manager,37,Commercial,"$16,640",1,Van,yes,"$10,215",2,No,0,,Highly Urban/ Urban
+2414,,0,45,2,15,"$135,768",No,"$347,575",Yes,M,Masters,,22,Commercial,"$19,580",1,Van,yes,"$8,176",2,No,6,15,Highly Urban/ Urban
+2422,,0,50,0,15,"$36,015",No,"$137,355",Yes,z_F,Masters,Lawyer,23,Private,"$15,100",1,z_SUV,no,$0,0,No,1,10,z_Highly Rural/ Rural
+2424,,0,40,0,11,"$82,505",No,$0,z_No,M,Masters,,35,Commercial,"$33,910",1,Panel Truck,no,"$5,464",3,No,2,13,Highly Urban/ Urban
+2430,,1,36,4,13,"$31,259",No,"$145,148",Yes,M,<High School,z_Blue Collar,32,Commercial,"$21,510",14,Van,no,"$3,719",1,No,0,8,Highly Urban/ Urban
+2435,,0,55,0,13,"$32,880",No,"$197,778",Yes,M,<High School,z_Blue Collar,27,Commercial,"$4,790",11,Pickup,yes,$0,0,No,3,1,Highly Urban/ Urban
+2439,,0,36,0,11,"$104,424",No,,z_No,z_F,Masters,Manager,43,Private,"$13,190",6,z_SUV,no,"$6,032",3,No,2,12,Highly Urban/ Urban
+2442,,0,44,3,17,"$35,066",Yes,$0,z_No,z_F,z_High School,Clerical,47,Private,"$18,880",4,z_SUV,no,"$37,642",3,Yes,6,1,Highly Urban/ Urban
+2445,,0,28,3,0,$0,Yes,$0,z_No,z_F,z_High School,Student,39,Private,"$4,300",7,Sports Car,no,$0,0,No,0,6,Highly Urban/ Urban
+2449,,0,53,0,13,"$117,470",No,"$357,727",Yes,z_F,Masters,Manager,50,Private,"$14,580",1,Sports Car,no,"$47,097",3,Yes,0,18,Highly Urban/ Urban
+2451,,2,56,3,16,"$55,380",Yes,$0,z_No,M,z_High School,z_Blue Collar,18,Commercial,"$11,100",1,Minivan,no,"$6,164",1,No,7,1,Highly Urban/ Urban
+2461,,1,43,1,10,"$90,610",No,"$260,271",Yes,M,Bachelors,Professional,38,Private,"$21,090",6,Van,no,"$1,942",1,No,6,6,Highly Urban/ Urban
+2464,,0,38,2,11,"$23,636",Yes,"$98,166",z_No,M,z_High School,Clerical,6,Commercial,"$4,800",14,Pickup,yes,$0,0,No,0,1,Highly Urban/ Urban
+2465,,0,51,0,6,"$72,037",No,$0,z_No,M,z_High School,Manager,13,Commercial,"$19,980",4,Van,yes,$0,0,No,0,8,Highly Urban/ Urban
+2472,,1,43,2,9,"$23,035",Yes,$0,z_No,z_F,z_High School,Clerical,62,Private,"$15,250",12,z_SUV,no,"$2,213",3,No,2,6,Highly Urban/ Urban
+2476,,0,33,1,12,"$54,480",Yes,"$180,381",z_No,M,z_High School,z_Blue Collar,48,Commercial,"$10,250",6,Pickup,yes,"$31,332",5,Yes,5,11,Highly Urban/ Urban
+2482,,0,40,3,0,$0,Yes,$0,z_No,z_F,Bachelors,Student,38,Private,"$6,690",3,z_SUV,no,$0,0,No,0,7,Highly Urban/ Urban
+2487,,0,50,0,9,"$76,091",No,"$246,609",Yes,M,z_High School,z_Blue Collar,53,Commercial,"$38,500",1,Panel Truck,yes,$0,0,No,1,1,Highly Urban/ Urban
+2498,,0,47,0,11,"$56,731",No,"$213,116",Yes,z_F,z_High School,z_Blue Collar,26,Commercial,"$7,170",1,Sports Car,no,"$8,547",1,No,0,,Highly Urban/ Urban
+2501,,1,41,1,,"$50,008",No,"$219,814",Yes,z_F,<High School,Clerical,37,Private,"$10,600",1,z_SUV,no,"$9,995",1,No,0,1,Highly Urban/ Urban
+2504,,0,46,0,0,$0,No,$0,z_No,z_F,z_High School,Home Maker,35,Private,"$1,500",17,z_SUV,no,$0,0,No,0,1,Highly Urban/ Urban
+2511,,0,57,0,13,"$40,264",No,$0,z_No,M,z_High School,z_Blue Collar,57,Commercial,"$19,260",6,Van,no,$0,0,Yes,3,6,Highly Urban/ Urban
+2518,,0,59,0,12,"$106,523",No,$0,z_No,z_F,Bachelors,z_Blue Collar,42,Commercial,"$12,150",8,Pickup,no,$0,0,No,0,10,Highly Urban/ Urban
+2521,,0,29,1,0,$0,Yes,$0,z_No,z_F,z_High School,Student,40,Commercial,"$15,610",4,z_SUV,no,"$7,857",2,No,2,1,Highly Urban/ Urban
+2530,,0,42,0,10,"$55,340",No,"$227,741",Yes,M,z_High School,Clerical,44,Commercial,"$34,210",7,Panel Truck,no,"$2,773",1,No,5,1,Highly Urban/ Urban
+2543,,0,39,2,14,"$40,259",No,"$178,724",Yes,M,z_High School,z_Blue Collar,35,Commercial,"$18,040",7,Van,yes,$0,0,Yes,1,11,Highly Urban/ Urban
+2545,,0,43,0,14,"$54,067",No,"$168,626",Yes,M,<High School,z_Blue Collar,5,Commercial,"$6,910",6,Pickup,yes,"$7,076",4,No,0,1,Highly Urban/ Urban
+2561,,0,47,0,9,"$11,802",No,$0,z_No,z_F,Bachelors,Home Maker,29,Private,"$1,500",7,Sports Car,no,"$6,838",4,No,5,9,Highly Urban/ Urban
+2566,,0,50,0,14,"$60,854",No,,z_No,M,PhD,,28,Commercial,"$28,330",10,Panel Truck,no,$607,3,No,4,7,Highly Urban/ Urban
+2572,,0,32,4,15,"$51,554",Yes,$0,z_No,z_F,Bachelors,z_Blue Collar,60,Commercial,"$13,990",1,z_SUV,no,"$2,551",2,No,3,8,Highly Urban/ Urban
+2577,,3,44,4,0,$0,Yes,$0,z_No,z_F,z_High School,Student,17,Private,"$1,500",3,Sports Car,no,"$2,602",3,No,8,9,Highly Urban/ Urban
+2578,,0,35,0,7,"$20,717",No,$0,z_No,M,z_High School,z_Blue Collar,24,Commercial,"$7,070",10,Pickup,yes,"$5,179",2,No,0,7,Highly Urban/ Urban
+2580,,0,60,0,12,"$65,624",No,"$235,124",Yes,z_F,Masters,Lawyer,31,Private,"$16,690",1,Minivan,no,$0,0,No,0,,Highly Urban/ Urban
+2581,,0,48,0,12,,No,"$117,400",Yes,z_F,z_High School,Clerical,35,Private,"$9,070",6,z_SUV,no,$0,0,No,0,7,Highly Urban/ Urban
+2582,,0,46,0,9,"$119,816",No,$0,z_No,M,Masters,Professional,48,Commercial,"$28,260",10,Panel Truck,no,"$3,320",2,No,5,13,Highly Urban/ Urban
+2584,,0,76,0,15,"$46,927",No,$0,z_No,M,Bachelors,Professional,78,Private,"$20,750",4,Minivan,yes,$0,0,No,5,15,z_Highly Rural/ Rural
+2590,,2,45,2,,"$27,266",Yes,$0,z_No,z_F,<High School,Clerical,23,Private,"$10,240",1,z_SUV,no,$0,0,Yes,5,6,Highly Urban/ Urban
+2598,,2,43,2,6,"$15,726",Yes,,z_No,z_F,z_High School,Home Maker,30,Private,"$7,370",10,Sports Car,no,"$3,588",3,No,4,4,Highly Urban/ Urban
+2602,,0,48,0,14,,No,"$308,646",z_No,M,Bachelors,z_Blue Collar,47,Commercial,"$17,690",4,Van,yes,$0,0,No,2,8,Highly Urban/ Urban
+2605,,0,36,3,0,$0,No,$0,Yes,z_F,Bachelors,Student,58,Commercial,"$5,100",1,z_SUV,no,$0,0,No,3,10,Highly Urban/ Urban
+2616,,2,39,3,0,$0,Yes,$0,z_No,z_F,PhD,Home Maker,30,Commercial,"$22,810",1,Pickup,no,$0,0,Yes,0,19,Highly Urban/ Urban
+2618,,1,36,2,8,"$88,236",Yes,$0,z_No,z_F,Bachelors,Professional,20,Private,"$19,050",1,Minivan,no,$0,0,Yes,5,13,Highly Urban/ Urban
+2619,,0,46,0,6,"$41,077",No,"$139,416",Yes,M,Bachelors,Professional,26,Commercial,"$22,610",9,Panel Truck,yes,"$2,161",2,No,3,8,Highly Urban/ Urban
+2624,,0,52,0,12,"$72,632",No,"$240,387",z_No,M,Bachelors,z_Blue Collar,19,Commercial,"$9,800",1,Minivan,yes,"$30,167",3,Yes,0,11,Highly Urban/ Urban
+2632,,0,47,0,,$0,No,$0,Yes,M,z_High School,Student,33,Commercial,"$6,620",1,Pickup,yes,"$4,093",3,No,1,8,Highly Urban/ Urban
+2640,,0,48,0,10,"$33,422",No,"$170,714",z_No,M,Bachelors,Professional,13,Commercial,"$11,550",1,Pickup,no,"$17,831",2,Yes,13,13,z_Highly Rural/ Rural
+2646,,0,59,0,,"$1,249",No,"$116,783",Yes,z_F,Bachelors,Home Maker,28,Private,"$1,500",1,Sports Car,no,$0,0,No,1,1,Highly Urban/ Urban
+2651,,1,37,2,,"$107,961",No,"$333,680",Yes,M,Bachelors,z_Blue Collar,44,Commercial,"$24,850",1,Panel Truck,yes,$0,0,Yes,0,7,Highly Urban/ Urban
+2660,,0,72,0,16,"$56,313",No,"$249,478",Yes,M,Masters,Lawyer,20,Private,"$14,330",6,z_SUV,yes,"$1,391",2,No,7,20,Highly Urban/ Urban
+2661,,0,25,2,0,$0,No,$0,Yes,z_F,z_High School,Student,21,Commercial,"$4,000",3,Sports Car,no,"$9,870",2,No,6,1,z_Highly Rural/ Rural
+2668,,0,48,0,10,"$92,234",No,$0,z_No,M,Bachelors,z_Blue Collar,27,Commercial,"$21,170",10,Van,no,"$20,699",2,Yes,1,8,Highly Urban/ Urban
+2670,,1,54,1,,$0,No,"$76,992",Yes,z_F,Bachelors,Home Maker,13,Private,"$6,900",6,z_SUV,no,$0,0,No,2,10,Highly Urban/ Urban
+2680,,0,43,2,0,$0,No,$0,Yes,M,<High School,Student,70,Private,"$5,800",11,Pickup,yes,$792,2,No,3,1,Highly Urban/ Urban
+2681,,0,40,0,13,"$31,101",No,$0,z_No,M,z_High School,Clerical,28,Commercial,"$4,610",7,Pickup,yes,"$1,852",2,No,1,6,Highly Urban/ Urban
+2689,,0,50,0,10,"$62,880",No,$0,z_No,z_F,PhD,Doctor,41,Private,"$12,790",1,z_SUV,no,"$4,538",4,No,11,11,Highly Urban/ Urban
+2694,,3,39,5,14,"$12,591",No,$0,Yes,M,<High School,Student,41,Private,"$16,570",1,Van,yes,"$7,621",2,No,0,1,Highly Urban/ Urban
+2695,,2,62,3,18,"$30,322",No,"$150,059",Yes,z_F,z_High School,z_Blue Collar,5,Private,"$18,780",4,Sports Car,no,"$23,486",2,Yes,0,1,Highly Urban/ Urban
+2696,,0,38,0,12,"$26,537",No,"$144,593",z_No,M,<High School,Clerical,48,Private,"$5,700",6,Minivan,no,"$8,256",3,No,1,1,Highly Urban/ Urban
+2702,,0,37,0,12,"$11,303",No,$0,z_No,M,<High School,Clerical,40,Private,"$6,330",4,Pickup,no,"$37,871",1,Yes,0,,Highly Urban/ Urban
+2704,,0,33,2,13,"$28,329",Yes,$0,z_No,z_F,z_High School,z_Blue Collar,32,Private,"$8,010",1,Sports Car,no,$0,0,No,0,11,Highly Urban/ Urban
+2708,,0,47,0,13,"$125,753",No,,Yes,M,Masters,Manager,36,Commercial,"$18,780",6,Van,yes,"$4,188",2,No,3,,Highly Urban/ Urban
+2709,,2,38,2,12,"$48,630",Yes,$0,z_No,M,z_High School,z_Blue Collar,25,Commercial,"$10,160",3,Pickup,no,$0,0,No,0,1,Highly Urban/ Urban
+2714,,0,49,0,13,"$28,592",No,"$183,206",Yes,M,<High School,Clerical,31,Private,"$9,260",1,Pickup,no,"$2,102",1,No,3,1,Highly Urban/ Urban
+2716,,0,32,1,0,$0,Yes,$0,z_No,z_F,Bachelors,Student,14,Private,"$4,750",4,z_SUV,no,"$4,074",1,No,9,9,Highly Urban/ Urban
+2723,,0,37,0,11,"$51,103",No,"$200,025",Yes,M,z_High School,z_Blue Collar,15,Commercial,"$17,080",13,Minivan,no,"$3,519",1,No,6,1,Highly Urban/ Urban
+2725,,0,45,3,0,$0,No,"$65,359",Yes,z_F,z_High School,Home Maker,9,Commercial,"$5,700",1,z_SUV,no,$0,0,No,1,1,z_Highly Rural/ Rural
+2738,,0,47,0,13,"$282,198",No,"$649,247",z_No,M,PhD,,32,Commercial,"$34,420",11,Panel Truck,yes,$0,0,Yes,2,16,Highly Urban/ Urban

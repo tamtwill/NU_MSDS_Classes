@@ -1,0 +1,79 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.CfsSubsetEval -P 1 -E 1
+Search:       weka.attributeSelection.BestFirst -D 1 -N 5
+Relation:     moneyball_flags-weka.filters.unsupervised.attribute.Remove-R1-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    1309
+Attributes:   43
+              TEAM_BATTING_H
+              TEAM_BATTING_2B
+              TEAM_BATTING_3B
+              TEAM_BATTING_HR
+              TEAM_BATTING_BB
+              TEAM_BATTING_SO
+              TEAM_BASERUN_SB
+              TEAM_BASERUN_CS
+              TEAM_BATTING_HBP
+              TEAM_PITCHING_H
+              TEAM_PITCHING_HR
+              TEAM_PITCHING_BB
+              TEAM_PITCHING_SO
+              TEAM_FIELDING_E
+              TEAM_FIELDING_DP
+              Flag_TARGET_WINS
+              Flag_TEAM_BATTING_H
+              Flag_TEAM_BATTING_2B
+              Flag_TEAM_BATTING_3B
+              Flag_TEAM_BATTING_HR
+              Flag_TEAM_BATTING_BB
+              Flag_TEAM_BATTING_SO
+              Flag_TEAM_BASERUN_SB
+              Flag_TEAM_BASERUN_CS
+              Flag_TEAM_BATTING_HBP
+              Flag_TEAM_PITCHING_H
+              Flag_TEAM_PITCHING_HR
+              Flag_TEAM_PITCHING_BB
+              Flag_TEAM_PITCHING_SO
+              Flag_TEAM_FIELDING_E
+              Flag_TEAM_FIELDING_DP
+              TEAM_BATTING_1B
+              sqrt_TEAM_BATTING_1B
+              sqrt_TEAM_BATTING_2B
+              sqrt_TEAM_BATTING_H
+              sqrt_TEAM_BATTING_BB
+              sqrt_TEAM_BATTING_HBP
+              sqrt_TEAM_BATTING_3B
+              sqrt_TEAM_BASERUN_SB
+              sqrt_TEAM_BASERUN_CS
+              sqrt_TEAM_PITCHING_HR
+              SB_PCT
+              sqrt_TARGET_WINS
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 501
+	Merit of best subset found:    0.3  
+
+Attribute Subset Evaluator (supervised, Class (numeric): 43 sqrt_TARGET_WINS):
+	CFS Subset Evaluator
+	Including locally predictive attributes
+
+Selected attributes: 7,10,12,22,24,29,35,36,38 : 9
+                     TEAM_BASERUN_SB
+                     TEAM_PITCHING_H
+                     TEAM_PITCHING_BB
+                     Flag_TEAM_BATTING_SO
+                     Flag_TEAM_BASERUN_CS
+                     Flag_TEAM_PITCHING_SO
+                     sqrt_TEAM_BATTING_H
+                     sqrt_TEAM_BATTING_BB
+                     sqrt_TEAM_BATTING_3B
+
