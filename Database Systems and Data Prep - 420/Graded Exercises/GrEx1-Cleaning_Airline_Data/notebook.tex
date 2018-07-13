@@ -1,0 +1,837 @@
+
+% Default to the notebook output style
+
+    
+
+
+% Inherit from the specified cell style.
+
+
+
+
+    
+\documentclass[11pt]{article}
+
+    
+    
+    \usepackage[T1]{fontenc}
+    % Nicer default font than Computer Modern for most use cases
+    \usepackage{palatino}
+
+    % Basic figure setup, for now with no caption control since it's done
+    % automatically by Pandoc (which extracts ![](path) syntax from Markdown).
+    \usepackage{graphicx}
+    % We will generate all images so they have a width \maxwidth. This means
+    % that they will get their normal width if they fit onto the page, but
+    % are scaled down if they would overflow the margins.
+    \makeatletter
+    \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth
+    \else\Gin@nat@width\fi}
+    \makeatother
+    \let\Oldincludegraphics\includegraphics
+    % Set max figure width to be 80% of text width, for now hardcoded.
+    \renewcommand{\includegraphics}[1]{\Oldincludegraphics[width=.8\maxwidth]{#1}}
+    % Ensure that by default, figures have no caption (until we provide a
+    % proper Figure object with a Caption API and a way to capture that
+    % in the conversion process - todo).
+    \usepackage{caption}
+    \DeclareCaptionLabelFormat{nolabel}{}
+    \captionsetup{labelformat=nolabel}
+
+    \usepackage{adjustbox} % Used to constrain images to a maximum size 
+    \usepackage{xcolor} % Allow colors to be defined
+    \usepackage{enumerate} % Needed for markdown enumerations to work
+    \usepackage{geometry} % Used to adjust the document margins
+    \usepackage{amsmath} % Equations
+    \usepackage{amssymb} % Equations
+    \usepackage{textcomp} % defines textquotesingle
+    % Hack from http://tex.stackexchange.com/a/47451/13684:
+    \AtBeginDocument{%
+        \def\PYZsq{\textquotesingle}% Upright quotes in Pygmentized code
+    }
+    \usepackage{upquote} % Upright quotes for verbatim code
+    \usepackage{eurosym} % defines \euro
+    \usepackage[mathletters]{ucs} % Extended unicode (utf-8) support
+    \usepackage[utf8x]{inputenc} % Allow utf-8 characters in the tex document
+    \usepackage{fancyvrb} % verbatim replacement that allows latex
+    \usepackage{grffile} % extends the file name processing of package graphics 
+                         % to support a larger range 
+    % The hyperref package gives us a pdf with properly built
+    % internal navigation ('pdf bookmarks' for the table of contents,
+    % internal cross-reference links, web links for URLs, etc.)
+    \usepackage{hyperref}
+    \usepackage{longtable} % longtable support required by pandoc >1.10
+    \usepackage{booktabs}  % table support for pandoc > 1.12.2
+    \usepackage[normalem]{ulem} % ulem is needed to support strikethroughs (\sout)
+                                % normalem makes italics be italics, not underlines
+    
+
+    
+    
+    % Colors for the hyperref package
+    \definecolor{urlcolor}{rgb}{0,.145,.698}
+    \definecolor{linkcolor}{rgb}{.71,0.21,0.01}
+    \definecolor{citecolor}{rgb}{.12,.54,.11}
+
+    % ANSI colors
+    \definecolor{ansi-black}{HTML}{3E424D}
+    \definecolor{ansi-black-intense}{HTML}{282C36}
+    \definecolor{ansi-red}{HTML}{E75C58}
+    \definecolor{ansi-red-intense}{HTML}{B22B31}
+    \definecolor{ansi-green}{HTML}{00A250}
+    \definecolor{ansi-green-intense}{HTML}{007427}
+    \definecolor{ansi-yellow}{HTML}{DDB62B}
+    \definecolor{ansi-yellow-intense}{HTML}{B27D12}
+    \definecolor{ansi-blue}{HTML}{208FFB}
+    \definecolor{ansi-blue-intense}{HTML}{0065CA}
+    \definecolor{ansi-magenta}{HTML}{D160C4}
+    \definecolor{ansi-magenta-intense}{HTML}{A03196}
+    \definecolor{ansi-cyan}{HTML}{60C6C8}
+    \definecolor{ansi-cyan-intense}{HTML}{258F8F}
+    \definecolor{ansi-white}{HTML}{C5C1B4}
+    \definecolor{ansi-white-intense}{HTML}{A1A6B2}
+
+    % commands and environments needed by pandoc snippets
+    % extracted from the output of `pandoc -s`
+    \providecommand{\tightlist}{%
+      \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+    \DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+    % Add ',fontsize=\small' for more characters per line
+    \newenvironment{Shaded}{}{}
+    \newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{{#1}}}
+    \newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{{#1}}}}
+    \newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{{#1}}}
+    \newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{{#1}}}
+    \newcommand{\RegionMarkerTok}[1]{{#1}}
+    \newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\NormalTok}[1]{{#1}}
+    
+    % Additional commands for more recent versions of Pandoc
+    \newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{{#1}}}
+    \newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{{#1}}}
+    \newcommand{\ImportTok}[1]{{#1}}
+    \newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{{#1}}}}
+    \newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{{#1}}}
+    \newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{{#1}}}
+    \newcommand{\BuiltInTok}[1]{{#1}}
+    \newcommand{\ExtensionTok}[1]{{#1}}
+    \newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{{#1}}}
+    \newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{{#1}}}
+    \newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    
+    
+    % Define a nice break command that doesn't care if a line doesn't already
+    % exist.
+    \def\br{\hspace*{\fill} \\* }
+    % Math Jax compatability definitions
+    \def\gt{>}
+    \def\lt{<}
+    % Document parameters
+    \title{Tamara\_Williams\_GrExercise\_1}
+    
+    
+    
+
+    % Pygments definitions
+    
+\makeatletter
+\def\PY@reset{\let\PY@it=\relax \let\PY@bf=\relax%
+    \let\PY@ul=\relax \let\PY@tc=\relax%
+    \let\PY@bc=\relax \let\PY@ff=\relax}
+\def\PY@tok#1{\csname PY@tok@#1\endcsname}
+\def\PY@toks#1+{\ifx\relax#1\empty\else%
+    \PY@tok{#1}\expandafter\PY@toks\fi}
+\def\PY@do#1{\PY@bc{\PY@tc{\PY@ul{%
+    \PY@it{\PY@bf{\PY@ff{#1}}}}}}}
+\def\PY#1#2{\PY@reset\PY@toks#1+\relax+\PY@do{#2}}
+
+\expandafter\def\csname PY@tok@gd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gu\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.50,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@gt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.27,0.87}{##1}}}
+\expandafter\def\csname PY@tok@gs\endcsname{\let\PY@bf=\textbf}
+\expandafter\def\csname PY@tok@gr\endcsname{\def\PY@tc##1{\textcolor[rgb]{1.00,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@cm\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@vg\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@mh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@cs\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@ge\endcsname{\let\PY@it=\textit}
+\expandafter\def\csname PY@tok@vc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@il\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@go\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.53,0.53}{##1}}}
+\expandafter\def\csname PY@tok@cp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.74,0.48,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gh\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@ni\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.60,0.60,0.60}{##1}}}
+\expandafter\def\csname PY@tok@nl\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@no\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@na\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.49,0.56,0.16}{##1}}}
+\expandafter\def\csname PY@tok@nb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@ne\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.82,0.25,0.23}{##1}}}
+\expandafter\def\csname PY@tok@nf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@si\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@s2\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@nt\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nv\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@s1\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@ch\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@m\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@gp\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@sh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@ow\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@sx\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@bp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@c1\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@o\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@kc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@c\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@mf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@err\endcsname{\def\PY@bc##1{\setlength{\fboxsep}{0pt}\fcolorbox[rgb]{1.00,0.00,0.00}{1,1,1}{\strut ##1}}}
+\expandafter\def\csname PY@tok@mb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@ss\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@sr\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@mo\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@kd\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@mi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@kn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@cpf\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@kr\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@s\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@kp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@w\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.73,0.73}{##1}}}
+\expandafter\def\csname PY@tok@kt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.69,0.00,0.25}{##1}}}
+\expandafter\def\csname PY@tok@sc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@k\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@se\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sd\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+
+\def\PYZbs{\char`\\}
+\def\PYZus{\char`\_}
+\def\PYZob{\char`\{}
+\def\PYZcb{\char`\}}
+\def\PYZca{\char`\^}
+\def\PYZam{\char`\&}
+\def\PYZlt{\char`\<}
+\def\PYZgt{\char`\>}
+\def\PYZsh{\char`\#}
+\def\PYZpc{\char`\%}
+\def\PYZdl{\char`\$}
+\def\PYZhy{\char`\-}
+\def\PYZsq{\char`\'}
+\def\PYZdq{\char`\"}
+\def\PYZti{\char`\~}
+% for compatibility with earlier versions
+\def\PYZat{@}
+\def\PYZlb{[}
+\def\PYZrb{]}
+\makeatother
+
+
+    % Exact colors from NB
+    \definecolor{incolor}{rgb}{0.0, 0.0, 0.5}
+    \definecolor{outcolor}{rgb}{0.545, 0.0, 0.0}
+
+
+
+    
+    % Prevent overflowing lines due to hard-to-break entities
+    \sloppy 
+    % Setup hyperref package
+    \hypersetup{
+      breaklinks=true,  % so long urls are correctly broken across lines
+      colorlinks=true,
+      urlcolor=urlcolor,
+      linkcolor=linkcolor,
+      citecolor=citecolor,
+      }
+    % Slightly bigger margins than the latex defaults
+    
+    \geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in}
+    
+    
+
+    \begin{document}
+    
+    
+    \maketitle
+    
+    
+
+    
+    \section{The Task at Hand: Getting Airline Data In
+Order}\label{the-task-at-hand-getting-airline-data-in-order}
+
+    \begin{enumerate}
+\def\labelenumi{(\Roman{enumi})}
+\setcounter{enumi}{199}
+\tightlist
+\item
+  Creative Commons BY-SA Lynd Bacon \& Associates, Ltd. DBA Loma Buena
+  Associates
+\end{enumerate}
+
+    \subsection{Your Data}\label{your-data}
+
+    The data you'll use for this assignment are from
+\href{http://www.openflights.org}{OpenFlights.org}.
+
+    You are provided with three data files, one for airports, one for
+routes, and one for airlines. The data are for up to January 2012.
+You'll be using this data for a couple of upcoming tasks, so be sure to
+keep track of them and to save your work with them.
+
+    The data in the file \textbf{airports.dat} look like this. Here are the
+first four (4) records in this file:
+
+1,``Goroka'',``Goroka'',``Papua New
+Guinea'',``GKA'',``AYGA'',-6.081689,145.391881,5282,10,``U'',``Pacific/Port\_Moresby''
+2,``Madang'',``Madang'',``Papua New
+Guinea'',``MAG'',``AYMD'',-5.207083,145.7887,20,10,``U'',``Pacific/Port\_Moresby''
+3,``Mount Hagen'',``Mount Hagen'',``Papua New
+Guinea'',``HGU'',``AYMH'',-5.826789,144.295861,5388,10,``U'',``Pacific/Port\_Moresby''
+4,``Nadzab'',``Nadzab'',``Papua New
+Guinea'',``LAE'',``AYNZ'',-6.569828,146.726242,239,10,``U'',``Pacific/Port\_Moresby''
+
+    What you have here is a character (comma in this case) separated value
+file.
+
+Here are the fields in this file, according to OpenFlights.org:
+
+\begin{itemize}
+\tightlist
+\item
+  Airport ID : Unique OpenFlights identifier for this airport.
+\item
+  Name : Name of airport. May or may not contain the City name.
+\item
+  City : Main city served by airport. May be spelled differently from
+  Name.
+\item
+  Country : Country or territory where airport is located.
+\item
+  IATA/FAA : 3-letter FAA code, for airports located in Country ``United
+  States of America''. 3-letter IATA code, for all other airports. Blank
+  if not assigned.
+\item
+  ICAO : 4-letter ICAO code. Blank if not assigned.
+\item
+  Latitude : Decimal degrees, usually to six significant digits.
+  Negative is South, positive is North.
+\item
+  Longitude : Decimal degrees, usually to six significant digits.
+  Negative is West, positive is East.
+\item
+  Altitude : In feet.
+\item
+  Timezone : Hours offset from UTC. Fractional hours are expressed as
+  decimals, eg. India is 5.5.
+\item
+  DST : Daylight savings time. One of E (Europe), A (US/Canada), S
+  (South America), O (Australia), Z (New Zealand), N (None) or U
+  (Unknown).
+\item
+  Tz : database time zoneTimezone in ``tz'' (Olson) format, eg.
+  ``America/Los\_Angeles''.
+\end{itemize}
+
+    OpenFlights says:
+
+The data is ISO 8859-1 (Latin-1) encoded, with no special characters.
+
+Note: Rules for daylight savings time change from year to year and from
+country to country. The current data is an approximation for 2009, built
+on a country level. Most airports in DST-less regions in countries that
+generally observe DST (eg. AL, HI in the USA, NT, QL in Australia, parts
+of Canada) are marked incorrectly."
+
+    The other two files, \textbf{routes.dat} and \textbf{airlines.dat}, are
+similar to \textbf{airports.dat}. The fields in \textbf{airlines.dat}
+are:
+
+\begin{itemize}
+\tightlist
+\item
+  Airline ID : Unique OpenFlights identifier for this airline.
+\item
+  Name : Name of the airline.
+\item
+  Alias : Alias of the airline. For example, All Nippon Airways is
+  commonly known as ``ANA''.
+\item
+  IATA : 2-letter IATA code, if available.
+\item
+  ICAO : 3-letter ICAO code, if available.
+\item
+  Callsign : Airline callsign.
+\item
+  Country : Country or territory where airline is incorporated.
+\item
+  Active : ``Y'' if the airline is or has until recently been
+  operational, ``N'' if it is defunct. This field is not reliable: in
+  particular, major airlines that stopped flying long ago, but have not
+  had their IATA code reassigned (eg. Ansett/AN), will incorrectly show
+  as ``Y''.
+\end{itemize}
+
+    Additional information about the \textbf{airlines.dat} data from
+OpenFlights:
+
+The data is ISO 8859-1 (Latin-1) encoded. The special value \N is used
+for ``NULL'' to indicate that no value is available, and is understood
+automatically by MySQL if imported. Notes: Airlines with null
+codes/callsigns/countries generally represent user-added airlines. Since
+the data is intended primarily for current flights, defunct IATA codes
+are generally not included. For example, ``Sabena'' is not listed with a
+SN IATA code, since ``SN'' is presently used by its successor Brussels
+Airlines.
+
+    \textbf{routes.dat} has the following data fields:
+
+\begin{itemize}
+\tightlist
+\item
+  Airline : 2-letter (IATA) or 3-letter (ICAO) code of the airline.
+\item
+  Airline ID : Unique OpenFlights identifier for airline (see Airline).
+\item
+  Source airport : 3-letter (IATA) or 4-letter (ICAO) code of the source
+  airport.
+\item
+  Source airport ID : Unique OpenFlights identifier for source airport
+  (see Airport)
+\item
+  Destination airport : 3-letter (IATA) or 4-letter (ICAO) code of the
+  destination airport.
+\item
+  Destination airport ID : Unique OpenFlights identifier for destination
+  airport (see Airport)
+\item
+  Codeshare : ``Y'' if this flight is a codeshare (that is, not operated
+  by Airline, but another carrier), empty otherwise.
+\item
+  Stops : Number of stops on this flight (``0'' for direct)
+\item
+  Equipment : 3-letter codes for plane type(s) generally used on this
+  flight, separated by spaces
+\end{itemize}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor} }]:} \PY{n}{Here}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{s some additional information about **routes.dat**:}
+        
+        \PY{n}{The} \PY{n}{data} \PY{o+ow}{is} \PY{n}{ISO} \PY{l+m+mi}{8859}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1} \PY{p}{(}\PY{n}{Latin}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{)} \PY{n}{encoded}\PY{o}{.} \PY{n}{The} \PY{n}{special} \PY{n}{value} \PYZbs{}\PY{n}{N} \PY{o+ow}{is} \PY{n}{used} \PY{k}{for} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{NULL}\PY{l+s+s2}{\PYZdq{}} \PY{n}{to} \PY{n}{indicate} \PY{n}{that} \PY{n}{no} \PY{n}{value} \PY{o+ow}{is} \PY{n}{available}\PY{p}{,} \PY{o+ow}{and} \PY{o+ow}{is} \PY{n}{understood} \PY{n}{automatically} \PY{n}{by} \PY{n}{MySQL} \PY{k}{if} \PY{n}{imported}\PY{o}{.}  \PY{p}{(}\PY{n}{Note}\PY{p}{:} \PY{n}{the} \PYZbs{}\PY{n}{N} \PY{o+ow}{is} \PY{n}{how} \PY{n}{missings} \PY{n}{were} \PY{n}{coded}\PY{o}{.} \PY{n}{It}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{s not be taken as the \PYZus{}newline\PYZus{} character.)}
+        
+        \PY{n}{Notes}\PY{p}{:} 
+        \PY{o}{*} \PY{n}{Routes} \PY{n}{are} \PY{n}{directional}\PY{p}{:} \PY{k}{if} \PY{n}{an} \PY{n}{airline} \PY{n}{operates} \PY{n}{services} \PY{k+kn}{from} \PY{n+nn}{A} \PY{n+nn}{to} \PY{n+nn}{B} \PY{n+nn}{and} \PY{n+nn}{from} \PY{n+nn}{B} \PY{n+nn}{to} \PY{n+nn}{A}\PY{p}{,} \PY{n}{both} \PY{n}{A}\PY{o}{\PYZhy{}}\PY{n}{B} \PY{o+ow}{and} \PY{n}{B}\PY{o}{\PYZhy{}}\PY{n}{A} \PY{n}{are} \PY{n}{listed} \PY{n}{separately}\PY{o}{.} 
+        \PY{o}{*} \PY{n}{Routes} \PY{n}{where} \PY{n}{one} \PY{n}{carrier} \PY{n}{operates} \PY{n}{both} \PY{n}{its} \PY{n}{own} \PY{o+ow}{and} \PY{n}{codeshare} \PY{n}{flights} \PY{n}{are} \PY{n}{listed} \PY{n}{only} \PY{n}{once}\PY{o}{.} 
+\end{Verbatim}
+
+    \subsection{What You Need to Do}\label{what-you-need-to-do}
+
+    
+
+    Here's what you need to do for this exercise. You'll use Python do to
+it. You can use the Enthought Canopy distribution, or some other version
+of Python, like the Continuum Anaconda scientific Python distribution.
+For each of the following, provide syntactically correct and commented
+code, followed by the results that your code produced for what is
+requested. Your commenting should explain what your code does. Use
+Python conventions for including your comments with your code.
+
+Here's a style guide for Python code that you might find useful:
+
+\href{https://www.python.org/dev/peps/pep-0008/}{PEP 8 Style Guide for
+Python Code}
+
+Submit your assignment in a pdf file of three or four pages, \emph{but
+in no more than six (6) pages}.
+
+    \paragraph{1. Read each data file into a Pandas DataFrame. Add
+meaningful names (i.e., names that would make sense to other people,
+given the data) to the columns of each
+DataFrame.}\label{read-each-data-file-into-a-pandas-dataframe.-add-meaningful-names-i.e.-names-that-would-make-sense-to-other-people-given-the-data-to-the-columns-of-each-dataframe.}
+
+\begin{itemize}
+\tightlist
+\item
+  Provide your syntactically correct, commented code.
+\item
+  Print the first three rows of each DataFrame. Provide your code, and
+  the results it produced.
+\end{itemize}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}1}]:} \PY{c+ch}{\PYZsh{}!/usr/bin/env python2}
+        \PY{c+c1}{\PYZsh{} \PYZhy{}*\PYZhy{} coding: utf\PYZhy{}8 \PYZhy{}*\PYZhy{}}
+        
+        \PY{c+c1}{\PYZsh{}\PYZsh{} Graded Exercise 1}
+        \PY{c+c1}{\PYZsh{}\PYZsh{} Tamara Williams}
+        \PY{c+c1}{\PYZsh{}\PYZsh{} Created on Fri Mar 31 12:14:22 2017}
+        
+        \PY{k+kn}{import} \PY{n+nn}{pandas} \PY{k+kn}{as} \PY{n+nn}{pd}
+        \PY{k+kn}{import} \PY{n+nn}{re}
+        \PY{k+kn}{import} \PY{n+nn}{pickle}
+        
+        \PY{c+c1}{\PYZsh{}\PYZsh{} For each of the given data files (airlines, airports, routes and}
+        \PY{c+c1}{\PYZsh{}\PYZsh{} airport\PYZus{}codes), read into a dataframe.  }
+        \PY{c+c1}{\PYZsh{}\PYZsh{} Using an empty string to fill missing data.  }
+        \PY{c+c1}{\PYZsh{}\PYZsh{} No path variable or relatives paths are used \PYZhy{} assumes data is in local path}
+        
+        \PY{n}{dfAirlines} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{read\PYZus{}csv}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{airlines.dat}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{sep} \PY{o}{=} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{,}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{na\PYZus{}values} \PY{o}{=} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZbs{}}\PY{l+s+s1}{N}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{names} \PY{o}{=} \PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{AirlineID}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,}
+                            \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Name}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Alias}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{IATA}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{ICAO}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{CallSign}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,}
+                            \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Country}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Active}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{)}
+        \PY{n}{dfAirlines} \PY{o}{=} \PY{n}{dfAirlines}\PY{o}{.}\PY{n}{fillna}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+        \PY{k}{print} \PY{n}{dfAirlines}\PY{o}{.}\PY{n}{head}\PY{p}{(}\PY{l+m+mi}{3}\PY{p}{)}\PY{p}{,}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s2}{\PYZdq{}}
+        
+        \PY{n}{dfAirports} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{read\PYZus{}csv}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{airports.dat}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{sep} \PY{o}{=} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{,}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{na\PYZus{}values} \PY{o}{=} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZbs{}}\PY{l+s+s1}{N}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{names} \PY{o}{=} \PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{AirportID}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} 
+                        \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Name}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{City}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Country}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{AirportCode}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{ICAO}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Lat}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} 
+                        \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Long}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Alt}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{TimeZone}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{DST}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Olson\PYZus{}TZ}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{)}
+        \PY{n}{dfAirports} \PY{o}{=} \PY{n}{dfAirports}\PY{o}{.}\PY{n}{fillna}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+        \PY{k}{print} \PY{n}{dfAirports}\PY{o}{.}\PY{n}{head}\PY{p}{(}\PY{l+m+mi}{3}\PY{p}{)}\PY{p}{,}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s2}{\PYZdq{}}
+        
+        \PY{n}{dfRoutes} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{read\PYZus{}csv}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{routes.dat}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{sep} \PY{o}{=} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{,}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{na\PYZus{}values} \PY{o}{=} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZbs{}}\PY{l+s+s1}{N}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{names} \PY{o}{=} \PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Airline}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{AirlineID}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,}
+                \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Src}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{SrcID}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Dest}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{DestID}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Codeshare}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Stops}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Equip}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{)}
+        \PY{n}{dfRoutes} \PY{o}{=} \PY{n}{dfRoutes}\PY{o}{.}\PY{n}{fillna}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+        \PY{k}{print} \PY{n}{dfRoutes}\PY{o}{.}\PY{n}{head}\PY{p}{(}\PY{l+m+mi}{3}\PY{p}{)}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s2}{\PYZdq{}}
+        
+        \PY{n}{dfAirportCodes} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{read\PYZus{}csv}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{airports\PYZus{}codes.txt}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{sep} \PY{o}{=} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+se}{\PYZbs{}t}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{na\PYZus{}values} \PY{o}{=} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZbs{}}\PY{l+s+s1}{N}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+        \PY{n}{dfAirportCodes}\PY{o}{.}\PY{n}{columns} \PY{o}{=} \PY{p}{[}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{AirportCode}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{City\PYZus{}Country}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{WorldAreaCode}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]}
+        \PY{n}{dfAirportCodes}\PY{o}{.}\PY{n}{fillna}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+        \PY{k}{print} \PY{n}{dfAirportCodes}\PY{o}{.}\PY{n}{head}\PY{p}{(}\PY{l+m+mi}{3}\PY{p}{)}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s2}{\PYZdq{}}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+   AirlineID            Name Alias IATA ICAO CallSign        Country Active
+0          1  Private flight          -                                   Y
+1          2     135 Airways             GNL  GENERAL  United States      N
+2          3   1Time Airline         1T  RNX  NEXTIME   South Africa      Y 
+
+   AirportID         Name         City           Country AirportCode  ICAO  \textbackslash{}
+0          1       Goroka       Goroka  Papua New Guinea         GKA  AYGA   
+1          2       Madang       Madang  Papua New Guinea         MAG  AYMD   
+2          3  Mount Hagen  Mount Hagen  Papua New Guinea         HGU  AYMH   
+
+        Lat        Long   Alt  TimeZone DST              Olson\_TZ  
+0 -6.081689  145.391881  5282      10.0   U  Pacific/Port\_Moresby  
+1 -5.207083  145.788700    20      10.0   U  Pacific/Port\_Moresby  
+2 -5.826789  144.295861  5388      10.0   U  Pacific/Port\_Moresby   
+
+  Airline AirlineID  Src SrcID Dest DestID Codeshare  Stops Equip
+0      2B       410  AER  2965  KZN   2990                0   CR2
+1      2B       410  ASF  2966  KZN   2990                0   CR2
+2      2B       410  ASF  2966  MRV   2962                0   CR2 
+
+  AirportCode                         City\_Country  WorldAreaCode
+0         AAC  AL ARISH, ARAB REP. OF EGYPT                   591
+1         AAE  ANNABA, ALGERIA                                500
+2         AAF  APALACHICOLA, FLORIDA, USA                      33 
+
+
+    \end{Verbatim}
+
+    \paragraph{2. Check each DataFrame for duplicate records. For each,
+report the number of duplicates you
+found.}\label{check-each-dataframe-for-duplicate-records.-for-each-report-the-number-of-duplicates-you-found.}
+
+\begin{itemize}
+\tightlist
+\item
+  Provide your commented, syntactically correct code and the results it
+  produced.
+\end{itemize}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}2}]:} \PY{c+c1}{\PYZsh{}\PYZsh{} For each dataframe above, create a new dataframe with the duplicates}
+        \PY{c+c1}{\PYZsh{}\PYZsh{} removed.  Specify the columns to compare on, making sure the }
+        \PY{c+c1}{\PYZsh{}\PYZsh{} ID column is not included.  Compare the before and after dataframe}
+        \PY{c+c1}{\PYZsh{}\PYZsh{} lengths to determine the number of dropped rows.}
+        
+        \PY{n}{before} \PY{o}{=} \PY{n+nb}{len}\PY{p}{(}\PY{n}{dfAirlines}\PY{p}{)}
+        \PY{n}{noDupsAL} \PY{o}{=} \PY{n}{dfAirlines}\PY{o}{.}\PY{n}{drop\PYZus{}duplicates}\PY{p}{(}\PY{p}{[}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Name}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Alias}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{IATA}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{ICAO}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{CallSign}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Country}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Active}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]}\PY{p}{)}
+        \PY{n}{after} \PY{o}{=} \PY{n+nb}{len}\PY{p}{(}\PY{n}{noDupsAL}\PY{p}{)}
+        \PY{n}{numDups} \PY{o}{=} \PY{n}{before} \PY{o}{\PYZhy{}} \PY{n}{after}
+        \PY{k}{print} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Number of duplicate Airline records =}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{numDups}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s2}{\PYZdq{}}
+        
+        \PY{n}{before} \PY{o}{=} \PY{n+nb}{len}\PY{p}{(}\PY{n}{dfAirports}\PY{p}{)}
+        \PY{n}{noDupsAP} \PY{o}{=} \PY{n}{dfAirports}\PY{o}{.}\PY{n}{drop\PYZus{}duplicates}\PY{p}{(}\PY{p}{[}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Name}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{City}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Country}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{AirportCode}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{ICAO}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Lat}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Long}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Alt}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,}
+                                               \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{TimeZone}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{DST}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Olson\PYZus{}TZ}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]}\PY{p}{)}
+        \PY{n}{after} \PY{o}{=} \PY{n+nb}{len}\PY{p}{(}\PY{n}{noDupsAP}\PY{p}{)}
+        \PY{n}{numDups} \PY{o}{=} \PY{n}{before} \PY{o}{\PYZhy{}} \PY{n}{after}
+        \PY{k}{print} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Number of duplicate Airport records =}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{numDups}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s2}{\PYZdq{}}
+        
+        \PY{n}{before} \PY{o}{=} \PY{n+nb}{len}\PY{p}{(}\PY{n}{dfRoutes}\PY{p}{)}
+        \PY{n}{noDupsRoute} \PY{o}{=} \PY{n}{dfRoutes}\PY{o}{.}\PY{n}{drop\PYZus{}duplicates}\PY{p}{(}\PY{p}{[}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Airline}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{AirlineID}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Src}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{SrcID}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Dest}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{DestID}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Codeshare}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,}
+                                                \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Stops}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Equip}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]}\PY{p}{)}
+        \PY{n}{after} \PY{o}{=} \PY{n+nb}{len}\PY{p}{(}\PY{n}{noDupsRoute}\PY{p}{)}
+        \PY{n}{numDups} \PY{o}{=} \PY{n}{before} \PY{o}{\PYZhy{}} \PY{n}{after}
+        \PY{k}{print} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Number of duplicated Route records =}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{numDups}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s2}{\PYZdq{}}
+        
+        \PY{n}{before} \PY{o}{=} \PY{n+nb}{len}\PY{p}{(}\PY{n}{dfAirportCodes}\PY{p}{)}
+        \PY{n}{noDupsCodes} \PY{o}{=} \PY{n}{dfAirportCodes}\PY{o}{.}\PY{n}{drop\PYZus{}duplicates}\PY{p}{(}\PY{p}{[}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{AirportCode}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{City\PYZus{}Country}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{WorldAreaCode}\PY{l+s+s2}{\PYZdq{}}\PY{p}{]}\PY{p}{)}
+        \PY{n}{after} \PY{o}{=} \PY{n+nb}{len}\PY{p}{(}\PY{n}{noDupsCodes}\PY{p}{)}
+        \PY{n}{numDups} \PY{o}{=} \PY{n}{before} \PY{o}{\PYZhy{}} \PY{n}{after}
+        \PY{k}{print} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Number of duplicate Airport Code records =}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{numDups}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s2}{\PYZdq{}}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+Number of duplicate Airline records = 1 
+
+Number of duplicate Airport records = 29 
+
+Number of duplicated Route records = 0 
+
+Number of duplicate Airport Code records = 0 
+
+
+    \end{Verbatim}
+
+    \paragraph{3. Describe the data types of the columns in each of the
+DataFrames.}\label{describe-the-data-types-of-the-columns-in-each-of-the-dataframes.}
+
+\begin{itemize}
+\tightlist
+\item
+  Provide your commented, syntactically correct code and the results it
+  produced.
+\end{itemize}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}3}]:} \PY{c+c1}{\PYZsh{}\PYZsh{} getting the data types for dataframe member via the df.dtypes command}
+        \PY{c+c1}{\PYZsh{}\PYZsh{} and printing the results}
+        \PY{n}{airlinesTypes} \PY{o}{=} \PY{n}{dfAirlines}\PY{o}{.}\PY{n}{dtypes}
+        \PY{n}{airportsTypes} \PY{o}{=} \PY{n}{dfAirports}\PY{o}{.}\PY{n}{dtypes}
+        \PY{n}{routesTypes} \PY{o}{=} \PY{n}{dfRoutes}\PY{o}{.}\PY{n}{dtypes}
+        \PY{n}{codesTypes} \PY{o}{=} \PY{n}{dfAirportCodes}\PY{o}{.}\PY{n}{dtypes}
+        \PY{k}{print} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Airlines dataframe}\PY{l+s+s2}{\PYZdq{}}
+        \PY{k}{print} \PY{n}{airlinesTypes}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s2}{\PYZdq{}}
+        \PY{k}{print} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Airports dataframe}\PY{l+s+s2}{\PYZdq{}}
+        \PY{k}{print} \PY{n}{airportsTypes}\PY{p}{,}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s2}{\PYZdq{}}
+        \PY{k}{print} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Routes dataframe}\PY{l+s+s2}{\PYZdq{}}
+        \PY{k}{print} \PY{n}{routesTypes}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s2}{\PYZdq{}}
+        \PY{k}{print} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Airport Codes dataframe}\PY{l+s+s2}{\PYZdq{}}
+        \PY{k}{print} \PY{n}{codesTypes}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s1}{\PYZsq{}}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+Airlines dataframe
+AirlineID     int64
+Name         object
+Alias        object
+IATA         object
+ICAO         object
+CallSign     object
+Country      object
+Active       object
+dtype: object 
+
+Airports dataframe
+AirportID        int64
+Name            object
+City            object
+Country         object
+AirportCode     object
+ICAO            object
+Lat            float64
+Long           float64
+Alt              int64
+TimeZone       float64
+DST             object
+Olson\_TZ        object
+dtype: object 
+
+Routes dataframe
+Airline      object
+AirlineID    object
+Src          object
+SrcID        object
+Dest         object
+DestID       object
+Codeshare    object
+Stops         int64
+Equip        object
+dtype: object 
+
+Airport Codes dataframe
+AirportCode      object
+City\_Country     object
+WorldAreaCode     int64
+dtype: object 
+
+
+    \end{Verbatim}
+
+    \paragraph{\texorpdfstring{4. Determine how many of the airlines are
+``defunct.''}{4. Determine how many of the airlines are defunct.}}\label{determine-how-many-of-the-airlines-are-defunct.}
+
+\begin{itemize}
+\tightlist
+\item
+  Provide your definition of what a defunct airline is.
+\item
+  Provide your commented, syntactically correct code and the results it
+  produced.
+\end{itemize}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}4}]:} \PY{c+c1}{\PYZsh{}\PYZsh{} my definition of a defunct airline is one which has no routes}
+        \PY{c+c1}{\PYZsh{}\PYZsh{} get the list of all airline IDs in the airlines.dat file, and compare to the}
+        \PY{c+c1}{\PYZsh{}\PYZsh{} airline column in the routes.dat file.  Any airline not in routes.dat is}
+        \PY{c+c1}{\PYZsh{}\PYZsh{} considered as defunct.  There are some bogus values in the Route Airline column}
+        \PY{c+c1}{\PYZsh{}\PYZsh{} so, handle the NANs and use regular expressions to pattern match for a good Airline}
+        \PY{c+c1}{\PYZsh{}\PYZsh{} code, count the elements in the noRoutes set to get the number of defunct airlines}
+        
+        \PY{n}{allAirlines} \PY{o}{=} \PY{n}{dfAirlines}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{IATA}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{.}\PY{n}{unique}\PY{p}{(}\PY{p}{)}
+        \PY{n}{hasRoute} \PY{o}{=} \PY{n}{dfRoutes}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Airline}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{.}\PY{n}{unique}\PY{p}{(}\PY{p}{)}
+        \PY{n}{noRoutes} \PY{o}{=} \PY{n+nb}{list}\PY{p}{(}\PY{n+nb}{set}\PY{p}{(}\PY{n}{allAirlines}\PY{p}{)}\PY{o}{\PYZhy{}} \PY{n+nb}{set}\PY{p}{(}\PY{n}{hasRoute}\PY{p}{)}\PY{p}{)}
+        \PY{n}{defunct} \PY{o}{=} \PY{l+m+mi}{0}
+        \PY{k}{for} \PY{n}{r} \PY{o+ow}{in} \PY{n}{noRoutes}\PY{p}{:}
+            \PY{n}{goodID} \PY{o}{=} \PY{n}{re}\PY{o}{.}\PY{n}{search}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZbs{}}\PY{l+s+s1}{w}\PY{l+s+s1}{\PYZbs{}}\PY{l+s+s1}{w}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{r}\PY{p}{)}
+            \PY{k}{if} \PY{n}{goodID}\PY{p}{:}
+                \PY{n}{defunct} \PY{o}{+}\PY{o}{=} \PY{l+m+mi}{1}
+        \PY{k}{print} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{There are}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{defunct}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{defunct airlines }\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s2}{\PYZdq{}}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+There are 539 defunct airlines 
+
+
+    \end{Verbatim}
+
+    \paragraph{\texorpdfstring{5. Determine how many ``routes from nowhere''
+there are in the data. These are flights that don't originate from an
+airport.}{5. Determine how many routes from nowhere there are in the data. These are flights that don't originate from an airport.}}\label{determine-how-many-routes-from-nowhere-there-are-in-the-data.-these-are-flights-that-dont-originate-from-an-airport.}
+
+\begin{itemize}
+\tightlist
+\item
+  Provide your commented, syntactically correct code and the results it
+  produced.
+\end{itemize}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}5}]:} \PY{c+c1}{\PYZsh{}\PYZsh{} get the list of source airports in the route dataframe, and compare to the }
+        \PY{c+c1}{\PYZsh{}\PYZsh{} list of airpot codes from the airport\PYZus{}codes txt file.  Any source airport}
+        \PY{c+c1}{\PYZsh{}\PYZsh{} not in the code list will be counted as a phantom flight.}
+        \PY{n}{codeList} \PY{o}{=} \PY{n+nb}{list}\PY{p}{(}\PY{n}{dfAirportCodes}\PY{o}{.}\PY{n}{AirportCode}\PY{p}{)}
+        \PY{n}{srcList} \PY{o}{=} \PY{n+nb}{list}\PY{p}{(}\PY{n}{dfRoutes}\PY{o}{.}\PY{n}{Src}\PY{p}{)}
+        
+        \PY{n}{phantomCount} \PY{o}{=} \PY{l+m+mi}{0}
+        \PY{k}{for} \PY{n}{i} \PY{o+ow}{in} \PY{n}{srcList}\PY{p}{:}
+            \PY{k}{if} \PY{n}{i} \PY{o+ow}{not} \PY{o+ow}{in} \PY{n}{codeList}\PY{p}{:}
+        \PY{c+c1}{\PYZsh{}        print \PYZdq{}missing\PYZdq{}, i}
+                \PY{n}{phantomCount} \PY{o}{+}\PY{o}{=}\PY{l+m+mi}{1}
+        \PY{k}{print} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{There are}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{phantomCount}\PY{p}{,}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{flights without a valid starting airport}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s1}{\PYZsq{}}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+There are 2253 flights without a valid starting airport 
+
+
+    \end{Verbatim}
+
+    \paragraph{6. Save your DataFrames for future use. You may pickle them,
+put them in a shelve db, on in a the tables of a SQL db. Check to make
+sure that they are saved
+correctly.}\label{save-your-dataframes-for-future-use.-you-may-pickle-them-put-them-in-a-shelve-db-on-in-a-the-tables-of-a-sql-db.-check-to-make-sure-that-they-are-saved-correctly.}
+
+\begin{itemize}
+\tightlist
+\item
+  Provide your commented, syntactically correct code and the results it
+  produced.
+\end{itemize}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}6}]:} \PY{c+c1}{\PYZsh{}\PYZsh{} pickle each of the 4 dataframes used above}
+        \PY{c+c1}{\PYZsh{}\PYZsh{} stored in local working directory, then check for correctness}
+        \PY{c+c1}{\PYZsh{}\PYZsh{} by reading the pickled file back in.  Should be the same as the}
+        \PY{c+c1}{\PYZsh{}\PYZsh{} output for question 1}
+        \PY{k}{print} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}Pickle test \PYZhy{} round trip each dataframe\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s1}{\PYZsq{}}
+        \PY{n}{dfAirlines}\PY{o}{.}\PY{n}{to\PYZus{}pickle}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Airlines.pkl}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+        \PY{n}{testPickle} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{read\PYZus{}pickle}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Airlines.pkl}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+        \PY{k}{print} \PY{n}{testPickle}\PY{o}{.}\PY{n}{head}\PY{p}{(}\PY{l+m+mi}{3}\PY{p}{)}\PY{p}{,}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s2}{\PYZdq{}}
+        \PY{n}{dfAirports}\PY{o}{.}\PY{n}{to\PYZus{}pickle}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Airports.pkl}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+        \PY{n}{testPickle} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{read\PYZus{}pickle}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Airports.pkl}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+        \PY{k}{print} \PY{n}{testPickle}\PY{o}{.}\PY{n}{head}\PY{p}{(}\PY{l+m+mi}{3}\PY{p}{)}\PY{p}{,}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s2}{\PYZdq{}}
+        \PY{n}{dfRoutes}\PY{o}{.}\PY{n}{to\PYZus{}pickle}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Routes.pkl}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+        \PY{n}{testPickle} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{read\PYZus{}pickle}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Routes.pkl}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+        \PY{k}{print} \PY{n}{testPickle}\PY{o}{.}\PY{n}{head}\PY{p}{(}\PY{l+m+mi}{3}\PY{p}{)}\PY{p}{,}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s2}{\PYZdq{}}
+        \PY{n}{dfAirportCodes}\PY{o}{.}\PY{n}{to\PYZus{}pickle}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{AirportCodes.pkl}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+        \PY{n}{testPickle} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{read\PYZus{}pickle}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{AirportCodes.pkl}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+        \PY{k}{print} \PY{n}{testPickle}\PY{o}{.}\PY{n}{head}\PY{p}{(}\PY{l+m+mi}{3}\PY{p}{)}\PY{p}{,}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s2}{\PYZdq{}}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+----------Pickle test - round trip each dataframe----------- 
+
+   AirlineID            Name Alias IATA ICAO CallSign        Country Active
+0          1  Private flight          -                                   Y
+1          2     135 Airways             GNL  GENERAL  United States      N
+2          3   1Time Airline         1T  RNX  NEXTIME   South Africa      Y 
+
+   AirportID         Name         City           Country AirportCode  ICAO  \textbackslash{}
+0          1       Goroka       Goroka  Papua New Guinea         GKA  AYGA   
+1          2       Madang       Madang  Papua New Guinea         MAG  AYMD   
+2          3  Mount Hagen  Mount Hagen  Papua New Guinea         HGU  AYMH   
+
+        Lat        Long   Alt  TimeZone DST              Olson\_TZ  
+0 -6.081689  145.391881  5282      10.0   U  Pacific/Port\_Moresby  
+1 -5.207083  145.788700    20      10.0   U  Pacific/Port\_Moresby  
+2 -5.826789  144.295861  5388      10.0   U  Pacific/Port\_Moresby   
+
+  Airline AirlineID  Src SrcID Dest DestID Codeshare  Stops Equip
+0      2B       410  AER  2965  KZN   2990                0   CR2
+1      2B       410  ASF  2966  KZN   2990                0   CR2
+2      2B       410  ASF  2966  MRV   2962                0   CR2 
+
+  AirportCode                         City\_Country  WorldAreaCode
+0         AAC  AL ARISH, ARAB REP. OF EGYPT                   591
+1         AAE  ANNABA, ALGERIA                                500
+2         AAF  APALACHICOLA, FLORIDA, USA                      33 
+
+
+    \end{Verbatim}
+
+    
+
+    \subsection{Tips and Hints}\label{tips-and-hints}
+
+    Before you can use pandas you may need may to install it, if you haven't
+already done so. You should be able to find it in Canopy and in
+Anaconda.
+
+You might find the documentation at (http://pandas.pydata.org) useful in
+addition to what has already been made available.
+
+Pickling is a basic and venerable Python ``serializing'' method.
+Pickling and unpickling are methods of converting Python objects in RAM
+to and from character streams so that they can persist. Pickle files can
+be text files or binary files. Here's a nice piece about pickling:
+
+(http://python.about.com/od/pythonstandardlibrary/a/pickle\_intro.htm)
+
+You can find a notebook about the \textbf{shelve} package on Canvas. It
+should be in the \emph{Resources} section of the course home page.
+
+
+    % Add a bibliography block to the postdoc
+    
+    
+    
+    \end{document}
