@@ -2,7 +2,7 @@
 
 In this class, the instructor required all work to be done using Python notebooks.  There were 4 projects in the class.  Each focued on a separate aspect of the material
 
-###Graded Exercise 1: 
+</h2>Graded Exercise 1: </h2>
 1. Read each data file into a Pandas DataFrame. Add meaningful names (i.e., names that would make sense to other people, given the data) to the columns of each DataFrame.
 Provide your syntactically correct, commented code.
 Print the first three rows of each DataFrame. Provide your code, and the results it produced.
@@ -18,10 +18,10 @@ Provide your commented, syntactically correct code and the results it produced.
 6. Save your DataFrames for future use. You may pickle them, put them in a shelve db, on in a the tables of a SQL db. Check to make sure that they are saved correctly.
 
 
-###Graded Exercise 2:  
+### Graded Exercise 2:  
 Provide the above in up to six (6) pages, but in no more than six pages, in a pdf file. Be sure that everything is readable. Address each of the seven (7) items in turn. Do 1 by providing your commented code and results, Then do 2 providing code + results, and so on. Do not provide a list of code for all of the above items in a block, followed by the results of your code in a block. An assignment organized in this way will be returned ungraded. Be sure all of your code is syntactically correct, and that it approximates good Python coding style.
 
-###Graded Exercise 3:
+### Graded Exercise 3:
 In no more than six(6) pages, in a pdf file, provide the following.
 Part I
 Provide your commented, syntactically correct code for each step you took to create the two results required.
@@ -31,6 +31,6 @@ The above should give you an idea of what your assignment should be like. Review
 Part II
 This should be done like part I, above. Take note of the requirement that with your code should work for an arbitrarily large number of json files. Also, assume that you don't know how many files it may need to work on, a priori.
 
-###Graded Exercise 4:
+### Graded Exercise 4:
 In six (6) pages or less in a pdf file, but in no more than six pages, address each of the items, above. Include your code (documented and syntactically correct, of course), and any results indicated. Make sure your content is readable. Don't forget to organize by providng for each part both code and results. For example, do 1. by providing your code and then the requested results, then do 2. with code and results, and so on. Do not first provide all of your code, and after all of the required results.
 Be prepared to share your code and results.
