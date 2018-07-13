@@ -1,0 +1,14 @@
+topic:  0
+['said', 'chemic', 'weapon', 'world', 'hit', 'strike', 'leadership', 'attack', 'use', 'agreement', 'site', 'missil', 'set', 'success', 'gas', 'withdraw', 'last', 'week', 'say', 'also']
+
+topic:  1
+['attack', 'said', 'war', 'presid', 'would', 'threat', 'trade', 'media', 'chemic', 'militari', 'tariff', 'last', 'alli', 'year', 'say', 'respons', 'call', 'like', 'even', 'though']
+
+topic:  2
+['said', 'tariff', 'trade', 'global', 'respons', 'steel', 'plan', 'product', 'market', 'area', 'need', 'nation', 'one', 'export', 'could', 'week', 'effort', 'secur', 'campaign', 'would']
+
+topic:  3
+['trade', 'billion', 'said', 'countri', 'deal', 'polici', 'deficit', 'elect', 'world', 'tariff', 'year', 'plan', 'would', 'includ', 'also', 'job', 'agreement', 'withdraw', 'look', 'take']
+
+topic:  4
+['fight', 'sign', 'rais', 'econom', 'accord', 'claim', 'hand', 'happen', 'question', 'like', 'call', 'howev', 'threaten', 'develop', 'economi', 'polit', 'mean', 'ago', 'back', 'accus']

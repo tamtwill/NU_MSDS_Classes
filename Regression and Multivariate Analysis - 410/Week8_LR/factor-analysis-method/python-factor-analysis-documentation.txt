@@ -1,0 +1,6 @@
+# factor analysis documentation
+# http://scikit-learn.org/stable/modules/generated/sklearn.decomposition.FactorAnalysis.html
+
+# GitHub repository of code for factor rotation
+https://github.com/mvds314/factor_rotation 
+
