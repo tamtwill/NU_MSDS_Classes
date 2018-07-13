@@ -1,0 +1,25 @@
+__pycache__ - directory containing the byte code for the python_utilities.py helper program
+
+console_output.html - saved output from the python console after execution of the full program
+
+filelist.txt - this file
+
+Hu_Liu_negative_word_list.txt - list of negative English words from the work of Bing Liu and Xu Hu. See: https://www.cs.uic.edu/~liub/FBS/sentiment-analysis.html#lexicon for more details
+
+Hu_Liu_positive_word_list.txt - list of positive English words from same source as above
+
+Model_Results.pdf - Excel spreadsheet tracking of the training and test accuracy for all the models run, along with the hyperparameters used in the model
+
+python_utilities.py - Instructor supplied helper program which evaluated the accuracy of a binary classifier
+
+reviews - directory containing the raw data movie review data, grouped into test/train subfolders, and sub-sub-folders by sentiment 
+
+TF_conf.pdf - graphical confusion matrix for best model achieved
+
+Williams_Assignment8_ML.PDF - the write-up for the assignment
+
+Williams_assignment8.py - the main Python program code used in this assignment
+
+
+
+

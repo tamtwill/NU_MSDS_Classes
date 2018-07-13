@@ -1,0 +1,15 @@
+boston.csv - the original data set
+
+console_output.html - an HTML dump of all of the program's output to the iPython console
+
+filelist.txt - this file
+
+mv-dist.pdf - chart of the distribution of the unmodified response variable
+
+mv-log-dist.pdf - chart of the distribution of the response variable after transforming it to be log(response)
+
+summary_results.png - a screen capture of the master summary of the averages for all the fold and all the methods.  Easier than scrolling thru the console output
+
+Williams_Assignment3_ML - a PDF of the write-up for the assignement
+
+Williams_Assignment3.py - the Python code file for the work done is this assignment

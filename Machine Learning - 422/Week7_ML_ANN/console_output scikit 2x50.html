@@ -1,0 +1,1425 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="qrichtext" content="1" /><style type="text/css">
+p, li { white-space: pre-wrap; }
+</style></head><body style=" font-family:'Menlo'; font-size:12pt; font-weight:400; font-style:normal;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Extracting /tmp/data/train-images-idx3-ubyte.gz</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Extracting /tmp/data/train-labels-idx1-ubyte.gz</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Extracting /tmp/data/t10k-images-idx3-ubyte.gz</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Extracting /tmp/data/t10k-labels-idx1-ubyte.gz</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:Using config: {'_task_type': None, '_task_id': 0, '_cluster_spec': &lt;tensorflow.python.training.server_lib.ClusterSpec object at 0x11c715828&gt;, '_master': '', '_num_ps_replicas': 0, '_num_worker_replicas': 0, '_environment': 'local', '_is_chief': True, '_evaluation_master': '', '_tf_config': gpu_options {</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">  per_process_gpu_memory_fraction: 1</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">, '_tf_random_seed': 13, '_save_summary_steps': 100, '_save_checkpoints_secs': 600, '_save_checkpoints_steps': None, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_model_dir': None}</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">WARNING:tensorflow:Using temporary folder as model directory: /var/folders/0l/wld3zs1j1pl9f_c8ftq54bjw0000gn/T/tmp25dgjllx</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">WARNING:tensorflow:From /Users/tamtwill/anaconda/lib/python3.6/site-packages/tensorflow/contrib/learn/python/learn/estimators/head.py:615: scalar_summary (from tensorflow.python.ops.logging_ops) is deprecated and will be removed after 2016-11-30.</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Instructions for updating:</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Please switch to tf.summary.scalar. Note that tf.summary.scalar uses the node name instead of the tag. This means that TensorFlow will automatically de-duplicate summary names based on the scope they are created in. Also, passing a tensor or list of tags to a scalar summary op is no longer supported.</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:Create CheckpointSaverHook.</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:Saving checkpoints for 1 into /var/folders/0l/wld3zs1j1pl9f_c8ftq54bjw0000gn/T/tmp25dgjllx/model.ckpt.</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 2.35302, step = 1</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 859.867</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.432497, step = 101 (0.118 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 874.699</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.31183, step = 201 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 860.312</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.364125, step = 301 (0.116 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 883.601</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.279792, step = 401 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 909.912</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.283707, step = 501 (0.110 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 888.385</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0769284, step = 601 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 877.692</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.159239, step = 701 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 894.75</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.331227, step = 801 (0.112 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 867.16</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.126416, step = 901 (0.115 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 893.201</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.231448, step = 1001 (0.112 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 872.272</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.233327, step = 1101 (0.115 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 879.012</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.117111, step = 1201 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 891.893</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.135424, step = 1301 (0.112 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 893.192</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.142615, step = 1401 (0.112 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 878.217</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.112584, step = 1501 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 881.014</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.19311, step = 1601 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 877.66</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0450153, step = 1701 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 886.462</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.195336, step = 1801 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 887.871</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.126854, step = 1901 (0.112 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 876.294</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0859813, step = 2001 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 883.212</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0295854, step = 2101 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 890.212</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0885259, step = 2201 (0.112 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 884.523</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.124491, step = 2301 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 874.041</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.116944, step = 2401 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 886.455</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.129843, step = 2501 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 877.971</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.159235, step = 2601 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 879.283</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0470112, step = 2701 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 897.667</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0709761, step = 2801 (0.111 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 878.92</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.124725, step = 2901 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 891.743</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0311993, step = 3001 (0.112 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 873.286</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0841757, step = 3101 (0.115 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 884.759</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0291688, step = 3201 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 891.466</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.109394, step = 3301 (0.112 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 872.539</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.355766, step = 3401 (0.115 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 878.904</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.102665, step = 3501 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 878.449</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.159653, step = 3601 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 890.505</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0696345, step = 3701 (0.112 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 863.118</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00646951, step = 3801 (0.116 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 884.359</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.110459, step = 3901 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 869.453</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.208314, step = 4001 (0.115 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 881.679</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0292161, step = 4101 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 885.214</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0911747, step = 4201 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 874.989</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.173415, step = 4301 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 890.805</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.182717, step = 4401 (0.112 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 884.996</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0562965, step = 4501 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 887.013</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0778629, step = 4601 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 875.978</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0367443, step = 4701 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 886.846</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0588492, step = 4801 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 886.307</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.12964, step = 4901 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 877.501</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.184268, step = 5001 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 871.361</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0353256, step = 5101 (0.115 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 885.582</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0655701, step = 5201 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 885.223</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.112063, step = 5301 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 886.365</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0561499, step = 5401 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 896.106</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.194359, step = 5501 (0.112 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 869.664</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.166606, step = 5601 (0.115 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 885.082</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0613445, step = 5701 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 887.24</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0171083, step = 5801 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 881.975</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.104332, step = 5901 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 877.462</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.132153, step = 6001 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 885.825</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0618382, step = 6101 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 866.76</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0436503, step = 6201 (0.115 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 876.457</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.163405, step = 6301 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 884.915</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0296983, step = 6401 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 895.176</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0193244, step = 6501 (0.112 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 877.877</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0385407, step = 6601 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 893.727</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0296398, step = 6701 (0.112 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 887.013</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0542032, step = 6801 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 891.462</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0421214, step = 6901 (0.112 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 883.525</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0472537, step = 7001 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 880.213</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0103091, step = 7101 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 893.376</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0885814, step = 7201 (0.112 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 880.415</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0214512, step = 7301 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 888.595</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0444682, step = 7401 (0.112 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 885.104</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.010007, step = 7501 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 881.462</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0527295, step = 7601 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 869.951</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0572477, step = 7701 (0.115 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 857.847</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0224407, step = 7801 (0.117 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 875.334</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.029966, step = 7901 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 876.386</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00936751, step = 8001 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 874.606</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0764923, step = 8101 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 871.135</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0803023, step = 8201 (0.115 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 866.094</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.141499, step = 8301 (0.115 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 889.853</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0719212, step = 8401 (0.112 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 861.869</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0207901, step = 8501 (0.116 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 888.343</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0348747, step = 8601 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 865.403</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00512792, step = 8701 (0.116 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 871.323</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0766836, step = 8801 (0.115 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 873.264</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0393324, step = 8901 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 890.868</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.051089, step = 9001 (0.112 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 871.946</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0155053, step = 9101 (0.115 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 880.522</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0323073, step = 9201 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 888.765</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0232442, step = 9301 (0.112 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 878.015</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0614555, step = 9401 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 878.76</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0307609, step = 9501 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 880.644</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0540022, step = 9601 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 883.19</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00738007, step = 9701 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 880.483</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0137749, step = 9801 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 870.24</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0511878, step = 9901 (0.115 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 871.839</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.035981, step = 10001 (0.115 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 884.62</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0109778, step = 10101 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 882.432</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0891129, step = 10201 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 882.153</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0401149, step = 10301 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 881.034</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.168739, step = 10401 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 885.072</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00827934, step = 10501 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 881.338</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.162322, step = 10601 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 887.272</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0295747, step = 10701 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 882.963</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0293236, step = 10801 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 885.717</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00457344, step = 10901 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 879.646</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0418897, step = 11001 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 898.536</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0643167, step = 11101 (0.111 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 881.679</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00564278, step = 11201 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 871.057</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0446844, step = 11301 (0.115 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 896.06</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0389654, step = 11401 (0.112 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 879.351</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0426501, step = 11501 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 892.515</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00658112, step = 11601 (0.112 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 898.746</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0340902, step = 11701 (0.111 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 889.228</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0015965, step = 11801 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 886.063</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0342335, step = 11901 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 880.535</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00380245, step = 12001 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 870.664</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00814375, step = 12101 (0.115 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 872.038</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0232962, step = 12201 (0.115 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 876.254</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0327406, step = 12301 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 878.657</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00872847, step = 12401 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 897.337</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00810125, step = 12501 (0.111 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 879.104</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00619901, step = 12601 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 890.575</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0109244, step = 12701 (0.112 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 868.848</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.138555, step = 12801 (0.115 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 879.184</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00740333, step = 12901 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 878.988</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.035584, step = 13001 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 863.372</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0317001, step = 13101 (0.116 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 874.034</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0322443, step = 13201 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 892.53</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0149257, step = 13301 (0.112 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 899.888</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0164606, step = 13401 (0.111 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 878.489</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0301847, step = 13501 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 882.617</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0639045, step = 13601 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 889.245</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.019141, step = 13701 (0.112 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 883.197</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0554989, step = 13801 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 877.918</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0181238, step = 13901 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 882.846</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00385083, step = 14001 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 883.424</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0727185, step = 14101 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 871.58</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.032912, step = 14201 (0.115 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 868.584</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0194699, step = 14301 (0.115 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 870.352</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0227408, step = 14401 (0.115 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 873.082</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00564605, step = 14501 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 890.321</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0527421, step = 14601 (0.112 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 881.188</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0213957, step = 14701 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 863.432</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0079643, step = 14801 (0.116 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 884.438</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0389349, step = 14901 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 876.838</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00328651, step = 15001 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 882.131</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.019817, step = 15101 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 877.701</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0226831, step = 15201 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 875.382</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.011773, step = 15301 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 872.584</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0120472, step = 15401 (0.115 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 895.432</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0729759, step = 15501 (0.112 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 881.243</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.033092, step = 15601 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 873.881</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0381912, step = 15701 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 878.773</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0170385, step = 15801 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 797.983</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00370445, step = 15901 (0.125 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 877.817</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0617854, step = 16001 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 887.689</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0221026, step = 16101 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 894.48</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.000653564, step = 16201 (0.112 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 876.662</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0382497, step = 16301 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 884.876</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0207178, step = 16401 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 872.289</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0440692, step = 16501 (0.115 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 869.369</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.028854, step = 16601 (0.115 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 882.114</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00917861, step = 16701 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 881.423</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0572952, step = 16801 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 882.114</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0174427, step = 16901 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 862.612</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.147244, step = 17001 (0.116 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 878.703</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0074862, step = 17101 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 784.658</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0318644, step = 17201 (0.128 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 784.714</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0357861, step = 17301 (0.127 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 785.002</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0147327, step = 17401 (0.127 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 797.113</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0228788, step = 17501 (0.125 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 790.477</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00671231, step = 17601 (0.127 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 822.097</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00496042, step = 17701 (0.122 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 884.134</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00346838, step = 17801 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 896.916</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0224986, step = 17901 (0.111 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 877.493</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0148064, step = 18001 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 876.633</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.013581, step = 18101 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 883.51</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0632683, step = 18201 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 882.487</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0727087, step = 18301 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 871.567</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0273043, step = 18401 (0.115 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 881.584</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0153941, step = 18501 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 883.112</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0515105, step = 18601 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 864.482</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.016864, step = 18701 (0.116 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 875.449</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0588659, step = 18801 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 875.144</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.049734, step = 18901 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 886.25</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00658839, step = 19001 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 877.4</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00235231, step = 19101 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 875.842</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00400823, step = 19201 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 887.948</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0653093, step = 19301 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 883.08</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0124312, step = 19401 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 871.603</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0475411, step = 19501 (0.115 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 875.435</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00715541, step = 19601 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 882.714</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00260992, step = 19701 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 874.967</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00197479, step = 19801 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 879.237</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0222007, step = 19901 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 878.072</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0285314, step = 20001 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 899.7</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.011458, step = 20101 (0.111 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 864.932</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0347494, step = 20201 (0.115 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 876.216</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00518678, step = 20301 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 879.827</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0011292, step = 20401 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 880.119</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.003981, step = 20501 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 889.585</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00614039, step = 20601 (0.112 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 896.796</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0147661, step = 20701 (0.112 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 888.044</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00637237, step = 20801 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 868.35</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.016181, step = 20901 (0.115 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 879.693</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00945666, step = 21001 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 881.491</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0427052, step = 21101 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 883.495</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0887965, step = 21201 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 875.994</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00239839, step = 21301 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 873.035</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0211161, step = 21401 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 887.894</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00689254, step = 21501 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 898.278</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0439948, step = 21601 (0.111 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 901.266</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00690194, step = 21701 (0.111 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 876.901</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0202305, step = 21801 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 885.3</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0146452, step = 21901 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 868.704</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.000248191, step = 22001 (0.115 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 900.641</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00175152, step = 22101 (0.111 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 864.657</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00900562, step = 22201 (0.116 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 877.022</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0180863, step = 22301 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 894.68</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0131177, step = 22401 (0.112 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 889.545</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00756835, step = 22501 (0.112 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 889.449</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.122873, step = 22601 (0.112 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 870.983</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00435332, step = 22701 (0.115 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 885.872</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0170933, step = 22801 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 886.698</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0350587, step = 22901 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 889.649</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00401343, step = 23001 (0.112 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 875.404</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0966713, step = 23101 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 873.424</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0174961, step = 23201 (0.115 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 882.541</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0222017, step = 23301 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 878.589</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00476395, step = 23401 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 888.178</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00878167, step = 23501 (0.112 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 871.853</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00552845, step = 23601 (0.115 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 878.99</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00502741, step = 23701 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 900.162</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00365116, step = 23801 (0.111 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 887.58</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0304533, step = 23901 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 881.849</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0232924, step = 24001 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 876.672</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00657212, step = 24101 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 884.313</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0226126, step = 24201 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 882.426</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00181432, step = 24301 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 890.219</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0540168, step = 24401 (0.112 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 887.83</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0110251, step = 24501 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 881.19</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00260573, step = 24601 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 876.901</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00356721, step = 24701 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 882.053</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00586491, step = 24801 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 873.873</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00947803, step = 24901 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 881.421</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0021107, step = 25001 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 900.633</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00665691, step = 25101 (0.111 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 889.451</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0559665, step = 25201 (0.112 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 871.102</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00779579, step = 25301 (0.115 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 879.879</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.016876, step = 25401 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 877.71</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0157255, step = 25501 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 883.142</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.016315, step = 25601 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 884.408</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00889462, step = 25701 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 875.442</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00727721, step = 25801 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 884.947</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0198698, step = 25901 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 897.16</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.000818878, step = 26001 (0.112 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 886.989</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00400934, step = 26101 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 881.073</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00599972, step = 26201 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 885.528</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00384276, step = 26301 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 870.041</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0149257, step = 26401 (0.115 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 887.068</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0116748, step = 26501 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 883.571</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00493036, step = 26601 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 899.411</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.000823702, step = 26701 (0.111 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 875.133</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00556593, step = 26801 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 891.489</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00974346, step = 26901 (0.112 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 880.949</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0083546, step = 27001 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 861.34</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0042805, step = 27101 (0.116 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 885.474</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.011377, step = 27201 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 880.322</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0141733, step = 27301 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 880.869</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00152889, step = 27401 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 877.602</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0107359, step = 27501 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 893.51</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0055198, step = 27601 (0.112 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 889.436</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00327527, step = 27701 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 896.972</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00351713, step = 27801 (0.111 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 877.826</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0156349, step = 27901 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 876.807</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00531137, step = 28001 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 878.714</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0069392, step = 28101 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 887.727</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00401088, step = 28201 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 893.719</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00458342, step = 28301 (0.112 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 864.559</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0120918, step = 28401 (0.116 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 884.54</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00083857, step = 28501 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 872.761</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00826402, step = 28601 (0.115 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 877.117</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00742271, step = 28701 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 894.127</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0147679, step = 28801 (0.112 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 885.528</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00552294, step = 28901 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 877.323</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0362893, step = 29001 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 891.599</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0171339, step = 29101 (0.112 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 891.902</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0297034, step = 29201 (0.112 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 886.138</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0133943, step = 29301 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 867.689</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.022031, step = 29401 (0.115 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 884.813</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00937362, step = 29501 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 887.494</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00275816, step = 29601 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 878.48</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0107982, step = 29701 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 898.812</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0054073, step = 29801 (0.111 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 880.692</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00711452, step = 29901 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 879.246</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00180277, step = 30001 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 874.003</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0078022, step = 30101 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 871.832</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00350705, step = 30201 (0.115 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 874.292</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00785622, step = 30301 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 890.592</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0153754, step = 30401 (0.112 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 884.809</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00582346, step = 30501 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 867.113</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0083521, step = 30601 (0.115 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 887.501</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0125389, step = 30701 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 881.08</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0200773, step = 30801 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 887.926</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00952749, step = 30901 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 872.684</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0217284, step = 31001 (0.115 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 790.382</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0107223, step = 31101 (0.126 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 893.367</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00376633, step = 31201 (0.112 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 877.486</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00505134, step = 31301 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 878.241</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00385804, step = 31401 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 861.291</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0047425, step = 31501 (0.116 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 883.439</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00189769, step = 31601 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 883.821</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00859812, step = 31701 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 898.215</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.000574908, step = 31801 (0.111 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 875.517</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0113712, step = 31901 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 874.189</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00278404, step = 32001 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 887.682</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00327791, step = 32101 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 885.833</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0270317, step = 32201 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 885.977</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00695484, step = 32301 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 872.006</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.000964585, step = 32401 (0.115 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 872.334</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00305158, step = 32501 (0.115 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 876.055</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00186986, step = 32601 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 888.503</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0135005, step = 32701 (0.112 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 882.668</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0160438, step = 32801 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 887.445</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00361451, step = 32901 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 879.499</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00135178, step = 33001 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 877.064</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0105927, step = 33101 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 903.602</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00542714, step = 33201 (0.111 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 888.795</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00182504, step = 33301 (0.112 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 901.727</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0143164, step = 33401 (0.111 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 878.079</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00233109, step = 33501 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 885.936</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00489424, step = 33601 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 878.258</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00658528, step = 33701 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 873.238</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0408144, step = 33801 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 883.564</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00659352, step = 33901 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 883.128</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00616526, step = 34001 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 867.386</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0016978, step = 34101 (0.115 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 870.115</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0146995, step = 34201 (0.115 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 880.291</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00171701, step = 34301 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 883.221</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00181634, step = 34401 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 877.885</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00924503, step = 34501 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 881.003</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00279473, step = 34601 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 890.306</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0139295, step = 34701 (0.112 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 879.894</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00475573, step = 34801 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 825.267</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00277684, step = 34901 (0.121 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 788.992</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00529037, step = 35001 (0.127 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 795.349</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0143, step = 35101 (0.126 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 782.503</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00499057, step = 35201 (0.128 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 808.375</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00367749, step = 35301 (0.124 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 838.96</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00879307, step = 35401 (0.119 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 877.941</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00250785, step = 35501 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 882.69</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0006408, step = 35601 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 882.285</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00331315, step = 35701 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 879.213</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00648049, step = 35801 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 889.428</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00394071, step = 35901 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 884.102</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00416141, step = 36001 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 870.157</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00962666, step = 36101 (0.115 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 888.737</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.004687, step = 36201 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 863.902</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00260717, step = 36301 (0.116 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 875.811</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00733138, step = 36401 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 905.887</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00170635, step = 36501 (0.110 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 894.39</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00100788, step = 36601 (0.112 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 878.928</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00310421, step = 36701 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 867.542</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00693434, step = 36801 (0.115 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 878.282</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0026047, step = 36901 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 876.408</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00814649, step = 37001 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 890.012</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00163048, step = 37101 (0.112 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 883.586</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00326213, step = 37201 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 883.784</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00626265, step = 37301 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 884.454</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00146693, step = 37401 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 877.932</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.003975, step = 37501 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 877.009</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00176128, step = 37601 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 875.495</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.000795234, step = 37701 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 882.723</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00228258, step = 37801 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 884.454</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0138018, step = 37901 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 871.641</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00286873, step = 38001 (0.115 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 886.651</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00492397, step = 38101 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 902.698</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0060691, step = 38201 (0.111 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 879.67</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.000723101, step = 38301 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 878.517</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0010038, step = 38401 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 864.245</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00412686, step = 38501 (0.116 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 881.966</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00502649, step = 38601 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 883.938</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00412043, step = 38701 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 876.256</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00107747, step = 38801 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 878.812</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0108324, step = 38901 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 894.48</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.000584734, step = 39001 (0.112 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 882.956</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00214606, step = 39101 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 869.854</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00320482, step = 39201 (0.115 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 881.117</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00690881, step = 39301 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 881.175</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0145543, step = 39401 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 875.265</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00110797, step = 39501 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 880.561</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00419875, step = 39601 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 881.857</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.00207644, step = 39701 (0.113 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 872.343</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0107245, step = 39801 (0.115 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:global_step/sec: 879.051</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:loss = 0.0058055, step = 39901 (0.114 sec)</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:Saving checkpoints for 40000 into /var/folders/0l/wld3zs1j1pl9f_c8ftq54bjw0000gn/T/tmp25dgjllx/model.ckpt.</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:Loss for final step: 0.00326935.</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:Restoring parameters from /var/folders/0l/wld3zs1j1pl9f_c8ftq54bjw0000gn/T/tmp25dgjllx/model.ckpt-40000</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">INFO:tensorflow:Restoring parameters from /var/folders/0l/wld3zs1j1pl9f_c8ftq54bjw0000gn/T/tmp25dgjllx/model.ckpt-40000</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Results for 2 layers, with 50 nodes per layer</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Training Accuracy:   0.999836363636</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Test Accuracy:     0.9763</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">F Score: 0.9763</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Total Time:    47.96781015396118</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><img src="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAb4AAAEWCAYAAAAZwvJqAAAACXBIWXMAAAsS
+AAALEgHS3X78AAAgAElEQVR4nOzdeVxUVf/A8c8Mm8KwCoICKoqg4pq4tWgq
+mplij5KiJqQo/SyzzCVcSU3FNZfUMskIF9Q0l3ye1Ewt00LMJUQFFRdAQJFF
+9u3+/uBxHjEYBoYZFM6b17xezJ17z/ecM3fmO/fcTSZJkoQgCIIg1BHymq6A
+IAiCIOiSSHyCIAhCnSISnyAIglCniMQnCIIg1Cki8QmCIAh1ikh8giAIQp1S
+KxJfZGQk7du3R6FQsGnTJry9vfnss89qulrVpnv37mzdurWmq/EP77zzDsuW
+LQPgp59+wtnZucz5fv75Zzp06KDLqlWb2rYuaZOdnR2nTp0CIDAwkEmTJmk9
+pqr1DuDEiRO0aNEChULBTz/9pPX6POnq1avo6+vrNGZtUdH7qimViU+hUCgf
+crmc+vXrK59v27ZNa5WqrCVLlvDGG2+QmZmJv7+/zuJevXoVmUzGlClTSk3P
+zc1FJpNhYmKCQqHAwcGBTz75hOLiYqD0F8TTAgICGD9+vNbr/qRbt27x5ptv
+Ym1tjbm5Oe3bt1fr/f3222+ZMWNGhfN5eHhw8eJF5XNV7X9Sef2rSk303/PC
+29sbIyMjFAoFVlZWDBgwgJiYGK3Emj9/Pl988YVaddLmD4vZs2czY8YMMjMz
+GTBggMblLVq0iDZt2mBqakrz5s1Zs2ZNNdSy5nz55Zfo6+uX+q4/c+aM8vX7
+9+8zePBgTExMcHJy4vvvv6/B2lYflYkvMzNT+WjSpAkHDx5UPh89erSu6liu
+wsJCAG7fvo2bm5vO44eEhGBlZcX27duVdXnStWvXyMzM5PDhwwQHB/Pdd99p
+vU5l1aMiI0eOxNXVlbt37/LgwQO2bNmCjY2NFmpXORX1b22hy7bNnTuXzMxM
+7ty5g6mpKRMmTKjxOmmTJt8NZfWBXC5nx44dpKWlcfDgQZYuXcq+ffs0rWa1
+KS4uVv7AVterr75a6ru+R48eytf8/f2xtLQkOTmZ4OBgxo0bp7UfS7qk0VBn
+UVERCxcupHnz5lhbWzN69GjS0tKA/23mb9myBQcHB2xsbFi+fLly2d9//51O
+nTphZmaGnZ0dM2fOVL62Z88e2rRpg4WFBR4eHqU62s7OjhUrVuDm5oaZmRkv
+vvgiZ86cYfz48SgUCu7cufOPeq5fv54WLVrQoEEDhg4dSlJSEgCffPIJ06dP
+ByAnJwcjIyPmzp0LQEZGBvXq1SMzM7PMthcXF7N161aWLVtGfn6+ymEUNzc3
+evToQWRkpMr+3LdvH6tWrSIkJASFQkHXrl2Vr924cYPu3btjZmbGwIEDSU1N
+LdXPX3/9NY6OjgwcOLDMYYLytrIkSSIiIoKxY8dSv359DAwM6Ny5M/3791fO
+c+LECbp37465uTlNmjRh+/btgOpf68uXL6d9+/YkJiaWqs9bb71FcnIy/fv3
+R6FQsHbt2jKXr6h/L168SJ8+fbC0tMTOzo6VK1eW239Pt/3JrcLCwkKGDRuG
+ra0tFhYW9O7dm2vXrpVZpydlZ2ejUCi4fv26clp8fDz169dXvjc//PAD7du3
+x8LCgldeeYWoqCjlvE+vxwALFy6kUaNGmJmZ0bp1a3777bcy+/np97e85VRR
+KBR4e3sr18mAgABGjRrFiBEjMDU1JSwsTOXnGyA4OJgmTZr847P9dB9D2evQ
+2rVr2bNnDwsXLkShUPDWW28BcPfuXYYMGYK1tTXNmzfnyy+/VJaTlZXF6NGj
+sbCwoF27dpw/f77cNjo4OJCQkKBc1wDu3LnDwIEDsbKywsXFhZCQkFJ1froP
+njZz5kw6dOiAnp4ebm5uDBo0iN9//73C/gb46quvaNWqFaampjg7O/PNN98o
+X3N2dubo0aPK57m5uZibm3PlyhUAfvvtN7p164aFhQUvvPBCqZjdu3dn3rx5
+dOvWDWNjYxISEvj6669p1qyZcst09+7datXxSampqRw8eJCFCxdiYmJCnz59
+GDBgQLmjQV9++SV9+/Zl8uTJWFhY0KJFC37++Wfl66r6vqL3VdU6oSqXlEtS
+U9OmTaWjR4+WmhYUFCS9/PLLUnx8vJSTkyP5+vpK77zzjiRJknTlyhUJkN57
+7z0pJydHCg8PlwwMDKQbN25IkiRJHTt2lHbt2iVJkiRlZGRIf/zxhyRJknTp
+0iVJoVBIx48fl/Ly8qQFCxZIrVu3lgoKCiRJkiRbW1vJ3d1dio+Pl7KzsyVJ
+kqRu3bpJoaGhynqNGDFCWrhwoSRJknTo0CHJ1tZWunjxopSTkyNNmDBB6tev
+n/I1d3d3SZIk6dixY1Lz5s2lnj17Kl/r2rVruf1x5MgRydjYWHr06JE0fvx4
+ycvLS/laTk6OBEh3795VtqlBgwbS1q1blW347bffyiz3k08+kfz8/EpN69at
+m+Ti4iJdv35dyszMlHr06CEFBgaW6mc/Pz8pKytLys7Olv7zn/9ILVq0KFWG
+qpgvvfSS1LNnT2nnzp3KOj8WExMjmZiYSN9//71UUFAgJScnSxcuXPhHPz8Z
+c+bMmVLXrl2llJSUf7xWUV0eU9W/Dx8+lKytraV169ZJubm5Unp6uhQeHl5u
+/z0d78l5CgoKpJCQEOnRo0dSTk6O9H//939St27dlPM+2canjRw5UlqwYIHy
++YoVK6QhQ4ZIkiRJZ86ckezs7KSIiAipsLBQ+uqrr6SWLVuWux5fuHBBcnJy
+khITE6Xi4mLpxo0b0s2bN8usw5P9qWq5pz1ZTnp6ujRs2DDJw8ND2SeGhobS
+oUOHpKKiIik7O1vl5/uvv/6SFAqFdPr0aSk3N1d67733JD09PWU/P9nH6q5D
+kiRJhYWFUtu2baWgoCApLy9PunbtmuTo6CidOHFCkiRJ+vDDD6U+ffpIqamp
+0s2bNyUXF5d/rOtPevq979q1q/TRRx9Jubm50tmzZyVLS0vp1KlT5faBKkVF
+RVKbNm2kLVu2lPn6lStXJD09PeXz/fv3Szdv3pSKi4ulo0ePSvXq1ZMiIyMl
+SZKk+fPnSz4+Psp5w8LClN9NsbGxkpWVlXT06FGpqKhIOnTokGRtbS09fPhQ
+kqSS7wcnJyfp6tWrUn5+vpScnCyZm5tL169flyRJkuLj46WoqKgy67hx40bJ
+xMREsrKyklxcXKTFixdLRUVFkiRJ0unTpyULC4tS83/22WelPotPl6Wvry+F
+hIRIhYWF0qpVq6SmTZsqX1fV96re14rWifJyiSoabfF9+eWXBAUF0bhxY+rV
+q0dgYCA7d+5EeuLyn/Pnz6devXp06dKFVq1acenSJQAMDAyIjo4mJSUFU1NT
+unXrBkBYWBj/+te/ePXVVzE0NGTWrFncv3+fiIgIZZlTpkyhcePG1K9fv8I6
+btu2DX9/f9q3b0+9evVYtmwZP//8M4mJibz88stcunSJR48e8euvvzJx4kSi
+o6PJzc3l5MmT9OrVq9xyQ0JCGDx4MAqFglGjRnHw4EHlL/3H3NzcsLS0ZOjQ
+oXzwwQeMGjWqUv37pAkTJtCiRQtMTEzw8vLiwoULpV5fsGABxsbGavXJ0/bt
+20fXrl0JDAykSZMmuLu7K39xhYaGMnjwYIYNG4a+vj42NjblHqgiSRLvv/8+
+Z86c4eeff8bKyqryDf0vVf27b98+nJ2dmTRpEkZGRpiZmdGlS5cqxdHX18fH
+xweFQqFch8PDw8nNza1w2VGjRrFjxw7l8+3btyvf46+++opJkybRuXNn9PT0
+8Pf3Jy8vj3Pnzinnf3I91tfXJycnh6ioKIqKimjevDlOTk5q1b8yyy1atAgL
+CwtcXV0pKipi8+bNytd69erFwIEDlfvzVX2+d+/ezbBhw+jRowdGRkYsXry4
+3CG2yqxDp06dIjc3l08++QRDQ0NcXFwYO3ascutr165dzJ07FwsLC5ycnHj/
+/fcr7KPHYmJiuHjxIosXL8bIyAh3d3d8fX0JDQ0ttw9UmTlzJsbGxmrv9vH0
+9MTJyQmZTIaHhwe9evVSjkT4+Piwb98+cnJygJI+GzNmDFDyWRg6dCgeHh7I
+5XIGDhxImzZtOHLkiLLs8ePH4+rqioGBgfKAmsjISHJzc2ncuDGtW7cus04e
+Hh5ERkZy//59du7cyZYtW5T7LTMzMzE3Ny81v5mZGY8ePSq3ja6urvj4+KCn
+p4evry+3b98mLS2twr5X9b5WtE6Ul0tUqXLikySJu3fvMnDgQCwsLLCwsKBT
+p04UFxeTkpICgJ6eHtbW1spljI2NlUOHISEhXLp0CRcXF7p168bhw4cBSEhI
+oGnTpspl9PT0sLe3Jz4+XjnN0dFR7Xo+XZ6FhQVmZmbEx8djZmZGu3bt+O23
+3/j111/p3bs3Xbp04c8//1SZ+B49esQPP/ygXOF79eqFtbU1O3fuLDXf5cuX
+SU1NJSYmhsDAQGQymdr1fpqdnZ3y/yf7EUr2OzRu3LjKZVtbW7N8+XKuXLlC
+YmIiLi4uDB06FCgZYmjRooVa5SQnJ7NlyxbmzJmDqalpletTUf9Wpk4VKSws
+ZOrUqTRv3hwzMzNatWqFJEnKdViV1157jaSkJC5evMi1a9eIiYlh8ODBQMm+
+pcWLFys/GxYWFty/f7/c9djNzY2goCBmz55Nw4YNGT16tHJIXpXKLjd79mzS
+0tK4d+8eP/zwQ6nPxpP1qejznZCQUGp+c3Pzf3xJPlaZ9+v27dvcunWrVL+t
+WrWKxMREiouLSUxMLBX3yfpXJCEhARsbm1IJrWnTplX6blm5ciV79+7l4MGD
+GBgYqLXMgQMH6Nq1K1ZWVlhYWPDLL7/w4MEDAJo1a0anTp3Yt28f9+/f55df
+fsHb2xso6ZOtW7eW6pOIiAgSEhLKrLelpSXbtm1j7dq12NnZ4enpWWpI/knO
+zs40a9YMuVxOx44dmTVrlvIAFoVCQUZGRqn509PTVX62n/6egpIEqqrvK3pf
+Va0TUH4uUaXKiU8mk2Fvb88vv/xCWlqa8pGbm1sq2ZWndevW7Ny5k+TkZCZP
+nszQoUPJz8+ncePG3L59WzlfUVER8fHx2Nvbl4qtrqfLS0tLIyMjQ1ler169
+OHr0KFeuXKFjx4706tWLQ4cOceHCBV5++eUyy9y9ezfZ2dn4+flhZ2dH48aN
+efDgQakx66qqSnJ8ehkTExOys7OVzwsKCnj48KFaZTVs2JCPP/6YW7dukZWV
+haOjIzdu3FBrWVtbW/bt28eoUaM4e/as2vV9WkX9q6pOZZX9dH88/sAAbNmy
+haNHj3L8+HHS09O5evUqQKlRi/IYGBjg5eXFjh072L59O//617+UH2xHR0cW
+LFhQ6rORnZ2t/EFRVl19fX05ffo0N2/eJDc3lzlz5lRYf1XLVdaT9ano892o
+USPu3r2rnD89PZ309PQyy63M++Xo6EirVq1KxXz8Q0gul2Nra1sqbln79MvT
+uHFj7t+/r9yqerx8Zb9bNmzYwLp16zh27FipL3pVsrKyeOutt5g7dy7Jycmk
+paXRp0+fUuuZr68vW7duJSwsjD59+tCwYUOgpE/Gjx9fqk+ysrJKHe38dL3f
+eOMNjh07RkJCAk2aNGHixIlq1VMmkynr1KpVKzIyMkr18cWLF6t0sJCqvq/o
+fVW1TkD5uUQVjYY6/+///o+AgABlhZOTkzl48KBay3733XekpKSgp6eHubk5
+MpkMmUzGiBEj+OGHH/j1118pKCggKCiIBg0a4O7uXqU6jhw5kq+//lq52R8Q
+EECfPn2UK2yvXr0IDg7mhRdeQE9Pj1dffZUvv/wSNze3cn/BhoSEMHHiRC5d
+usSFCxe4cOECx48f588//yQ6OrpK9XzM1taW2NhYtb54y9O6dWsePnzIsWPH
+KCgoIDAwUOWRXtOmTVMOlaWnp/Pll1/Stm1bTExMGDNmDD/++CM//PADhYWF
+3L9/XzlcXZb+/fvzzTffMHjw4HIPPLC1teXmzZvlllFR/7755ptcv36djRs3
+kp+fT0ZGhjLRltV/HTt2ZMeOHRQWFvLHH3+wf/9+5WuPHj2iXr16NGjQgKys
+rEonjVGjRhEWFsaOHTtKDWX7+/uzbt06IiIikCSJzMxMDhw4UCqBPSkqKoqT
+J0+Sl5dH/fr1qV+/PnK5XFn/H3/8kbS0NOLj41m3bp1ay2lK1ed7+PDh7N27
+lz///JO8vDzmzJlTblxV69DT68LjH5urV68mNzeXwsJCLl26xF9//aWMu2jR
+ItLT07l9+zYbNmxQuz3Ozs60a9eOOXPmkJeXx19//UVISAhvv/222mV88803
+fPbZZxw9epQmTZqovVxOTg4FBQU0bNgQuVzOgQMHOHHiRKl5vLy8OHXqFBs3
+bsTHx0c53dfXl927d3Ps2DGKiorIycnh2LFj//gB9Fh8fDyHDh0iOztbefpK
+ee/NoUOHuH//PlAyNLp48WKGDBkClGw5Dho0iHnz5pGdnc3x48c5fPhwlY7o
+r6jvVb2vFa0T5eUSVTT6hMyYMQMPDw/69OmDqakpL774orIyFfnxxx9xdXXF
+1NSUmTNnsmvXLgwMDGjfvj3BwcG8++672NjYcOzYMfbv31/lE0EHDRrEzJkz
+8fT0pHHjxiQmJpYa03/llVfIysqiZ8+eQMmXjFwuVz5/WmxsLKdOneKjjz7C
+zs5O+ejRowevvvqqxqcseHt7k52djZWVFS+++GKVyrC2tmbNmjWMHj0aBwcH
+7OzsVG6FZ2Rk4Onpibm5Oc7Ozty/f5+9e/cCJSvs/v37Wbx4MVZWVri7u3P5
+8mWV8d944w02btzI66+/XmaSnD17NrNnz8bCwuIf53qp07+WlpYcPXqUsLAw
+GjZsiKurq3JfSVn9t3jxYv7++28sLCxYsmSJcggJwM/PDxsbG+zs7GjXrl25
+W/nl6dmzp/IHg4eHh3L6Sy+9xNq1a3n33XexsLDAxcWF7du3l/uBzMnJYerU
+qcqtqczMTBYuXAjAuHHjcHZ2pkmTJgwaNIiRI0eqtZymVH2+O3XqxMqVK/Hy
+8sLBwYEmTZqUu46pWof8/f05e/YsFhYWeHt7Y2BgwL///W9Onz5N06ZNsbGx
+YeLEicqh/c8++wxra2uaNGnCG2+8USpBVEQmk7F7926ioqKws7NjxIgRLF++
+vFLv+ezZs3nw4AGdOnVSnvf20UcfVbictbU1K1asYPDgwTRo0IB9+/YxcODA
+UvOYmpoyePBgEhIS8PT0VE5v3rw5e/bsITAwEGtra5o2bcqaNWvK/TFbVFRE
+UFAQdnZ2NGjQgLNnz5Z7TuXhw4dxc3PDxMSEN998kzFjxjBt2jTl619//TUP
+HjzA2tqasWPHEhwcTMuWLdXpqlIq6ntV72tF60R5uURlfSRNNi0EQRCEajNr
+1iySk5NLHXQkVD9xPR1BEIRnwP379/n222+fqRPia6taca1OQRCE59kXX3xB
+s2bNeOutt0pduELQDjHUKQiCINQpYotPEARBqFPEPj4dcOmxUSdxos/01Ukc
+QRC0yUXjEuo3GVnxTP+Vc2dHxTPVMmKLTxAEQahTxBafIAhCLSOTiW0aVUTi
+EwRBqGXkMvHVroroHUEQhFpGbPGpJhKfIAhCLaPJnWDqApH4BEEQah2xxaeK
+SHyCIAi1jBjqVE30Tg2bPL4LYZv+Reh6T1xblNyx/M3XXQhZN5jvvvBkUP+S
+K6E3czQndL0noes9mTm5andtKMvevT/j7T0db+8ZXL5c9s0qq4Of3zy6dx/N
+hg07K565GuiqXbqKA7rvw9jYeNzc3iQiQvXdODShyzZFRd3A23sGo0cH4OMz
+m7t3y76tz/MSRxWZTK72oy4SW3xquHr1Kvv371feqdne3h5PT09at26tUbmt
+WzagfZuGePv/gF1DE5bN68uClb/xYhcHfD8ofV/DGe/3YMWGP7l4OYlPp/fk
+xS4OnD4bp1H89PRMQkMPsnPnCpKSUpgxYxU7dizTqMzyLFo0mdOnL5CYWPGd
+zTWlq3bpsv9At30IsGFDGF26tNVqDF22ycbGis2bP0WhMObkyQjWrt3G8uVT
+n9s4qoijOlWrm+m+EpYuXYq3tzeSJNG1a1e6du2KJEmMHDmSoKAgjcpu1sSC
+yKslN4FMTM7CobEpA3q3ICe3kC1rBrE+6DVsbUz+O685kVeTAbgUlUT3zvbl
+lquuS5ei6dzZDUNDAxwd7cjKyiE/v0DjcstiZ1f+/QCrm67apcv+A9324cWL
+17C2tsTOroFW4+iyTTY2ligUxgAYGhqgr6/3XMdRRWzxqVY3W10JwcHBnD17
+loCAAN5++23efvttAgICCA8PJzg4uNzlNm3ahLu7O+7u7qQnnSpznugbD+n2
+QmMM9OW0cm6AnY2ChjbGWJjXY+yHP7L74FUCPuihnPeV7iV3fO7ZownmZkYa
+ty0tLQNzc4XyuZmZCWlpjzQut6bpql21tf8ANm7chb+/V01XQyuys3NZvToU
+P7+htSJOWUTiU61utroS5HI5CQkJ/5h+79495PLyu8/f35+IiAgiIiIwty37
+Ds83bqVy8EgMW9YOxmdEO67HPiQ9I49Tf9wF4NQfd3FpUfKLe8na07w1uBXf
+rh1MekYeyQ+yNG6bubkpGRn/K+fRo2wsLEw1Lrem6apdtbX/Tpw4S9u2zlha
+mtV0VapdQUEhU6YsZcKEYTg7N3nu45RHVom/ukgMBFdg9erV9O3bl5YtW+Lo
+6AjAnTt3uH79Ol988YXG5W/fe5ntey/TsrkV/mM68edfCfTr5cTug1dwa2XD
+nfgMAJLuZ/F+wGEAls/rw5ETsRrH7tDBldWrt1JQUMj9+w8xNq6HoaGBxuXW
+NF21q7b235UrNwkPj8TPL5Do6FvcvBnP55/PwN6+YU1XTSPFxcVMn74SD4/u
+eHj0eO7jqFJXt+TUJRJfBQYMGEB0dDTh4eGlDm7p0qULenqaj91/s3oQenpy
+0jJymb/iNx6m5vBKd0dC13sil8mYu/QkAIP6t2S4Z2skCfb/dI2Ymw81jm1u
+rmDUqIGMGTMTkDF79gSNyyzPnDnrOH/+Cvn5hURGxrBhwxytxdJVu3TZf6C7
+Ppw4cQQTJ44AICDgc7y8+mst6elyvThy5AwnT0aQkpLGgQMncHFpxty57z63
+cVSRy8VXuyriRrQ6IG5LJAiC+jS/LZFdm5lqz5sYtUTjeM8b8bNAEAShlhFD
+naqJxCcIglDLiMSnmkh8giAItYxMHLCvkkh8giAItYzY4lNNJD5BEIRaRi7X
+/dVinifiZ4EgCEItI0Ou9qMi48aNo2HDhrRt+7/rtj58+JB+/frRsmVL+vXr
+R2pqqvK1JUuW4OzsjKurK4cPH1ZOP3fuHO3atcPZ2ZnJkydTkycUiNMZdCJa
+J1HqNwnUSRyAnDvzdRZLEOoWzU9naNZR/esI37oQoPL1X3/9FYVCgY+PD5GR
+kQDMmDEDKysrAgICCAoKIjU1laVLlxIVFcXIkSMJDw8nISEBDw8PoqOj0dPT
+o2vXrqxdu5Zu3boxcOBAJk+ezOuvv65RO6tKbPEJgiDUMtV5rc6ePXtiZWVV
+atr+/fvx9fUFwNfXl3379imne3t7Y2RkhJOTE87OzoSHh3Pv3j0yMjLo3r07
+MpkMHx8f5TI1QSQ+QRCEWqYyQ51PXlDf3d2dTZs2VVh+UlISjRo1AsDOzo6k
+pCQA4uPjlZd2BHBwcCA+Pp74+HgcHBz+Mb2miINbBEEQahlZJS5Z5u/vj7+/
+f9VjyWTIZM/Xxa7FFp8gCEIt8zgZqfOoCltbW+7duweU3KmmYcOSa7na29tz
+9+5d5XxxcXHY29tjb29PXFzcP6bXFJH4BEEQapnqPKqzLJ6enoSEhAAQEhLC
+kCFDlNPDwsLIy8sjNjaWmJgYunbtSqNGjTAzM+OPP/5AkiS+++475TI1QQx1
+CoIg1DLVeQL7yJEjOXHiBA8ePMDBwYH58+cTEBDA8OHDCQ4OpmnTpuzatQsA
+Nzc3hg8fTps2bdDX12f9+vXKu9hs2LCBd955h5ycHF5//fUaO6ITxOkMOlK5
+0xn27v2ZXbsOAzLmzvXHzc1ZreWePp3hQGgAHds6sf6bn1i67gecmjZk64YP
+cWnemCE+QZw+ew2A5YE+dO1UEuPgkQhWbDgAQPDq93Bo1AATk3rs/OEU64L/
+oyy7sqczREXdYMGCr9DTk6Onp8eiRR/g6GhXqTKexVhVfa+qws9vHpcv38DH
+x5P33huhtTiPxcbGM2jQ+4SELMLd3U1rcXTVh5mZ2YwfH4iBgT45OXlMnepL
+jx4dtBJLszZpfjqDS9cNas8bHf6exvGeNyLx6YT6iS89PZN33pnNzp0rSEpK
+YcaMVezYsUytZZ9OfPZ2VvR+uS32jRqwdN0P1K9nSD0jA5bOG8O3YceVia9F
+Mztu3EpEJpNxfO+njP1oPbG3kzEw0KOgoAg9PTkXfllBj4GzyMzKBSqf+O7f
+T6V+fSMUCmNOnozgxx9Psnz51EqV8azF0uS9qorExAecPn2BxMQUnSS+6dNX
+cv9+KpMmjdRa4tNlHxYXF1NcLKGvr8fdu4l89NFS9uz5vNrjaN6makh83SuR
++P6oe4lPDHU+Yy5diqZzZzcMDQ1wdLQjKyuH/PyCKt3ZOz6x9M1qc3LzycnN
+/8d8N24lAiBJEoVFxRQVFQNQUFAEQD0jA+4mpJCdk1fpOjxmY2Op/N/Q0AB9
+fe1dUklXsarzvVKHnZ21Vsoty8WL17C2tkRPT7uHAeiyD+VyOfL/NiczMxtX
+V6dqjwG6Xy/KJBeHb6giekcDW7ZsqfYy09IyMDdXKJ+bmZmQlvao2uOUxfvN
+l4i9k8yduAfKads2fkjUqTWcPnuN4mLNBweys3NZvToUP7+hGpdV07Fq8r3S
+to0bd+Hv76X1OLruw6SkFEaOnMG4cfPo16+7VmI8E+uFvBKPOqiONrt6BAaW
+f4mwJ08K3bRpp9plmpubkpGRpXz+6FE2FhamGtVTHb1fbsuY4b34YObmUtNH
+T1xDqxcnM6BPJ1q11Ozw44KCQt6QmuMAACAASURBVKZMWcqECcNwdm6iUVnP
+Qqyaeq+07cSJs7Rt64ylpZnWY+m6D21tG7BjxzJ2717JwoVfaSXGs7BeSDKZ
+2o+6SAx1VqB9+/ZlTpckSXm1grKUPilU/X18HTq4snr1VgoKCrl//yHGxvW0
+PkTSpWMLAqe+xRDfpeTmFSinP97Hl5tXQG45w6TqKi4uZvr0lXh4dMfDo0d1
+VLvGY9XEe6ULV67cJDw8Ej+/QKKjb3HzZjyffz4De/uG1R5Ll3345HCjQmGM
+iUl9rcR5JtaLupnP1CYSXwWSkpI4fPgwlpaWpaZLksSLL75Y7fHMzRWMGjWQ
+MWNmAjJmz55Q5bLWL51A984uGBnq07m9E35TNhK2aQqtWzrQxsWBn45f4LNV
+37Nx+bsA7Pq65ACQgM+28veVO/y4dRYAhgb67Dn0B7fv3q9yXY4cOcPJkxGk
+pKRx4MAJXFyaMXfuu1Uu71mIVZ3vlTrmzFnH+fNXyM8vJDIyhg0b5mglzsSJ
+I5g4seTgmYCAz/Hy6q+VpAe67cPo6NssWbIZuVxOUVERs2ZpJ5au14syyUXm
+U0Uc1VkBPz8/xo4dy8svv/yP10aNGsX27dvVKEXcnUEQBHVpflRny95fqz1v
+zPEaSMw1TGzxVSA4OLjc19RLeoIgCDqmJ7b4VBGJTxAEobapowetqEskPkEQ
+hNpG5D2VROITBEGobcTBLSqJxCcIglDbiLynkkh8giAItYyk5UvNPe9E4tMB
+Cd2cMaLLUwyav/CjzmLd+OsNncWSiZ/KGtHVul6iWGeRZGjv2rJaIVZjlUTi
+EwRBqG3EUZ0qicQnCIJQ24iDW1QSiU8QBKG2EXlPJZH4BEEQahsx1KmSSHyC
+IAi1jbhkmUoi8QmCINQ2YotPJZH4BEEQahuR91QSie8Z1KG9F+07lNyaZIjn
+q3i91V8rcfz85nH58g18fDx5770RGpX17fqhuLVqyLfbz7M++E8AAmf0po2r
+DY8y85k69yfSM3IxN6vHyoUDMFUYEnXtPvOXHQfArVVDAmf0RiaTEbb3EnsO
+RmlUn8jI66xa9R2FBUW0a+fM9BljNSqvLFFRN1iw4Cv09OTo6emxaNEHODra
+VXucx/bu/Zlduw4DMubO9cfNzVkrcTIzsxk/PhADA31ycvKYOtWXHj06aCUW
+6G59B1i7dgenT1/AwECfObMn4NqqmVbiVOdnqyokcVSnSiLxPYNsba0IDV2s
+9TiLFk3m9OkLJCamaFxWwPwjvNStCXYNTQHo+WIz6tczYITfLv71Rmve9XVn
+2bpTvOvrzo9HrrHv0BWWBvan54vN+PX0LQJn9ObjOf8hKTmTPSEjOXriBhmP
+8qpUl/z8AlatDGHtupkoFMYat608NjZWbN78KQqFMSdPRrB27TaWL5+qlVjp
+6ZmEhh5k584VJCWlMGPGKnbsWKaVWMbG9di6NQh9fT3u3k3ko4+WsmfP51qJ
+Bbpb369cucnfl2IIC1vKvXv3+WTGGr4L/Uwrsarzs1UlYqhTJXFdGzVcvXqV
+Y8eOkZmZWWr6Tz/9pJV4Dx6k8fbbM/lg0mLi4pK0EgPAzs662spKTC7dN91e
+cOCX324CcOzXm3Tt7ABA184O/PLr/6Z3e8EBQwM9jOsbEJeQQUFhMWfPx9Oh
+bdW3nC5cuIaxcX2mTVuJr89sIiIuV7ksVWxsLJWJ1dDQAH197V3d49KlaDp3
+dsPQ0ABHRzuysnLIzy/QSiy5XK5sS2ZmNq6uTlqJ85iu1vdbsQm4ubUAoFEj
+G+Lik7TWh9X52aoSWSUedZBIfBVYu3YtQ4YMYd26dbRt25b9+/crX5s1a5ZW
+Yh47tpmtW5cwfMQA5sxep5UY2mZhUY/0jFwAMh7lYW5ar2S6WT3lllzGozzM
+zethYV6v1Nbdo8w8LMzqVTl2cnIKV6/GsmLFVJYt/5i5c75AkrR3Ka3s7FxW
+rw7Fz2+o1mKkpWVgbq5QPjczMyEt7ZHW4iUlpTBy5AzGjZtHv37dtRYHdLe+
+t3RpSnh4JPn5BVy9GktSYgrp6ZkVL/g80pOr/6iD6marK+Hrr7/m3Llz7Nu3
+jxMnTrBw4ULWrFkDoPLLdNOmTbi7u+Pu7s6mTTsrFdPSygyAV155gYSE5KpX
+vgalp+diZmoEgKnCiPRHJUkw/VEeporH0w1JT88lLeN/8z6eP+2/SbMqzM1N
+6dSpFQqFMba2DbC0NOPhw3QNWlO+goJCpkxZyoQJw3B2bqKVGFDSpoyMLOXz
+R4+ysbAw1Vo8W9sG7NixjN27V7Jw4VdaiwO6W9+dnR0ZNOgVxo37lO9CfsTZ
+uQlW/41d64gtPpVE4qtAcXExCkXJL+1mzZpx4sQJ/vOf//Dxxx+rTHz+/v5E
+REQQERGBv7/6O7ezsnIoKioC4NrVWCwtn88P5p/n4nj15ZIhst4vOxF+Lg6A
+8HNx9P7v9FdfduLPv+LIzy8iO6eAxnam6OvLce/YmIuRiVWO3aGDC7duJVBY
+WERmZjYpD9O1kiSKi4uZPn0lHh7d8fDoUe3lP6lDB1fOnYuioKCQhIRkjI3r
+YWhooJVYTw7/KRTGmJjU10oc0P36Pmr0QLZuXcQ7Yz1xcWmKnt5zdvFpdcll
+6j/qIHFwSwVsbW25cOECHTt2BEChUPDjjz8ybtw4/v7772qPd+PGXQLnrS/5
+spHJmL/g/WqP8dicOes4f/4K+fmFREbGsGHDnCqXtXhOP17o0AhDQ33atbFl
+4rQD9OnZnJ3Bw8nMzGfqvJL9oV+FnGXlggGMfqs9V2Me8NuZWwAsXH6C1YsH
+IpPJ2Lr7YpUPbAEwM1Pw9tuD8Bkzi8LCIqZN89XKF9yRI2c4eTKClJQ0Dhw4
+gYtLM+bOfbfa4wCYmysYNWogY8bMBGTMnj1BK3EAoqNvs2TJZuRyOUVFRcya
+pb1YulzfAcaNC6SosBgLC1PmBfprLU51fraqpI4mNHXJJG3u/KgF4uLi0NfX
+x87unwdb/P7777z00ksVliFxTRtV+wdd3lJH3JZIKIu4LVF1cNG4hObjd6s9
+783Nb2kc73kjtvgq4ODgUO5r6iQ9QRAEnaujB62oS/SOIAhCbVON+/g+//xz
+3NzcaNu2LSNHjiQ3N5eHDx/Sr18/WrZsSb9+/UhNTVXOv2TJEpydnXF1deXw
+4cPabGWVicQnCIJQ28gr8VAhPj6etWvXEhERQWRkJEVFRYSFhREUFETfvn2J
+iYmhb9++BAUFARAVFUVYWBiXL1/mp59+4r333lMevPQsEYlPEAShtpHJ1H9U
+oLCwkJycHAoLC8nOzqZx48bs378fX19fAHx9fdm3bx8A+/fvx9vbGyMjI5yc
+nHB2diY8PFyrTa0KkfgEQRBqm0oMdT55znHJeceblMXY29szbdo0mjRpQqNG
+jTA3N6d///4kJSXRqFEjAOzs7EhKKrniTnx8PI6OjsrlHRwciI+P123b1SAO
+bhEEQahlpEpcq9Pf3x9//7JP7UhNTWX//v3ExsZiYWHBW2+9xdatW0vNI5PJ
+kD1n1wYViU8HauMh8jf/GqSzWC3ddbeDPCbiNZ3F0tWh/7Vx/SshBqzKpV89
+7/nPP/+Mk5MTNjY2AAwdOpTTp09ja2vLvXv3aNSoEffu3aNhw4ZAyRbi3bt3
+lcvHxcVhb29fLXWpTmLNEQRBqG2qaR9fkyZN+OOPP8jOzkaSJI4dO0br1q3x
+9PQkJCQEgJCQEIYMGQKAp6cnYWFh5OXlERsbS0xMDF27dtV6cytLbPEJgiDU
+NtV05ZZu3brh5eXFCy+8gL6+Pp06dcLf35/MzEyGDx9OcHAwTZs2ZdeuXQC4
+ubkxfPhw2rRpg76+PuvXr38mLwsnrtyiE9E1XYHnmhjq1Iwuhzp1e+UW3dHt
+cLHmV25x+kT9KyvFLtXdbotnhdjiEwRBqGXEHdhVE4lPEAShthGJTyWR+ARB
+EGobPZH4VBGJTxAEobZ5zs6r0zWR+J4xUVE3WLDgK/T05Ojp6bFo0Qc4Ov7z
+lkjVZe/en9m16zAgY+5cf9zcnLUWCyA2Np5Bg94nJGQR7u5uGpc32b8bL3Vz
+pKCwiIXLf+VeUiZrlgzA0EAPPX0ZgUtOcO16Ch/4d+WNfi158DAbAJ+J+ygu
+1vxADF32X2TkdVat+o7CgiLatXNm+oyxWouly3Z1aO9F+w4lB3QM8XwVr7f6
+P9exMjOzGT8+EAMDfXJy8pg61ZcePTpUexyVxFCnSiLxPWNsbKzYvPlTFApj
+Tp6MYO3abSxfPlUrsdLTMwkNPcjOnStISkphxoxV7NixTCuxHtuwIYwuXdpW
+S1mtXaxp72bLCL/vsbNVsHx+Pw7/coNzF+/xxdfhdO1sz8RxXfhoVslNcDd8
+E8GB/1TfvRF12X/5+QWsWhnC2nUzUSiMtRLjMV2vF7a2VoSGLtZa+bqOZWxc
+j61bg9DX1+Pu3UQ++mgpe/Z8rtWY/yASn0riBHY1hIeHc/bsWaDk6uOrVq3i
+3//+t1Zi2dhYKr/YDA0N0NfX3jkwly5F07mzG4aGBjg62pGVlUN+foHW4l28
+eA1ra0vs7BpUS3nNmlhw+WoyAIlJmTg0NuPWnTQUJoYAmJsakZKarZx/gs8L
+7Ng8DJ8R7aslvi7778KFaxgb12fatJX4+swmIuKyVuKA7teLBw/SePvtmXww
+aTFxcUlai6OrWHK5XPm5zczMxtXVSStxVJFkMrUfdZFIfBWYP38+kydPZuLE
+icycOZNJkyaRlZVFUFAQixYtKne5Jy/8umnTzkrHzc7OZfXqUPz8hmpSfZXS
+0jIwN1con5uZmZCW9khr8TZu3IW/v1e1lRdzI4Wune0x0JfTqqU1dg0VXI15
+QMd2thzaOYp503vxzdbzAITuvMTgkTt45/199OnZHPeOjTWOr8v+S05O4erV
+WFasmMqy5R8zd84XaOsUXF2vF8eObWbr1iUMHzGAObPXaS2OLmMlJaUwcuQM
+xo2bR79+3bUWp1x6MvUfdZAY6qzA999/z4ULF8jLy8POzo64uDjMzMyYNm0a
+3bp1Y/bs2WUuV/rCr5U7gb2goJApU5YyYcIwnJ2baNiC8pmbm5KRkaV8/uhR
+NhYWplqJdeLEWdq2dcbS0qzayrwem8rBn6L5dv2b3IlPJ+bmQ3y9O3D4lxts
+2XaBju3s+PSTV5nw0UHS0nMByMsr4sjxG7Rt05CICwkaxddl/5mbm9KpUysU
+CmMUCmMsLc14+DCdBg0stBJLV+0CsLQqWSdeeeUFFi74UmtxdBnL1rYBO3Ys
+Iy4uCR+fWfTurePLdomhTpXEFl8F9PX10dPTw9jYmBYtWmBmVvLBqV+/PnJ5
+9XdfcXEx06evxMOjOx4ePaq9/Cd16ODKuXNRFBQUkpCQjLFxPQwNDbQS68qV
+m4SHR+LnF8jvv19g2bItxMcna1zu9u//ZvS7e/lm23mirz8AIDWtJMk9fJiN
+uZkRAKYKQ+Uy3TrbE3s79Z+FVZIu+69DBxdu3UqgsLCIzMxsUh6may0Z6bJd
+WVk5yhuVXrsaW60/jGoq1pPDwgqFMSYm9bUSR6VqvAN7bSS2+CpgaGhIdnY2
+xsbGnDt3Tjk9PT1dK4nvyJEznDwZQUpKGgcOnMDFpRlz575b7XEAzM0VjBo1
+kDFjZgIyZs+eoJU4ABMnjmDixBEABAR8jpdXf+ztG2pc7pYvhqCnJyMtPZdP
+l55EX0/O8gX98PJsTT0jfZatOw3AnKk9cWpqgUwm489z8Zz8/bbGsXXZf2Zm
+Ct5+exA+Y2ZRWFjEtGm+WrsGoi7bdePGXQLnrS9JDjIZ8xe8/9zHio6+zZIl
+m5HL5RQVFTFrlvb6r1x1M5+pTVyrswJ5eXkYGRn9Y/qDBw+4d+8e7dq1U6MU
+ca1OTYhrdWpGXKtTc8/btTqbrDqu9rx3Pu6tcbznjdjiq0BZSQ/A2toaa2tr
+HddGEARBDXX0aE11icQnCIJQ29TRozXVJRKfIAhCLaOFww9qFZH4BEEQahkx
+0qmaSHyCIAi1jEh8qonEJwiCUMvIROZTSSQ+4Zmny1MMWr6i/mHgmor5rfYd
+Rq7bw/51p1gq1Fms6jinXOzjU00kPkEQhFpGJhKfSiLxCYIg1DJipFM1kfgE
+QRBqmTp6CU61icQnCIJQy4gtPtVE4hMEQahlROJTTSQ+QRCEWkYuLlmmkkh8
+giAItYzY4lNNJL5n0N69P7Nr12FAxty5/ri5OWsljp/fPC5fvoGPjyfvvTdC
+KzGeFhsbz6BB7xMSsgh3dzetxNBWuyaPc+cld3sKCotZuOZ3zE2N+PzTvsTe
+SQdgyRdnuBz9gLEj2tHvZSfkejLuxGcwK+gkhUXFGsWOirrBggVfoacnR09P
+j0WLPsDR0a46mvUPmZnZjB8fiIGBPjk5eUyd6kuPHh20EkuX7dJ2rPF+84mK
+uskYn0FMnPiWcvrePccIDNzI35HfV1usiojEp5pIfFXg4+PDd999p5Wy09Mz
+CQ09yM6dK0hKSmHGjFXs2LFMK7EWLZrM6dMXSExM0Ur5ZdmwIYwuXdpqNYY2
+2tXauQHtW9sw4r392DU0Yfns3qzbco4TZ+4we+mvpebduucyW3b+DcCy2b15
+uasDJ87c0Si+jY0Vmzd/ikJhzMmTEaxdu43ly6dqVGZ5jI3rsXVrEPr6ety9
+m8hHHy1lz57PtRJLl+3SdqzPFr3PmdOXSEz633qXl5fPkSNnaNRIt7cwE4lP
+tTqR+AYPHqzyEj4HDhwo9zVPT89SzyVJ4vjx46SlpVW4bFVcuhRN585uGBoa
+4OhoR1ZWDvn5BRgaGlRrHAA7O91+GC9evIa1tSV6eto9u1Yb7WrmaM7law8A
+SEzOwqGRGYaGerzSxZHtX3hy5XoKyzb8QV5+EQWF/9u6k8tl3I5L1zi+jY2l
+8n9DQwP09bVz93UAuVyuvPJHZmY2rq5OWouly3ZpO1ZZ611o6CFGeL9G0JJv
+qjVWRcTpDKrVicQ3bdq0Ki8bFxdHmzZtGD9+PDKZDEmSiIiIYOpU1b8UN23a
+xKZNmwDw9x+Cv796Q25paRmYmyuUz83MTEhLe0TDhlZVbsOzYuPGXSxZ8iFL
+lwbXdFUqLSb2IT5ebTHQl9OiqQV2NiZcv5WKx6gw8vOLmDKhC+NHdmB9yF8A
+TBzTiaGvu3IrLp17yVnVVo/s7FxWrw5l0aLJ1VZmWZKSUvjoo6XcupXA4sXa
+jQW6a5cuY6WnZxJx9jLjx/9L54mvOrf40tLSGD9+PJGRkchkMr755htcXV0Z
+MWIEt27dolmzZuzatQtLy5IfFkuWLCE4OBg9PT3Wrl3La6/p7pKD6qoTia9X
+r15VXjYiIoI1a9awaNEili9fTseOHalfv36FZfr7++Pv7//fZ9FqxzM3NyUj
+439flI8eZWNhYVqVqj9TTpw4S9u2zlhamtV0Vark+q00Dh69zrefv8Gd+Axi
+bqWS/CCb4mIJgINHY5jq3005/8bQ82wMPU/glJcZ+roL2/dFaVyHgoJCpkxZ
+yoQJw3B2bqJxearY2jZgx45lxMUl4eMzi969u2otli7bpctYmzbtwW/8v7Qa
+ozzVeVTnhx9+yIABA/j+++/Jz88nOzubxYsX07dvXwICAggKCiIoKIilS5cS
+FRVFWFgYly9fJiEhAQ8PD6Kjo9HT096WfFXUqSu6xcTE4OXlRZs2bWjevLny
+oYpcLmfKlCls2bKFRYsWMWnSJAoLtXfB2g4dXDl3LoqCgkISEpIxNq6nlWFO
+Xbty5Sbh4ZH4+QXy++8XWLZsC/HxyTVdrUrZvi+K0R8c5Judl4i++RDj+v97
+X7q/YE/s3ZLhb0PD/33IH2Xlk5un+fpSXFzM9Okr8fDojodHD43LUyU/v0D5
+v0JhjIlJfa3F0mW7dBkL4PatBDZ9tYcJ4xdw/34qU6as0HrMx2Qy9R+qpKen
+8+uvv+Ln5weAoaEhFhYW7N+/H19fXwB8fX3Zt28fAPv378fb2xsjIyOcnJxw
+dnYmPDxcq22tijqxxffY2LFjmT9/PlOmTOH48eNs2bKF4mL1jrZzcHBg9+7d
+HDp0CDMz7W21mJsrGDVqIGPGzARkzJ49QWux5sxZx/nzV8jPLyQyMoYNG+Zo
+LdbEiSOYOLFkuDcg4HO8vPpjb99QK7G01a4tKweipycnLSOXT1edwrOfM15v
+tCI3t5DU9FwCgk4AMPP9HrR0skQuk3E7Pp21wREaxz5y5AwnT0aQkpLGgQMn
+cHFpxty572pcblmio2+zZMlm5HI5RUVFzJqlvXVQl+3Sdqy5c9dz/vw1CvIL
+uBx5nS/Wz1S+9lr/iXz+edV3uVRWdQ11xsbGYmNjw9ixY7l48SKdO3dmzZo1
+JCUl0ahRIwDs7OxISkoCID4+nu7duyuXd3BwID4+vnoqU41kkiRJNV0JXenc
+uTPnzp2jXbt2/P3336WmaZf6Q51CzRK3JRLKotvbErXRuIzue06pPe+4lCjl
+8QhQejdNREQE3bt35/fff6dbt258+OGHmJmZsW7dOuUBfgCWlpakpqYyadIk
+unfvzttvvw2An58fr7/+Ol5eXhq3qTrVqS0+IyMjiouLadmyJV988QX29vZk
+ZmbWdLUEQRCqVWWO6ix9PEJpDg4OODg40K1byf5rLy8vgoKCsLW15d69ezRq
+1Ih79+7RsGHJ6I29vT13795VLh8XF4e9vX3VG6IldWof35o1a8jOzmbt2rWc
+O3eO0NBQQkJCarpagiAI1Uqup/5DFTs7OxwdHbl27RoAx44do02bNnh6eiq/
+O0NCQhgyZAhQcvpXWFgYeXl5xMbGEhMTQ9eu2jswqqrq1BZfly5dAFAoFGzZ
+sqWGayMIgqAd1Xk6w7p16xg9ejT5+fk0b95ceWzE8OHDCQ4OpmnTpuzatQsA
+Nzc3hg8fTps2bdDX12f9+vXP3BGdUMf28fXu3bvME9l/+eUXLUcW+/ieF2If
+n1CW520fX8+Dv6s976+DX9I43vOmTm3xrVjxv8OJc3Nz2bNnD/r6daoLBEGo
+A8Qly1SrU9/6nTt3LvX8pZdeeibHnwVBEDQhEp9qdSrxPXz4UPl/cXEx586d
+Iz1d8+soCtolUaSzWLocfnQecVYnca7v7KKTOLomobu9NHLZ8/VVKRKfas/X
+u6mhzp07K6+3qa+vj5OTE8HBz991IwVBEFTRr1PH61denUp8V65coV69eqWm
+5eXl1VBtBEEQtEMuqzPHLFZJnfpd8OKLL/5jWo8e2r9mnyAIgi7JZeo/6qI6
+scWXmJhIfHw8OTk5nD9/nsdncGRkZJCdnV3DtRMEQahedWqLpgrqROI7fPgw
+3377LXFxcUydOlWZ+MzMzFi8eHEN104QBKF6iaFO1epE4vP19cXX15c9e/Yw
+bNiwmq6OIAiCVtXVIUx11akt4nPnzpW6onhqaipz5mjvVjxVERV1A2/vGYwe
+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
+zs64urpy+PBhbTRPYyLxPaNiY+Nxc3uTiIjLWouRmZmNt/d0xoyZiZfXx5w5
+c7FWxALYu/dnvL2n4+09g8uXr2stjq7apa04k995gZ3rPNn6+Ru4NrdSTh82
+wIWoo37K5+amRmxa/Brb1wxm7gcvVkvsx3T1XkVF3cDbewajRwfg4zObu3cT
+tRZLV20qj4FMUvuhjjVr1pS6aXdQUBB9+/YlJiaGvn37EhQUBEBUVBRhYWFc
+vnyZn376iffee095899niUh8z6gNG8Lo0qWtVmMYG9dj69YgQkOX8PnnM1ix
+4ttaESs9PZPQ0IN8991ili//mM8+26S1WLpqlzbitG5hRftWDRnxwQGmLT7B
+nEk9ADA00OO1nk7ce+JO7xO823Po+A1GfXgQ4/r6vNLFQeP4oNv3ysbGis2b
+P2XbtiD8/P7F2rXbtBJHl20qT3Vu8cXFxXHo0CHGjx+vnLZ//358fX0B8PX1
+Zd++fcrp3t7eGBkZ4eTkhLOzM+Hh4VppoyZE4qvAn3/+SUZGBgA5OTkEBgYy
+ePBgPvnkE9LT07US8+LFa1hbW2Jn10Ar5T8ml8vR1y+5KkpmZjaurtq7v6Au
+Y126FE3nzm4YGhrg6GhHVlYO+fkFWomlq3ZpI04zRwsuRz8AIPF+Fg6NTDE0
+kOM7zI0dB66UutFr1w6NOH7mDgC/nL5D1w6NNI4Pun2vbGwsUSiMATA0/P/2
+7jwuqnr/4/hrGCBlVYotwC1EcFAQXCvtmku2XEzBBUW9SVLZZvVzSy1bzC1v
+Lle7kmVevYHWtbRFIzW10C5BWgkmSJAshiuyCczA+f3Bda52ZQCZM+rweT4e
+83gww5zzPt85Bz5ztu/Xzvh5mpsl21SfphS++Ph4evbsaXzEx19ZqKdNm8aS
+JUuwsflvuSgqKsLbu24b8PLyoqioCICCggL8/PyM7/P19aWgoMACLW4aKXwN
+mDx5Mg4OdX8szz77LBcuXGDmzJk4ODjwyCOPqJL59ttbiIuLUmXef1RUdJbo
+6BlMnvwSQ4b0tYqs4uISXF2djM9dXBwpLi5VLc9S7TJ3TlbOOXqHemNna0Pg
+HW54uTvi6nwLvbp78/V3J654r6vzLZSUVQNQUlZFG5dbmp0Pll9XABUVlSxf
+vpHY2JGqzP96tOmPtJrGP+Li4khNTTU+4uLijPP57LPP8PDwIDw8vN4sjUaD
+RnNzXU0jV3U2oLa2Flvbuo8pNTWVH374AYC7776b0NDQeqeLj483fnOKixtO
+XNyYRuXt3fs9wcH+tG3r0swlbxxPz1tJSFhCfn4REye+yMCBvW/6LFdXZ0pK
+yo3PS0sraNPGWZUssFy7zJ1z/LdiPt19nPfffIAThSVk5Z5n8qhuvJP4v+cP
+S8qqcHa0p7S8GmdHe4pLqpqVfYml15Veb+C55xYzZUok/v7tVMmwdJuuxlxX
+dSYnJ7N9+3a++OILKisrKSkpISYmBk9PT06ePIm3tzcnT57Ew8MDAB8fH/Ly
+8ozT5+fn4+PjY56FMSPZ42tAcHAw69evByAkJITU1FQAMjMzsbOzq3e6y79F
+NbboARw9+ispKUeIjX2Z5OTDLFmynoKCU81rRD0uP/zi5OSAo2NrVXIsnRUS
+0oW0tAz0egOFhadwcGiFvX3966o5LNUutXI+2HaU8dM+470tP5P56zna+7ry
++PhQ3l08DHc3B5a/dC8AKT/+zp/61h3CuqevHyk/njRLviXXVW1tLdOnL2Pw
+4L4MHtxPlQywbJvqY66BaBcuXEh+fj65ubkkJiZy7733smnTJiIiItiwYQMA
+GzZsYPjw4QBERESQmJhIVVUVOTk5ZGVl0bu3el+mr5Xs8TVg3bp1PPvss7z+
++uvcdttt9OvXDz8/P/z8/Fi3bp3Z8554YgxPPFFXKGfNeouoqKH4+HiYPQcg
+M/M3Fi5ch42NDTU1Nbz44hRVciyd5erqxLhxDzBhwmxAw5w5N3+71MpZv+R+
+tFobiksqmb8imXPFlcbf7do0mmmv7gHgncQfWTr7T0RHdOXYr2f5NjXfLPmW
+XFdJSQfZty+Vs2eL2b59LwEBHZg37zGz51iyTfWxU/nI46xZsxg9ejTvvvsu
+7du3Z8uWLQDodDpGjx5N165dsbW1ZfXq1Wi1N97oKhpFUeQW/0YoKSkhJycH
+g8GAr68vnp6eTZg6U7XlEqIh1joskfUKaPYc/n40qdHvfTxoaLPzbjayx9dI
+Li4uhISEXO/FEEKIBkmXZaZJ4RNCCCujvbkusrQ4KXxCCGFlpK9O06TwCSGE
+lbGV6/VNksInhBBWRivn+EySwieEEFZGdvhMk8Inrsnl/TiqTYOcsGgOS95i
+0LHHJxbLyjn0sMWyLLu9N5+c4zNNCp8QQlgZKXymSeETQggrI+f4TJPCJ4QQ
+Vkau6jRNCp8QQlgZOdRpmhQ+IYSwMtJzi2lS+IQQwspIX52mSeETQggrI6f4
+TJPCdwPaunUXW7Z8CWiYNy8Onc5flZyMjGxefXUtWq0NWq2WBQuexs/PS5Us
+RVF47bW1pKdnU2Oo4S+PDOehh9S5v8yS7YqNfYn09GwmToxg6tTGDzh8LSy1
+XZgza8PqUeiCPHn/gzT+tu4gAPNnDqJrgAclZdW8MO9zLpRU4urSimWvPYiL
+kz0ZmaeYv3g3AJF/Dmbi2DAMhhrSDhfwxlt7r7lNltwuQrpH0T2kbnih4RF/
+ImqUZYf+kXN8pknhu8FcuFDGxo2fsnnzmxQVnWXGjL+SkLBElSx3dzfWrZuP
+k5MD+/alsnLlP1m69AVVsrKyTnA8K4/Nm5dSVlbBiIenqVb4LNmuBQue4cCB
+w/z++1lV5n+JJbcLc2bNfGUHd/XpgLenMwAD7uxIq1Z2jI5NYORDOh77S2+W
+rNzPY3/pzedJR/n48wwWvzyMAXd2ZP+BHKY9fhf3Rb1HxUU9Ce+M5Y6ObmTn
+nLumZbHkduHp6cbGjW+oMu/GsLORQ52myB5xA1auXEleXp7F8n76KZPwcB32
+9nb4+XlRXn6R6mq9Klnu7m1xcnIAwN7eDltb9UZK9vBww87eFr3eQHn5RVxd
+nVTLsmS7vLxuU23el7PkdmHOrN9PlV3xvE+4H3v2ZwOwa99x+oT7GV/f/Z/X
+d+/PNr6enXMWR0d77GxtsLPTUlJada3Nsuh2ceZMMTExs3n6qTfIzy9SLac+
+NprGP1oiKXwNmDdvHn369KF///6sWbOG06dPN2q6+Ph4evbsSc+ePYmP39zo
+vOLikiuKgouLI8XFpU1e7qaoqKhk+fKNxMaOVC3D1dWJ9u29GXbf44x4eBpP
+PDFataxLLNEuS7HkdqFmVlvX1lwoqQSgpLQKV+dWALRxaW0saiWlVbRxqXv9
+ky8y+DxhEnu2TSH1UD6nz5Q3exkssV3s3r2OTZsWMnrMMObOWaVaTn2k8Jkm
+ha8BnTp1Ij8/n3nz5pGWlkbXrl0ZNmwYGzZsoLS0/n8GcXFxpKamkpqaSlxc
+48/9uLo6U1Ly3z/u0tIK2rRxblYbTNHrDTz33GKmTInE37+dajnJyYc5VXSO
+pK/W8sWONbz11kbV9ljAcu2yFEtuF2pmFZdcxMX5FgCcnW7hQmldEbxQUomz
+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
+QmCC
+" /></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#000080;">In [</span><span style=" font-weight:600; color:#000080;">2</span><span style=" color:#000080;">]:</span> </p></body></html>
