@@ -1,0 +1,6 @@
+bank.csv - the data set used in the exercise
+
+console_output.html - the captured Python console output, with embedded imagescorr_of_vars.pdf - heatmap of the correlations between variables, used to check for possible collinearitycount_of_vars.pdf - graphic of the counts of each value for the 4 variables in the training set
+
+dist_of_bal.pdf - chart of the distribution of the balance variablefilelist.txt - this filesvm_test_data.csv - file of synthetic data for generating probabilities based on the 16 different combinations of the 4 explanatory variables
+Williams_Assignment4_ML - PDF of the paper for this assignmentWilliams_Assignment4.py - the python code for this assignment, produces all output and graphics referenced

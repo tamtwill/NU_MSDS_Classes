@@ -1,0 +1,41 @@
+console_output scikit 2x10.html - capture of the console output after running the Scikit-Learn TF.Learn model from the book with 2 layers and 10 nodes
+
+console_output scikit 2x50.html - capture of the console output after running the Scikit-Learn TF.Learn model from the book with 2 layers and 50 nodes
+
+console_output scikit 5x10.html - capture of the console output after running the Scikit-Learn TF.Learn model from the book with 5 layers and 10 nodes
+
+console_output scikit 5x50.html - capture of the console output after running the Scikit-Learn TF.Learn model from the book with 5 layers and 50 nodes
+
+console_output TF 2x10.html - capture of the console output after running the Tensorflow native model from the book with 2 layers and 10 nodes
+
+console_output TF 2x50.html - capture of the console output after running the Tensorflow native model from the book with 2 layers and 50 nodes
+
+console_output TF 5x10.html - capture of the console output after running the Tensorflow native model from the book with 5 layers and 10 nodes
+
+console_output TF 5x50.html - capture of the console output after running the Tensorflow native model from the book with 5 layers and 50 nodes
+
+filelist.txt - this file
+
+metric comparison.xlsx - Excel summary of the results from all the runs
+
+Scikit_TF.py - The Python code for the Scikit-Learn TF.Learn model.  From page 264 of the course textbook.
+
+TF_res_2x10.png - visualization of the classification results on the test data for the TensorFlow model, 2 layers, 10 nodes
+
+TF_res_2x50.png - visualization of the classification results on the test data for the TensorFlow model, 2 layers, 50 nodes
+
+TF_res_5x10.png - visualization of the classification results on the test data for the TensorFlow model, 5 layers, 10 nodes
+
+TF_res_5x50.png - visualization of the classification results on the test data for the TensorFlow model, 5 layers, 50 nodes
+
+TF_Sk_res_2x10.png - visualization of the classification results on the test data for the Scikit-Learn model, 2 layers, 10 nodes
+
+TF_Sk_res_2x50.png - visualization of the classification results on the test data for the Scikit-Learn model, 2 layers, 50 nodes
+
+TF_Sk_res_5x10.png - visualization of the classification results on the test data for the Scikit-Learn model, 5 layers, 10 nodes
+
+TF_Sk_res_5x50.png - visualization of the classification results on the test data for the Scikit-Learn model, 5 layers, 50 nodes
+
+Williams_Assignment7_ML.pdf - the write-up for the assignment
+
+Williams_week7_TF.py - the Python code for the model built using native TensorFlow API, from pages 265 - 272 of cource textbook.
