@@ -5,9 +5,9 @@ The corpus is comprised of articles selcted by the students under the general gu
 
 The professor's description on material selection was:
 
-    "**EVERYONE PAY ATTENTION TO THIS**: I've selected a topic on which you may already have an opinion. **__You may have a strong opinion. This class is NOT the place to be sharing your opinion - directly or even indirectly__**. You're not trying to make a case, or prove a point. Your goal is to be as machine-like as possible - just finding representative data, and going through the text analytics process.
+"**EVERYONE PAY ATTENTION TO THIS**: I've selected a topic on which you may already have an opinion. **__You may have a strong      opinion. This class is NOT the place to be sharing your opinion - directly or even indirectly__**. You're not trying to make a case,    or prove a point. Your goal is to be as machine-like as possible - just finding representative data, and going through the text          analytics process.
 
-    The Case Study 2 Topic is: Donald Trump's Presidency"
+        The Case Study 2 Topic is: Donald Trump's Presidency"
 
 
 
