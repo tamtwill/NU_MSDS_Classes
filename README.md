@@ -18,3 +18,4 @@ Order classes were taken in:
 10.	Decision Analytics - 460: not included here.  Class exclusived used an Excel add-in to perform decision optimization
 11.	Text Analytics - 453: Class was mostly theory, code done in **Python** 
 12.	Capstone - 498: Project done in **R** (mostly) since it was the only language all members knew, one **Python** script
+My best Capstone model, scored by making a "late submission", got a Private Score of .502, which would have ranked it in second place in the competition had we been participating while it was "live".  
