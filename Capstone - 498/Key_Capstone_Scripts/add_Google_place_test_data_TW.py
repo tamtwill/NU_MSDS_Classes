@@ -10,7 +10,7 @@ import json
 import pandas as pd
 
 
-key = 'AIzaSyDRc-ORARiw3zE5HYTqdYMFyE0B-FM9M8Y'
+key = [your key here]
 url = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json'
 
 
